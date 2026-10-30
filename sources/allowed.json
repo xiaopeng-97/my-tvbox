@@ -1,6 +1,6 @@
 {
  "schema": "my-tvbox/sources/1",
- "updated": "2026-10-29",
+ "updated": "2026-10-30",
  "note": "只有通过四级测活（列表/搜索/详情/m3u8首行）的源才会写在这里；由 scripts/discover.py 与 scripts/check_health.py 自动维护",
  "sources": [
   {
@@ -70,9 +70,9 @@
    "score": 100.0,
    "status": "active",
    "added": "2026-10-22",
-   "last_ok": "2026-10-29",
+   "last_ok": "2026-10-30",
    "fail_streak": 0,
-   "last_update_at": "2026-10-29 23:54:04",
+   "last_update_at": "2026-10-30 09:30:02",
    "pinned": 4,
    "source_note": "用户指定置顶",
    "categories_removed_reason": "中文分类名会导致客户端分类页返回空；改用接口 class 的 type_id"
@@ -87,9 +87,9 @@
    "score": 95.0,
    "status": "active",
    "added": "2026-10-22",
-   "last_ok": "2026-10-29",
+   "last_ok": "2026-10-30",
    "fail_streak": 0,
-   "last_update_at": "2026-10-29 23:56:07",
+   "last_update_at": "2026-10-30 09:31:07",
    "pinned": 5,
    "source_note": "用户指定置顶",
    "categories_removed_reason": "中文分类名会导致客户端分类页返回空；改用接口 class 的 type_id"
@@ -104,9 +104,9 @@
    "score": 100.0,
    "status": "active",
    "added": "2026-10-22",
-   "last_ok": "2026-10-29",
+   "last_ok": "2026-10-30",
    "fail_streak": 0,
-   "last_update_at": "2026-10-29 23:54:02",
+   "last_update_at": "2026-10-30 09:29:02",
    "categories_removed_reason": "中文分类名会导致客户端分类页返回空；改用接口 class 的 type_id"
   },
   {
@@ -119,9 +119,9 @@
    "score": 100.0,
    "status": "active",
    "added": "2026-10-22",
-   "last_ok": "2026-10-29",
+   "last_ok": "2026-10-30",
    "fail_streak": 0,
-   "last_update_at": "2026-10-29 23:54:02",
+   "last_update_at": "2026-10-30 09:30:02",
    "categories_removed_reason": "中文分类名会导致客户端分类页返回空；改用接口 class 的 type_id"
   },
   {
@@ -134,9 +134,9 @@
    "score": 100.0,
    "status": "active",
    "added": "2026-10-22",
-   "last_ok": "2026-10-29",
+   "last_ok": "2026-10-30",
    "fail_streak": 0,
-   "last_update_at": "2026-10-29 23:54:02",
+   "last_update_at": "2026-10-30 09:30:01",
    "categories_removed_reason": "中文分类名会导致客户端分类页返回空；改用接口 class 的 type_id"
   },
   {
@@ -145,13 +145,13 @@
    "api": "https://360zy.com/api.php/provide/vod/",
    "type": 3,
    "searchable": 1,
-   "total": 73988,
+   "total": 74012,
    "score": 100.0,
    "status": "active",
    "added": "2026-10-22",
-   "last_ok": "2026-10-29",
+   "last_ok": "2026-10-30",
    "fail_streak": 0,
-   "last_update_at": "2026-10-29 23:59:28",
+   "last_update_at": "2026-10-30 09:12:17",
    "categories_removed_reason": "中文分类名会导致客户端分类页返回空；改用接口 class 的 type_id"
   },
   {
@@ -164,9 +164,9 @@
    "score": 95.0,
    "status": "active",
    "added": "2026-10-22",
-   "last_ok": "2026-10-29",
+   "last_ok": "2026-10-30",
    "fail_streak": 0,
-   "last_update_at": "2026-10-30 00:51:02",
+   "last_update_at": "2026-10-30 09:33:01",
    "categories_removed_reason": "中文分类名会导致客户端分类页返回空；改用接口 class 的 type_id"
   },
   {
@@ -179,7 +179,7 @@
    "score": 95.0,
    "status": "active",
    "added": "2026-10-22",
-   "last_ok": "2026-10-29",
+   "last_ok": "2026-10-30",
    "fail_streak": 0,
    "last_update_at": "2026-10-29 10:30:32",
    "categories_removed_reason": "中文分类名会导致客户端分类页返回空；改用接口 class 的 type_id"
@@ -195,7 +195,7 @@
    "score": null,
    "status": "active",
    "added": "2026-10-25",
-   "last_ok": "2026-10-29",
+   "last_ok": "2026-10-30",
    "fail_streak": 0,
    "last_update_at": "2026-10-29 13:00:22"
   },
@@ -210,7 +210,7 @@
    "score": null,
    "status": "active",
    "added": "2026-10-25",
-   "last_ok": "2026-10-29",
+   "last_ok": "2026-10-30",
    "fail_streak": 0,
    "last_update_at": "2026-10-30 00:05:20"
   },
@@ -221,13 +221,13 @@
    "type": 3,
    "searchable": 1,
    "categories": [],
-   "total": 88802,
+   "total": 88803,
    "score": null,
    "status": "active",
    "added": "2026-10-25",
-   "last_ok": "2026-10-29",
+   "last_ok": "2026-10-30",
    "fail_streak": 0,
-   "last_update_at": "2026-10-30 00:23:39"
+   "last_update_at": "2026-10-30 09:30:13"
   },
   {
    "key": "hongniuzy2",
@@ -240,9 +240,9 @@
    "score": null,
    "status": "active",
    "added": "2026-10-25",
-   "last_ok": "2026-10-29",
+   "last_ok": "2026-10-30",
    "fail_streak": 0,
-   "last_update_at": "2026-10-29 23:56:02"
+   "last_update_at": "2026-10-30 09:32:03"
   },
   {
    "key": "mtzy",
@@ -254,7 +254,7 @@
    "score": 80.0,
    "status": "active",
    "added": "2026-10-22",
-   "last_ok": "2026-10-29",
+   "last_ok": "2026-10-30",
    "fail_streak": 0,
    "last_update_at": "2026-10-29 23:01:01",
    "categories_removed_reason": "中文分类名会导致客户端分类页返回空；改用接口 class 的 type_id"
@@ -266,14 +266,14 @@
    "type": 3,
    "searchable": 0,
    "total": 148571,
-   "score": 30.0,
+   "score": 5.0,
    "status": "active",
    "added": "2026-10-22",
    "last_ok": "2026-10-29",
-   "fail_streak": 1,
+   "fail_streak": 2,
    "last_update_at": "2026-10-28 22:36:13",
    "categories_removed_reason": "中文分类名会导致客户端分类页返回空；改用接口 class 的 type_id",
-   "last_fail": "2026-10-29"
+   "last_fail": "2026-10-30"
   },
   {
    "key": "jszyapi",
@@ -431,7 +431,7 @@
  "stats": {
   "active": 14,
   "retired": 12,
-  "last_run": "2026-10-29",
+  "last_run": "2026-10-30",
   "last_changed": {
    "ok": 13,
    "degraded": 1,

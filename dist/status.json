@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-29T17:00:04Z",
+ "updated": "2026-10-30T02:02:42Z",
  "counts": {
   "active": 14,
   "searchable": 12,
@@ -15,7 +15,7 @@
    "score": 100.0,
    "searchable": 1,
    "total": 116760,
-   "last_ok": "2026-10-29",
+   "last_ok": "2026-10-30",
    "fail_streak": 0
   },
   {
@@ -25,7 +25,7 @@
    "score": 95.0,
    "searchable": 1,
    "total": 116687,
-   "last_ok": "2026-10-29",
+   "last_ok": "2026-10-30",
    "fail_streak": 0
   },
   {
@@ -35,7 +35,7 @@
    "score": 100.0,
    "searchable": 1,
    "total": 116792,
-   "last_ok": "2026-10-29",
+   "last_ok": "2026-10-30",
    "fail_streak": 0
   },
   {
@@ -45,7 +45,7 @@
    "score": 100.0,
    "searchable": 1,
    "total": 116745,
-   "last_ok": "2026-10-29",
+   "last_ok": "2026-10-30",
    "fail_streak": 0
   },
   {
@@ -55,7 +55,7 @@
    "score": 100.0,
    "searchable": 1,
    "total": 115853,
-   "last_ok": "2026-10-29",
+   "last_ok": "2026-10-30",
    "fail_streak": 0
   },
   {
@@ -64,8 +64,8 @@
    "api": "https://360zy.com/api.php/provide/vod/",
    "score": 100.0,
    "searchable": 1,
-   "total": 73988,
-   "last_ok": "2026-10-29",
+   "total": 74012,
+   "last_ok": "2026-10-30",
    "fail_streak": 0
   },
   {
@@ -75,7 +75,7 @@
    "score": 95.0,
    "searchable": 1,
    "total": 115682,
-   "last_ok": "2026-10-29",
+   "last_ok": "2026-10-30",
    "fail_streak": 0
   },
   {
@@ -85,7 +85,7 @@
    "score": 95.0,
    "searchable": 1,
    "total": 14975,
-   "last_ok": "2026-10-29",
+   "last_ok": "2026-10-30",
    "fail_streak": 0
   },
   {
@@ -95,7 +95,7 @@
    "score": null,
    "searchable": 1,
    "total": 104759,
-   "last_ok": "2026-10-29",
+   "last_ok": "2026-10-30",
    "fail_streak": 0
   },
   {
@@ -105,7 +105,7 @@
    "score": null,
    "searchable": 1,
    "total": 67507,
-   "last_ok": "2026-10-29",
+   "last_ok": "2026-10-30",
    "fail_streak": 0
   },
   {
@@ -114,8 +114,8 @@
    "api": "https://cj.rycjapi.com/api.php/provide/vod",
    "score": null,
    "searchable": 1,
-   "total": 88802,
-   "last_ok": "2026-10-29",
+   "total": 88803,
+   "last_ok": "2026-10-30",
    "fail_streak": 0
   },
   {
@@ -125,7 +125,7 @@
    "score": null,
    "searchable": 1,
    "total": 116168,
-   "last_ok": "2026-10-29",
+   "last_ok": "2026-10-30",
    "fail_streak": 0
   },
   {
@@ -135,18 +135,18 @@
    "score": 80.0,
    "searchable": 0,
    "total": 151549,
-   "last_ok": "2026-10-29",
+   "last_ok": "2026-10-30",
    "fail_streak": 0
   },
   {
    "key": "dbzy",
    "name": "豆瓣资源",
    "api": "https://caiji.dbzy5.com/api.php/provide/vod/",
-   "score": 30.0,
+   "score": 5.0,
    "searchable": 0,
    "total": 148571,
    "last_ok": "2026-10-29",
-   "fail_streak": 1
+   "fail_streak": 2
   }
  ]
 }
