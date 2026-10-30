@@ -93,20 +93,13 @@
    "type": "cms",
    "api": "https://mtzy.me/api.php/provide/vod/",
    "searchable": 0
-  },
-  {
-   "key": "dbzy",
-   "name": "豆瓣资源",
-   "type": "cms",
-   "api": "https://caiji.dbzy5.com/api.php/provide/vod/",
-   "searchable": 0
   }
  ],
  "lives": [
   {
    "name": "精选直播·仅真活",
    "type": 0,
-   "url": "http://127.0.0.1:8899/dist/live.txt"
+   "url": "https://raw.githubusercontent.com/xiaopeng-97/my-tvbox/main/dist/live.txt"
   }
  ],
  "tvboxDesktop": {
