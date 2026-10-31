@@ -66,16 +66,19 @@
    "api": "https://api.guangsuapi.com/api.php/provide/vod/",
    "type": 3,
    "searchable": 1,
-   "total": 116865,
+   "total": 116962,
    "score": 100.0,
    "status": "active",
    "added": "2026-10-22",
    "last_ok": "2026-10-31",
    "fail_streak": 0,
-   "last_update_at": "2026-10-31 02:30:02",
+   "last_update_at": "2026-10-31 22:04:02",
    "pinned": 4,
    "source_note": "用户指定置顶",
-   "categories_removed_reason": "中文分类名会导致客户端分类页返回空；改用接口 class 的 type_id"
+   "categories_removed_reason": "中文分类名会导致客户端分类页返回空；改用接口 class 的 type_id",
+   "l4_kind": "HLS-ENC",
+   "l4_kbps": 65.1,
+   "search_n": 8
   },
   {
    "key": "subo",
@@ -83,16 +86,19 @@
    "api": "https://subocaiji.com/api.php/provide/vod/",
    "type": 3,
    "searchable": 1,
-   "total": 116792,
+   "total": 116889,
    "score": 95.0,
    "status": "active",
    "added": "2026-10-22",
    "last_ok": "2026-10-31",
    "fail_streak": 0,
-   "last_update_at": "2026-10-31 02:31:07",
+   "last_update_at": "2026-10-31 22:06:08",
    "pinned": 5,
    "source_note": "用户指定置顶",
-   "categories_removed_reason": "中文分类名会导致客户端分类页返回空；改用接口 class 的 type_id"
+   "categories_removed_reason": "中文分类名会导致客户端分类页返回空；改用接口 class 的 type_id",
+   "l4_kind": "HLS-ENC",
+   "l4_kbps": 74.2,
+   "search_n": 8
   },
   {
    "key": "xinlang",
@@ -100,14 +106,17 @@
    "api": "https://api.xinlangapi.com/xinlangapi.php/provide/vod/",
    "type": 3,
    "searchable": 1,
-   "total": 116897,
+   "total": 116994,
    "score": 100.0,
    "status": "active",
    "added": "2026-10-22",
    "last_ok": "2026-10-31",
    "fail_streak": 0,
-   "last_update_at": "2026-10-31 02:29:02",
-   "categories_removed_reason": "中文分类名会导致客户端分类页返回空；改用接口 class 的 type_id"
+   "last_update_at": "2026-10-31 22:07:02",
+   "categories_removed_reason": "中文分类名会导致客户端分类页返回空；改用接口 class 的 type_id",
+   "l4_kind": "HLS-ENC",
+   "l4_kbps": 73.2,
+   "search_n": 8
   },
   {
    "key": "jyzy",
@@ -115,14 +124,17 @@
    "api": "https://jyzyapi.com/api.php/provide/vod/",
    "type": 3,
    "searchable": 1,
-   "total": 116850,
+   "total": 116948,
    "score": 100.0,
    "status": "active",
    "added": "2026-10-22",
    "last_ok": "2026-10-31",
    "fail_streak": 0,
-   "last_update_at": "2026-10-31 02:30:02",
-   "categories_removed_reason": "中文分类名会导致客户端分类页返回空；改用接口 class 的 type_id"
+   "last_update_at": "2026-10-31 22:06:03",
+   "categories_removed_reason": "中文分类名会导致客户端分类页返回空；改用接口 class 的 type_id",
+   "l4_kind": "HLS-ENC",
+   "l4_kbps": 74.2,
+   "search_n": 8
   },
   {
    "key": "hhzy",
@@ -130,14 +142,17 @@
    "api": "https://hhzyapi.com/api.php/provide/vod/",
    "type": 3,
    "searchable": 1,
-   "total": 115958,
+   "total": 116055,
    "score": 100.0,
    "status": "active",
    "added": "2026-10-22",
    "last_ok": "2026-10-31",
    "fail_streak": 0,
-   "last_update_at": "2026-10-31 02:30:01",
-   "categories_removed_reason": "中文分类名会导致客户端分类页返回空；改用接口 class 的 type_id"
+   "last_update_at": "2026-10-31 22:06:02",
+   "categories_removed_reason": "中文分类名会导致客户端分类页返回空；改用接口 class 的 type_id",
+   "l4_kind": "HLS-ENC",
+   "l4_kbps": 112.7,
+   "search_n": 8
   },
   {
    "key": "360zy",
@@ -145,14 +160,17 @@
    "api": "https://360zy.com/api.php/provide/vod/",
    "type": 3,
    "searchable": 1,
-   "total": 74059,
+   "total": 74128,
    "score": 100.0,
    "status": "active",
    "added": "2026-10-22",
    "last_ok": "2026-10-31",
    "fail_streak": 0,
-   "last_update_at": "2026-10-30 23:46:19",
-   "categories_removed_reason": "中文分类名会导致客户端分类页返回空；改用接口 class 的 type_id"
+   "last_update_at": "2026-10-31 20:49:48",
+   "categories_removed_reason": "中文分类名会导致客户端分类页返回空；改用接口 class 的 type_id",
+   "l4_kind": "HLS-ENC",
+   "l4_kbps": 101.0,
+   "search_n": 3
   },
   {
    "key": "huyaapi",
@@ -160,14 +178,17 @@
    "api": "https://www.huyaapi.com/api.php/provide/vod/from/hym3u8/",
    "type": 3,
    "searchable": 1,
-   "total": 115787,
+   "total": 115885,
    "score": 95.0,
    "status": "active",
    "added": "2026-10-22",
    "last_ok": "2026-10-31",
    "fail_streak": 0,
-   "last_update_at": "2026-10-31 04:18:02",
-   "categories_removed_reason": "中文分类名会导致客户端分类页返回空；改用接口 class 的 type_id"
+   "last_update_at": "2026-10-31 22:06:01",
+   "categories_removed_reason": "中文分类名会导致客户端分类页返回空；改用接口 class 的 type_id",
+   "l4_kind": "HLS-ENC",
+   "l4_kbps": 56.9,
+   "search_n": 8
   },
   {
    "key": "cxkjg",
@@ -175,14 +196,17 @@
    "api": "https://ys.cxkjg.cn/api/provide/vod/",
    "type": 3,
    "searchable": 1,
-   "total": 14978,
+   "total": 14981,
    "score": 95.0,
    "status": "active",
    "added": "2026-10-22",
    "last_ok": "2026-10-31",
    "fail_streak": 0,
-   "last_update_at": "2026-10-30 10:30:26",
-   "categories_removed_reason": "中文分类名会导致客户端分类页返回空；改用接口 class 的 type_id"
+   "last_update_at": "2026-10-31 10:30:51",
+   "categories_removed_reason": "中文分类名会导致客户端分类页返回空；改用接口 class 的 type_id",
+   "l4_kind": "HLS-ENC",
+   "l4_kbps": 73.2,
+   "search_n": 8
   },
   {
    "key": "apiyhzy",
@@ -191,13 +215,16 @@
    "type": 3,
    "searchable": 1,
    "categories": [],
-   "total": 104813,
+   "total": 104862,
    "score": null,
    "status": "active",
    "added": "2026-10-25",
    "last_ok": "2026-10-31",
    "fail_streak": 0,
-   "last_update_at": "2026-10-30 13:00:09"
+   "last_update_at": "2026-10-31 13:00:10",
+   "l4_kind": "TS",
+   "l4_kbps": 77.1,
+   "search_n": 0
   },
   {
    "key": "ikunzyapi",
@@ -206,13 +233,16 @@
    "type": 3,
    "searchable": 1,
    "categories": [],
-   "total": 67522,
+   "total": 67535,
    "score": null,
    "status": "active",
    "added": "2026-10-25",
    "last_ok": "2026-10-31",
    "fail_streak": 0,
-   "last_update_at": "2026-10-31 00:02:43"
+   "last_update_at": "2026-10-31 21:38:46",
+   "l4_kind": "TS",
+   "l4_kbps": 177.6,
+   "search_n": 3
   },
   {
    "key": "rycjapi",
@@ -221,13 +251,16 @@
    "type": 3,
    "searchable": 1,
    "categories": [],
-   "total": 88881,
+   "total": 88959,
    "score": null,
    "status": "active",
    "added": "2026-10-25",
    "last_ok": "2026-10-31",
    "fail_streak": 0,
-   "last_update_at": "2026-10-31 09:34:46"
+   "last_update_at": "2026-10-31 22:01:20",
+   "l4_kind": "TS",
+   "l4_kbps": 102.8,
+   "search_n": 3
   },
   {
    "key": "hongniuzy2",
@@ -236,13 +269,16 @@
    "type": 3,
    "searchable": 1,
    "categories": [],
-   "total": 116273,
+   "total": 116370,
    "score": null,
    "status": "active",
    "added": "2026-10-25",
    "last_ok": "2026-10-31",
    "fail_streak": 0,
-   "last_update_at": "2026-10-31 02:32:03"
+   "last_update_at": "2026-10-31 22:04:03",
+   "l4_kind": "HLS-ENC",
+   "l4_kbps": 119.6,
+   "search_n": 8
   },
   {
    "key": "mtzy",
@@ -250,15 +286,18 @@
    "api": "https://mtzy.me/api.php/provide/vod/",
    "type": 3,
    "searchable": 0,
-   "total": 151627,
+   "total": 151713,
    "score": 55.0,
    "status": "active",
    "added": "2026-10-22",
-   "last_ok": "2026-10-30",
-   "fail_streak": 1,
-   "last_update_at": "2026-10-30 22:42:45",
+   "last_ok": "2026-10-31",
+   "fail_streak": 0,
+   "last_update_at": "2026-10-31 19:33:46",
    "categories_removed_reason": "中文分类名会导致客户端分类页返回空；改用接口 class 的 type_id",
-   "last_fail": "2026-10-31"
+   "last_fail": "2026-10-31",
+   "l4_kind": "HLS-ENC",
+   "l4_kbps": 59.2,
+   "search_n": 0
   },
   {
    "key": "jszyapi",
@@ -435,8 +474,8 @@
   "retired": 13,
   "last_run": "2026-10-31",
   "last_changed": {
-   "ok": 12,
-   "degraded": 1,
+   "ok": 13,
+   "degraded": 0,
    "retired": 0,
    "revived": 0
   }
