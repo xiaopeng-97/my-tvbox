@@ -15,7 +15,7 @@
    "api": "https://json02.heimuer.xyz/api.php/provide/vod/",
    "name": "黑木耳 | 采集",
    "verdict": "非JSON/非CMS",
-   "last_check": "2026-10-28",
+   "last_check": "2026-10-31",
    "fail_streak": 1,
    "status": "quarantine"
   },
@@ -31,7 +31,7 @@
    "api": "https://api.wwzy.tv/api.php/provide/vod/",
    "name": "旺旺 | 采集",
    "verdict": null,
-   "last_check": "2026-10-28",
+   "last_check": "2026-10-31",
    "fail_streak": 1,
    "status": "quarantine"
   },
@@ -39,7 +39,7 @@
    "api": "https://www.lovedan.net/api.php/provide/vod/",
    "name": "艾旦 | 采集",
    "verdict": null,
-   "last_check": "2026-10-28",
+   "last_check": "2026-10-31",
    "fail_streak": 1,
    "status": "quarantine"
   },
@@ -47,7 +47,7 @@
    "api": "https://pg.fenwe078.cf/api.php/provide/vod/",
    "name": "四圈 | 采集",
    "verdict": null,
-   "last_check": "2026-10-28",
+   "last_check": "2026-10-31",
    "fail_streak": 1,
    "status": "quarantine"
   },
@@ -55,7 +55,7 @@
    "api": "http://c.小胡.icu/api.php/provide/vod/",
    "name": "👒┃小胡┃资源┃·ok线路1",
    "verdict": null,
-   "last_check": "2026-10-28",
+   "last_check": "2026-10-31",
    "fail_streak": 1,
    "status": "quarantine"
   },
@@ -63,7 +63,7 @@
    "api": "http://ffzy1.tv/api.php/provide/vod/",
    "name": "🥗┃非凡┃资源·ok线路1",
    "verdict": null,
-   "last_check": "2026-10-28",
+   "last_check": "2026-10-31",
    "fail_streak": 1,
    "status": "quarantine"
   },
@@ -71,7 +71,7 @@
    "api": "https://49zy1.com/api.php/provide/vod/?ac=list",
    "name": "🦁┃四九┃资源·ok线路1",
    "verdict": null,
-   "last_check": "2026-10-28",
+   "last_check": "2026-10-31",
    "fail_streak": 1,
    "status": "quarantine"
   },
@@ -79,7 +79,7 @@
    "api": "https://caiji.qhzyapi.com/api.php/provide/vod/",
    "name": "🐯┃奇虎┃采集·ok线路1",
    "verdict": null,
-   "last_check": "2026-10-28",
+   "last_check": "2026-10-31",
    "fail_streak": 1,
    "status": "quarantine"
   },
@@ -87,7 +87,7 @@
    "api": "https://kekezy1.com/api.php/provide/vod/?ac=list",
    "name": "⛱┃可可┃采集·ok线路1",
    "verdict": null,
-   "last_check": "2026-10-28",
+   "last_check": "2026-10-31",
    "fail_streak": 1,
    "status": "quarantine"
   },
@@ -95,7 +95,7 @@
    "api": "https://mv.wogg.link/mv/vod",
    "name": "🎹┃MTV┃合集·ok线路1",
    "verdict": "非JSON/非CMS",
-   "last_check": "2026-10-28",
+   "last_check": "2026-10-31",
    "fail_streak": 1,
    "status": "quarantine"
   },
@@ -111,7 +111,7 @@
    "api": "https://taopianapi.com/cjapi/mc/vod/json.html",
    "name": "🕹️淘片┃采集·ok线路1",
    "verdict": "播放地址不可播",
-   "last_check": "2026-10-28",
+   "last_check": "2026-10-31",
    "fail_streak": 1,
    "status": "quarantine"
   },
@@ -119,7 +119,7 @@
    "api": "https://www.feisuzyapi.com/api.php/provide/vod/?ac=list",
    "name": "🛰️飞速┃采集·ok线路1",
    "verdict": "非JSON/非CMS",
-   "last_check": "2026-10-28",
+   "last_check": "2026-10-31",
    "fail_streak": 1,
    "status": "quarantine"
   },
@@ -127,7 +127,7 @@
    "api": "https://app.bfzyapi.com/api.php/provide/vod/",
    "name": "🌪️暴风影音",
    "verdict": null,
-   "last_check": "2026-10-28",
+   "last_check": "2026-10-31",
    "fail_streak": 1,
    "status": "quarantine"
   },
@@ -135,7 +135,7 @@
    "api": "py_cctv_full",
    "name": "📺央视｜少儿",
    "verdict": null,
-   "last_check": "2026-10-28",
+   "last_check": "2026-10-31",
    "fail_streak": 1,
    "status": "quarantine"
   },
@@ -143,7 +143,7 @@
    "api": "py_qie",
    "name": "🏀┃企鹅┃体育",
    "verdict": null,
-   "last_check": "2026-10-28",
+   "last_check": "2026-10-31",
    "fail_streak": 1,
    "status": "quarantine"
   },
@@ -151,7 +151,7 @@
    "api": "py_cctv",
    "name": "❤️┃央视┃py",
    "verdict": null,
-   "last_check": "2026-10-28",
+   "last_check": "2026-10-31",
    "fail_streak": 1,
    "status": "quarantine"
   },
@@ -159,7 +159,7 @@
    "api": "https://suoniapi.com/api.php/provide/vod/at/xml/",
    "name": "影视 | 索尼[直连]",
    "verdict": "非JSON/非CMS",
-   "last_check": "2026-10-28",
+   "last_check": "2026-10-31",
    "fail_streak": 1,
    "status": "quarantine"
   },
@@ -167,7 +167,7 @@
    "api": "http://154.219.117.232:9981/jacloudapi.php/provide/vod",
    "name": "影视 | 建安",
    "verdict": "有详情无m3u8",
-   "last_check": "2026-10-28",
+   "last_check": "2026-10-31",
    "fail_streak": 1,
    "status": "quarantine"
   },
@@ -183,7 +183,7 @@
    "api": "https://cdn.jsdmirror.com/gh/ouhaibo1980/tvbox@main/py/py_douban.py",
    "name": "📢接口软件永远免费",
    "verdict": null,
-   "last_check": "2026-10-28",
+   "last_check": "2026-10-31",
    "fail_streak": 1,
    "status": "quarantine"
   },
@@ -191,7 +191,7 @@
    "api": "http://xh1.xn--yetu07f.icu/api.php/provide/vod/",
    "name": "🔥┃小胡┃4K",
    "verdict": null,
-   "last_check": "2026-10-28",
+   "last_check": "2026-10-31",
    "fail_streak": 1,
    "status": "quarantine"
   },
@@ -199,7 +199,7 @@
    "api": "https://video.adminqt.cn/api.php/provide/vod/",
    "name": "🧡┃初恋┃官源",
    "verdict": "非JSON/非CMS",
-   "last_check": "2026-10-28",
+   "last_check": "2026-10-31",
    "fail_streak": 1,
    "status": "quarantine"
   },
@@ -207,7 +207,7 @@
    "api": "https://xzcjz.com/api.php/provide/vod",
    "name": "🐻┃熊掌┃高清",
    "verdict": null,
-   "last_check": "2026-10-28",
+   "last_check": "2026-10-31",
    "fail_streak": 1,
    "status": "quarantine"
   },
