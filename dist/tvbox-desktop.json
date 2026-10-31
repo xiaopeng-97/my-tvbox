@@ -1,7 +1,7 @@
 {
  "format": "tvbox-desktop/1",
  "name": "my-tvbox 活源",
- "note": "自动生成：全部源经过四级测活（列表/搜索/详情/m3u8 首行）",
+ "note": "自动生成：全部源经过四级测活（列表/搜索/详情/播放地址拉真实分片）",
  "sites": [
   {
    "key": "guangsu",
@@ -99,7 +99,7 @@
   {
    "name": "精选直播·仅真活",
    "type": 0,
-   "url": "http://127.0.0.1:8899/dist/live.txt"
+   "url": "https://raw.githubusercontent.com/xiaopeng-97/my-tvbox/main/dist/live.txt"
   }
  ],
  "tvboxDesktop": {

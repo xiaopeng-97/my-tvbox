@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-31T09:19:18Z",
+ "updated": "2026-10-31T14:06:57Z",
  "counts": {
   "active": 13,
   "searchable": 12,
@@ -16,7 +16,8 @@
    "searchable": 1,
    "total": 116865,
    "last_ok": "2026-10-31",
-   "fail_streak": 0
+   "fail_streak": 0,
+   "uptime_7d": null
   },
   {
    "key": "subo",
@@ -26,7 +27,8 @@
    "searchable": 1,
    "total": 116792,
    "last_ok": "2026-10-31",
-   "fail_streak": 0
+   "fail_streak": 0,
+   "uptime_7d": null
   },
   {
    "key": "xinlang",
@@ -36,7 +38,8 @@
    "searchable": 1,
    "total": 116897,
    "last_ok": "2026-10-31",
-   "fail_streak": 0
+   "fail_streak": 0,
+   "uptime_7d": null
   },
   {
    "key": "jyzy",
@@ -46,7 +49,8 @@
    "searchable": 1,
    "total": 116850,
    "last_ok": "2026-10-31",
-   "fail_streak": 0
+   "fail_streak": 0,
+   "uptime_7d": null
   },
   {
    "key": "hhzy",
@@ -56,7 +60,8 @@
    "searchable": 1,
    "total": 115958,
    "last_ok": "2026-10-31",
-   "fail_streak": 0
+   "fail_streak": 0,
+   "uptime_7d": null
   },
   {
    "key": "360zy",
@@ -66,7 +71,8 @@
    "searchable": 1,
    "total": 74059,
    "last_ok": "2026-10-31",
-   "fail_streak": 0
+   "fail_streak": 0,
+   "uptime_7d": null
   },
   {
    "key": "huyaapi",
@@ -76,7 +82,8 @@
    "searchable": 1,
    "total": 115787,
    "last_ok": "2026-10-31",
-   "fail_streak": 0
+   "fail_streak": 0,
+   "uptime_7d": null
   },
   {
    "key": "cxkjg",
@@ -86,7 +93,8 @@
    "searchable": 1,
    "total": 14978,
    "last_ok": "2026-10-31",
-   "fail_streak": 0
+   "fail_streak": 0,
+   "uptime_7d": null
   },
   {
    "key": "apiyhzy",
@@ -96,7 +104,8 @@
    "searchable": 1,
    "total": 104813,
    "last_ok": "2026-10-31",
-   "fail_streak": 0
+   "fail_streak": 0,
+   "uptime_7d": null
   },
   {
    "key": "ikunzyapi",
@@ -106,7 +115,8 @@
    "searchable": 1,
    "total": 67522,
    "last_ok": "2026-10-31",
-   "fail_streak": 0
+   "fail_streak": 0,
+   "uptime_7d": null
   },
   {
    "key": "rycjapi",
@@ -116,7 +126,8 @@
    "searchable": 1,
    "total": 88881,
    "last_ok": "2026-10-31",
-   "fail_streak": 0
+   "fail_streak": 0,
+   "uptime_7d": null
   },
   {
    "key": "hongniuzy2",
@@ -126,7 +137,8 @@
    "searchable": 1,
    "total": 116273,
    "last_ok": "2026-10-31",
-   "fail_streak": 0
+   "fail_streak": 0,
+   "uptime_7d": null
   },
   {
    "key": "mtzy",
@@ -136,7 +148,8 @@
    "searchable": 0,
    "total": 151627,
    "last_ok": "2026-10-30",
-   "fail_streak": 1
+   "fail_streak": 1,
+   "uptime_7d": null
   }
  ]
 }
