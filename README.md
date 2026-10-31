@@ -1,7 +1,7 @@
 # my-tvbox
 
 一套**实测驱动**的 TVBox 配置仓库：点播源四级测活、直播源深度验活（拉真实分片），
-GitHub Actions 每 12 小时自动重跑，死源自动降级、淘汰、复活，产物直接给客户端用。
+GitHub Actions 每 24 小时自动重跑，死源自动降级、淘汰、复活，产物直接给客户端用。
 
 > 核心原则：**不放没验过的源**。宁可只有 22 个能用的，也不放 200 个点开就报错的。
 
@@ -18,6 +18,7 @@ GitHub Actions 每 12 小时自动重跑，死源自动降级、淘汰、复活�
 | TVBoxPC 增强（含 jar 蜘蛛） | `https://raw.githubusercontent.com/xiaopeng-97/my-tvbox/main/dist/tvbox-pc.json` |
 | zyfun / ZyPlayer | 用上面的 `tvbox.json`（其 `tbl_site` 的 `type=1` 即苹果CMS） |
 | 多仓订阅 | `https://raw.githubusercontent.com/xiaopeng-97/my-tvbox/main/dist/multi.json` |
+| **通用播放器**（PotPlayer / VLC / TiviMate / Kodi） | `https://raw.githubusercontent.com/xiaopeng-97/my-tvbox/main/dist/live.m3u` |
 
 GitHub 直连慢的话，在前面加反代前缀：`https://gh-proxy.com/` + 原地址。
 
@@ -29,19 +30,20 @@ GitHub 直连慢的话，在前面加反代前缀：`https://gh-proxy.com/` + �
 
 ```yaml
 schedule:
-  - cron: '10 22 * * *'   # 北京时间 06:10
-  - cron: '10 10 * * *'   # 北京时间 18:10
+  - cron: '10 22 * * *'   # 每天一次：北京时间 06:10（UTC 22:10）
 ```
 
 每次运行：
 
-1. **点播测活** `check_health.py`
+0. **单元测试** `python -m unittest discover -s tests`：把验活判据（地址解析、加密判定、播放地址抽取）钉住，判据改错时先在这里红，而不是产出"全绿但全死链"的配置
+1. **点播测活** `check_health.py`（并发，默认 8 线程，可用 `HEALTH_WORKERS` 覆盖）
    - 连续失败 1~2 次 → `score` 打折排后（降级）
    - 连续失败 ≥3 次 → `status=retired` 移出配置
    - retired 满 30 天 → 自动复检，活了回来
-2. **直播深度验活** `check_live.py`：拉候选列表 → 解析频道 → **拉真实 TS/fMP4 分片** → 只留能播的
-3. **重建产物** `build_config.py`：4 份配置 + `live.txt` + `status.json` + 徽章
-4. **产物校验**：每份 JSON 能否解析、`sites` 是否为空、`live.txt` 是否有地址，任一不过标红
+   - 每轮结果追加到 `sources/history.jsonl`，供 `status.json` 算 7 日可用率
+2. **直播深度验活** `check_live.py`：拉候选列表 → 解析频道 → **拉真实 TS/fMP4 分片** → 只留能播的 → 按实测速度排备线
+3. **重建产物** `build_config.py`：4 份配置 + `live.txt` + `live.m3u` + `status.json` + 徽章
+4. **产物校验** `validate_dist.py`：JSON 可解析、`sites` 非空、key 不重复、`api` 无 query、`live.txt`/`live.m3u` 有条目且 EXTINF 与地址数一致，任一不过标红
 
 ---
 
@@ -54,7 +56,13 @@ schedule:
 | L1 | `GET api` 有无 JSON、`list` 有无数据 | 无数据 / 非 JSON |
 | L2 | `?ac=videolist&wd=庆余年` | 搜索无结果（标为不可搜，仍保留浏览） |
 | L3 | `?ac=videolist&ids=<id>` 的 `vod_play_url` | 无播放地址 |
-| L4 | 第一条 m3u8 前 2KB 含 `#EXTM3U` | 不可播 |
+| L4 | **拉真实分片**：m3u8 → (master)子列表 → 第一个分片 → 校验 0x47(TS) / ftyp/styp/moof(fMP4) | 不可播 |
+
+L4 与直播用同一套判据，而不是只看 `#EXTM3U` 首行——理由见下一节。三条实现细节：
+
+- master 播放列表按 `BANDWIDTH` 从高到低**试多个**子列表（默认 3 个），避免"4K 挂了但 720p 还活着"被整源判死；
+- 播放列表里的相对地址一律用 `urljoin` 解析，兼容 `/2024/xx/index.m3u8` 这种根相对写法；
+- 带 `#EXT-X-KEY` 的 AES-128 加密流不做 TS/fMP4 格式判定（客户端解密前就是随机字节），只要求"分片能取到、够大、不是占位 m3u8 文本"——否则会把大批正常加密源误杀。
 
 ### 直播：深度验活（最关键）
 
@@ -62,6 +70,8 @@ schedule:
 m3u8 首行有 #EXTM3U 就算活？  ❌ 会得到大量假阳性
 真实标准：m3u8 → (master)子列表 → 拉第一个分片 → 校验 0x47(TS) 或 ftyp/styp/moof(fMP4)
 ```
+
+**备线排序**：同一频道保留的 2 条地址，按实测分片下载速度（`kbps`）降序排列，客户端默认取第一条 → 秒开概率更高。
 
 **实测（2672 条候选）**：
 
@@ -130,10 +140,12 @@ my-tvbox/
 │  └─ seed_api.txt        # 手工候选接口
 ├─ scripts/
 │  ├─ probe_core.py       # 测活引擎：四级点播 + deep_hls 直播 + 两段式预筛
-│  ├─ check_health.py     # 点播降级/淘汰/复活
-│  ├─ check_live.py       # 直播深度验活 → live.txt
-│  ├─ build_config.py     # 生成 4 份配置 + status + badge
+│  ├─ check_health.py     # 点播降级/淘汰/复活（并发 + 历史记录）
+│  ├─ check_live.py       # 直播深度验活 → live.txt（备线按速度排序）
+│  ├─ build_config.py     # 生成 4 份配置 + live.m3u + status + badge
+│  ├─ validate_dist.py    # 产物自检（本地可单独跑）
 │  └─ discover.py         # GitHub 发现新源（四道闸）
+├─ tests/                 # 判据纯函数单测（unittest，无第三方依赖）
 ├─ dist/                  # 产物（客户端直接读这里）
 └─ .github/workflows/
    ├─ healthcheck.yml     # 每日 2 次：测活 → 重建 → 校验 → 提交
@@ -146,7 +158,9 @@ my-tvbox/
 ## 六、本地跑
 
 ```bash
-python scripts/check_health.py                                  # 点播测活（~1 分钟）
+python -m unittest discover -s tests                            # 判据单测（秒级）
+python scripts/validate_dist.py                                 # 产物自检
+python scripts/check_health.py                                  # 点播测活（并发 8，~1 分钟）
 python scripts/check_live.py                                    # 直播深度验活（~3 分钟）
 python scripts/check_live.py --from-cache                       # 用上次结果只重生成 live.txt
 PUBLIC_BASE=http://127.0.0.1:8899 LIVE_REL=live.txt python scripts/build_config.py

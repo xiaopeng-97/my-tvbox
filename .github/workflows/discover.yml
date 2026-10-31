@@ -21,12 +21,16 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: 单元测试
+        run: python -m unittest discover -s tests -v
       - name: 扫描新源（连续两日存活才转正）
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/discover.py
       - name: 重建配置
         run: python scripts/build_config.py
+      - name: 校验产物
+        run: python scripts/validate_dist.py
       - name: 提交并汇总
         run: |
           git config user.name  "my-tvbox-bot"

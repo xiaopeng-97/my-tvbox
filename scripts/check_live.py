@@ -180,6 +180,7 @@ def main():
     use_cache = "--from-cache" in sys.argv
     alive, stat, meta = {}, {"candidates": 0, "prefilter_pass": 0, "alive": 0,
                              "dead": 0, "kinds": {}}, []
+    metrics = {}
 
     if use_cache:
         cache = rebuild_from_cache()
@@ -187,6 +188,7 @@ def main():
             return 1
         alive, stat = cache["channels"], cache["stat"]
         meta = cache.get("list_sources", [])
+        metrics = cache.get("metrics") or {}
         print(f"== 缓存模式（{cache.get('generated','?')}）：{stat['alive']} 条真活，跳过拉取与验活 ==")
     else:
         print("== 1/3 拉取直播列表 ==")
@@ -212,6 +214,7 @@ def main():
             part = [(g, n, u) for g, n, u, _ in uniq[i:i + B]]
             a2, s2 = pc.probe_channel_list(part, workers=workers, timeout=timeout,
                                            per_channel_keep=keep_n)
+            metrics.update(s2.get("metrics") or {})
             for g, d in a2.items():
                 for n, us in d.items():
                     tgt = alive.setdefault(g, {}).setdefault(n, [])
@@ -263,6 +266,8 @@ def main():
                     continue
                 slot.append(u)
                 seen_url.add(u)
+            # 同一频道可能来自不同源、速度差很多：组内按实测分片速度降序
+            slot.sort(key=lambda x: -(metrics.get(x, {}).get("kbps") or 0))
             name_home[n] = home
     norm = {g: d for g, d in merged.items() if d}
 
@@ -305,6 +310,7 @@ def main():
             "stat": stat,
             "list_sources": meta,
             "channels": {g: {n: us for n, us in v.items()} for g, v in alive.items()},
+            "metrics": metrics,
         }
         with open(os.path.join(SRC, "live_verified.json"), "w", encoding="utf-8") as f:
             json.dump(verified, f, ensure_ascii=False, indent=1)

@@ -2,16 +2,20 @@ name: 每日测活与重建
 
 on:
   schedule:
-    # 北京时间 06:10 与 18:10（UTC 22:10 / 10:10）。GitHub Actions 的 cron 是 UTC。
+    # 每天一次：北京时间 06:10（UTC 22:10）。GitHub Actions 的 cron 是 UTC。
     # 排在整点后 10 分，避开整点调度高峰（整点任务经常排队延迟 20-40 分钟）。
+    # 需要恢复一天两跑时，在这里加一条 cron 即可（例如 '10 10 * * *'）。
     - cron: '10 22 * * *'
-    - cron: '10 10 * * *'
   workflow_dispatch:
     inputs:
       skip_live:
         description: '跳过直播深度验活（只测点播）'
         required: false
         default: 'false'
+      health_workers:
+        description: '点播测活并发数（默认 8）'
+        required: false
+        default: '8'
 
 permissions:
   contents: write
@@ -36,7 +40,14 @@ jobs:
           python -V
           echo "仓库: ${{ github.repository }}"
 
-      - name: 点播源测活（四级：列表/搜索/详情/m3u8）
+      # 纯函数单测：判据（地址解析/加密判定/地址抽取）改错了要在这里就红，
+      # 而不是产出一份"全绿但全死链"的配置。
+      - name: 单元测试（判据纯函数）
+        run: python -m unittest discover -s tests -v
+
+      - name: 点播源测活（四级：列表/搜索/详情/播放地址拉真实分片）
+        env:
+          HEALTH_WORKERS: ${{ github.event.inputs.health_workers || '8' }}
         run: python scripts/check_health.py
 
       - name: 直播源深度验活（拉真实分片）
@@ -50,30 +61,7 @@ jobs:
         run: python scripts/build_config.py
 
       - name: 校验产物完整性
-        run: |
-          python - <<'PY'
-          import json, os, sys
-          ok = True
-          for f in ("tvbox.json", "tvbox-pc.json", "tvbox-desktop.json", "status.json"):
-              p = os.path.join("dist", f)
-              if not os.path.exists(p):
-                  print(f"缺失 {f}"); ok = False; continue
-              try:
-                  d = json.load(open(p, encoding="utf-8"))
-              except Exception as e:
-                  print(f"{f} 解析失败 {e}"); ok = False; continue
-              print(f"{f:<24} {os.path.getsize(p):>7} 字节  sites={len(d.get('sites') or [])}  lives={len(d.get('lives') or [])}")
-          lt = os.path.join("dist", "live.txt")
-          if os.path.exists(lt):
-              lines = [l for l in open(lt, encoding="utf-8").read().splitlines()
-                       if l and not l.startswith("#")]
-              print(f"live.txt                 {os.path.getsize(lt):>7} 字节  {len(lines)} 条地址")
-              if len(lines) == 0:
-                  print("live.txt 为空"); ok = False
-          else:
-              print("缺失 live.txt"); ok = False
-          sys.exit(0 if ok else 1)
-          PY
+        run: python scripts/validate_dist.py
 
       - name: 提交变更
         run: |

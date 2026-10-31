@@ -15,6 +15,7 @@ import json
 import os
 import sys
 import time
+from concurrent.futures import ThreadPoolExecutor
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import probe_core as pc  # noqa: E402
@@ -24,6 +25,8 @@ SRC = os.path.join(ROOT, "sources")
 TODAY = time.strftime("%Y-%m-%d")
 RETIRE_AFTER = 3          # 连续失败几次移出
 REVIVE_AFTER_DAYS = 30    # retired 满多少天尝试复活
+WORKERS = int(os.environ.get("HEALTH_WORKERS") or 8)   # 并发测活数：源池变大后串行会顶到 45 分钟超时
+HISTORY_KEEP = 200        # 历史记录保留最近多少条（sources/history.jsonl）
 
 
 def load(name, default):
@@ -38,6 +41,27 @@ def save(name, obj):
     p = os.path.join(SRC, name)
     with open(p, "w", encoding="utf-8") as f:
         json.dump(obj, f, ensure_ascii=False, indent=1)
+
+
+def append_history(rows):
+    """把本轮每个源的判活结果追加到 sources/history.jsonl（一行一条）。
+
+    为什么要有：现在只有"当前分数"，源什么时候开始抖、抖了几次、多久恢复，全看不到。
+    有了历史，才能判断"这个源是不是在反复横跳"（fail_streak 会被一次成功清零），
+    也是后续做可用率统计（uptime）的唯一数据来源。文件按行裁剪，不会无限长。
+    """
+    path = os.path.join(SRC, "history.jsonl")
+    with open(path, "a", encoding="utf-8") as f:
+        for r in rows:
+            f.write(json.dumps(r, ensure_ascii=False) + "\n")
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            lines = f.readlines()
+        if len(lines) > HISTORY_KEEP * 5:
+            with open(path, "w", encoding="utf-8") as f:
+                f.writelines(lines[-HISTORY_KEEP * 5:])
+    except Exception:
+        pass
 
 
 def apply_result(s, ok, rec):
@@ -74,15 +98,33 @@ def main():
 
     # ---------- 1. 测活全部 active ----------
     todo = [s for s in sources if s.get("status") in ("active", None)]
-    print(f"[health] 待测 {len(todo)} 个 active 源")
-    for s in todo:
+    print(f"[health] 待测 {len(todo)} 个 active 源（并发 {WORKERS}）")
+
+    def probe_one(s):
         try:
-            rec = pc.probe_cms(s["api"])
+            return s, pc.probe_cms(s["api"])
         except Exception as e:
-            rec = {"l4_ok": False, "verdict": f"异常 {type(e).__name__}"}
+            return s, {"l4_ok": False, "verdict": f"异常 {type(e).__name__}"}
+
+    # 并发测：源池从 13 个长到 50 个时，串行会顶到 Actions 的 45 分钟上限
+    with ThreadPoolExecutor(max_workers=max(1, WORKERS)) as ex:
+        results = list(ex.map(probe_one, todo))
+
+    history = []
+    for s, rec in results:
         r = apply_result(s, bool(rec.get("l4_ok")), rec)
         changed[r] += 1
-        print(f"  {s['key']:<10} {str(rec.get('verdict'))[:10]:<12} streak={s['fail_streak']} -> {r}")
+        s["l4_kind"] = rec.get("l4_kind") or s.get("l4_kind")
+        s["l4_kbps"] = rec.get("l4_kbps") or s.get("l4_kbps")
+        if rec.get("l2_n") is not None:
+            s["search_n"] = rec["l2_n"]
+        history.append({"date": TODAY, "ts": int(time.time()), "key": s["key"],
+                        "ok": bool(rec.get("l4_ok")), "verdict": rec.get("verdict"),
+                        "result": r, "score": s.get("score"),
+                        "l1_ms": rec.get("l1_ms"), "l4_ms": rec.get("l4_ms")})
+        print(f"  {s['key']:<10} {str(rec.get('verdict'))[:10]:<12} "
+              f"streak={s['fail_streak']} -> {r}")
+    append_history(history)
 
     # ---------- 2. 复活退休满 30 天的 ----------
     for s in sources:
@@ -124,10 +166,12 @@ def main():
         it["last_check"] = TODAY
         if rec.get("l4_ok"):
             it["status"] = "active"
-            revive.append(it)
+            # 修复：原实现把 score 取自循环外的 rec（永远是最后一个候选的分数），
+            # 复活进来的源分数会串台；这里把每个候选自己的分数随条目一起带出去。
+            revive.append((it, rec))
     if revive:
         exist = {s["api"].split("?")[0].rstrip("/").lower() for s in sources}
-        for it in revive:
+        for it, rec in revive:
             k = it["api"].split("?")[0].rstrip("/").lower()
             if k in exist:
                 continue
@@ -137,11 +181,12 @@ def main():
                 n += 1
                 key = f"{base_key}{n}"
             sources.append({
-                "key": key, "name": key, "api": it["api"], "type": 3,
-                "searchable": 1, "categories": [], "total": None,
-                "score": rec.get("score") if revive else None,
+                "key": key, "name": it.get("name") or key, "api": it["api"], "type": 3,
+                "searchable": 1, "categories": [], "total": rec.get("l1_total"),
+                "score": rec.get("score"),
                 "status": "active", "added": TODAY, "last_ok": TODAY, "fail_streak": 0,
             })
+            exist.add(k)
         print(f"[health] 隔离区复活 {len(revive)} 个")
 
     # ---------- 4. 重排：能搜的优先，然后按分数 ----------

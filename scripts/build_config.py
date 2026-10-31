@@ -95,6 +95,110 @@ def verify(sites, name, allow_spider=False):
     return True
 
 
+def load_verified_live():
+    """读 check_live.py 的产物（频道 → 地址 + 实测速度），给 live.m3u 用。
+
+    读不到就返回空 dict，调用方跳过 m3u 生成——不因为一个可选产物让整份构建失败。
+    """
+    path = os.path.join(SRC, "live_verified.json")
+    if not os.path.exists(path):
+        return {}
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return {}
+
+
+def parse_live_txt(path):
+    """把 dist/live.txt 解析成 [(group, name, url)]。
+
+    m3u 必须和 live.txt 用同一份频道集合：live.txt 已经过 check_live.py 的
+    分组归一化、地方台剔除、跨源合并。直接读它，能保证两种方言内容完全一致，
+    不会出现"m3u 里冒出 live.txt 已经剔掉的地方台"。
+    """
+    if not os.path.exists(path):
+        return []
+    out, group = [], "未分组"
+    with open(path, "r", encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line or line.startswith("#"):
+                continue
+            if "#genre#" in line:
+                group = line.split(",")[0].strip() or group
+                continue
+            if "," not in line:
+                continue
+            name, url = line.split(",", 1)
+            if url.strip().startswith("http"):
+                out.append((group, name.strip(), url.strip()))
+    return out
+
+
+def write_m3u(rows, metrics=None, epg=""):
+    """额外产出一份 dist/live.m3u（带分组与 tvg-name）。
+
+    为什么加：live.txt 是 TVBox 方言（`分组,#genre#` + `频道,地址`），
+    PotPlayer / VLC / TiviMate / Kodi 这些通用播放器不认；m3u 是它们的公共格式。
+    同一份已验活数据换一种方言输出，等于把"只给 TVBox 用"的产物扩到所有播放器，
+    不影响原有 live.txt 与 TVBox 配置的行为。
+    """
+    if not rows:
+        return None, 0, 0
+    metrics = metrics or {}
+    # 频道内按实测分片速度降序（播放器默认取第一条，快线排前才能秒开），
+    # 速度相同时保持 live.txt 原顺序，保证输出稳定、diff 不乱跳。
+    order = {}
+    for idx, (g, n, u) in enumerate(rows):
+        order.setdefault((g, n), []).append((-(metrics.get(u, {}).get("kbps") or 0), idx, u))
+    lines = [f'#EXTM3U x-tvg-url="{epg}"' if epg else "#EXTM3U"]
+    n_ch = n_url = 0
+    for (group, name), items in order.items():
+        for _kbps, _idx, u in sorted(items):
+            lines.append(f'#EXTINF:-1 tvg-name="{name}" group-title="{group}",{name}')
+            lines.append(u)
+            n_url += 1
+        n_ch += 1
+    path = os.path.join(DIST, "live.m3u")
+    os.makedirs(DIST, exist_ok=True)
+    with open(path, "w", encoding="utf-8") as f:
+        f.write("\n".join(lines) + "\n")
+    return path, n_ch, n_url
+
+
+def uptime_from_history(days=7):
+    """按 sources/history.jsonl 算每个源最近 N 天的可用率。
+
+    价值：fail_streak 一旦成功就清零，"反复横跳"的源在现有数据里看不出来；
+    有了可用率，status.json 与 README 才能回答"这个源到底稳不稳"。
+    """
+    path = os.path.join(SRC, "history.jsonl")
+    if not os.path.exists(path):
+        return {}
+    cutoff = time.time() - days * 86400
+    agg = {}
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if not line:
+                    continue
+                try:
+                    r = json.loads(line)
+                except Exception:
+                    continue
+                if (r.get("ts") or 0) < cutoff:
+                    continue
+                a = agg.setdefault(r.get("key") or "?", [0, 0])
+                a[0] += 1
+                if r.get("ok"):
+                    a[1] += 1
+    except Exception:
+        return {}
+    return {k: round(v[1] * 100.0 / v[0], 1) for k, v in agg.items() if v[0]}
+
+
 def write(name, obj):
     os.makedirs(DIST, exist_ok=True)
     path = os.path.join(DIST, name)
@@ -179,7 +283,7 @@ def main():
     desk_payload = {
         "format": "tvbox-desktop/1",
         "name": "my-tvbox 活源",
-        "note": "自动生成：全部源经过四级测活（列表/搜索/详情/m3u8 首行）",
+        "note": "自动生成：全部源经过四级测活（列表/搜索/详情/播放地址拉真实分片）",
         "sites": desk_sites,
         "lives": [{"name": L["name"], "type": 0, "url": L["url"]} for L in lives],
         "tvboxDesktop": {"home": {"sections": home}},
@@ -210,6 +314,10 @@ def main():
             for s in sources
         ],
     }
+    # 5.5) 可用率（近 7 天，来自 sources/history.jsonl）
+    uptime = uptime_from_history(7)
+    for row in status["sources"]:
+        row["uptime_7d"] = uptime.get(row["key"])
     p5, n5 = write("status.json", status)
 
     # 6) 徽章数据（shields.io endpoint 格式，README 直接引用）
@@ -228,6 +336,17 @@ def main():
         print(f"多仓索引 {os.path.basename(p4):<22}   2 项   {n4:>6} 字节")
     print(f"状态     {os.path.basename(p5):<22}         {n5:>6} 字节")
     print(f"直播源 {len(lives)} 个 / 可搜索站点 {status['counts']['searchable']} 个")
+
+    # 7) 通用播放器方言：live.m3u（同一批真活数据，给 VLC/TiviMate/Kodi 用）
+    epg = (allowed.get("epg") or "")
+    verified = load_verified_live()
+    m3u_rows = parse_live_txt(os.path.join(DIST, "live.txt"))
+    m3u_path, m3u_ch, m3u_url = write_m3u(m3u_rows, verified.get("metrics") or {}, epg)
+    if m3u_path:
+        print(f"m3u     {os.path.basename(m3u_path):<22} {m3u_ch:>3} 频道  {m3u_url:>3} 地址  "
+              f"{os.path.getsize(m3u_path):>6} 字节")
+    else:
+        print("m3u     跳过（没有 live_verified.json 或缓存为空）")
     return 0
 
 
