@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-07T02:03:03Z",
+ "generated": "2026-11-08T01:35:56Z",
  "policy": {
   "drop_groups": [
    "地方频道"
@@ -15,14 +15,14 @@
   "timeout": 8
  },
  "stat": {
-  "candidates": 2207,
-  "prefilter_pass": 665,
-  "alive": 333,
-  "dead": 1874,
+  "candidates": 2366,
+  "prefilter_pass": 741,
+  "alive": 413,
+  "dead": 1953,
   "kinds": {
-   "TS": 326,
-   "fMP4": 6,
-   "raw-TS": 1
+   "TS": 405,
+   "raw-TS": 2,
+   "fMP4": 6
   }
  },
  "list_sources": [
@@ -31,8 +31,8 @@
    "url": "https://live.zbds.top/tv/iptv4.txt",
    "ok": true,
    "status": 200,
-   "channels": 231,
-   "ms": 0.52
+   "channels": 559,
+   "ms": 1.31
   },
   {
    "name": "Kimentanm-aptv",
@@ -48,7 +48,7 @@
    "ok": true,
    "status": 200,
    "channels": 188,
-   "ms": 0.67
+   "ms": 0.64
   },
   {
    "name": "Guovin-ipv4",
@@ -56,7 +56,7 @@
    "ok": true,
    "status": 200,
    "channels": 1616,
-   "ms": 0.24
+   "ms": 0.15
   },
   {
    "name": "iptv-org-cn",
@@ -64,13 +64,30 @@
    "ok": true,
    "status": 200,
    "channels": 513,
-   "ms": 0.11
+   "ms": 0.28
   }
  ],
  "channels": {
   "央视频道": {
+   "CCTV5": [
+    "http://gmxw.7766.org:808/hls/93/index.m3u8"
+   ],
+   "CCTV8": [
+    "http://124.165.251.82:85/tsfile/live/0008_1.m3u8?key=txiptv&playlive=1&authid=0",
+    "http://gmxw.7766.org:808/hls/96/index.m3u8"
+   ],
+   "CCTV12": [
+    "http://124.165.251.82:85/tsfile/live/0012_1.m3u8?key=txiptv&playlive=1&authid=0"
+   ],
+   "CCTV13": [
+    "http://ali-m-l.cztv.com/channels/lantian/channel21/1080p.m3u8"
+   ],
    "CGTN": [
+    "http://english-livetx.cgtn.com/hls/yypdyyctzb_hd.m3u8",
     "https://0472.org/hls/cgtn.m3u8"
+   ],
+   "CGTN法语": [
+    "http://espanol-liveali.cgtn.com/hls/LSveOGBaBw41Ea7ukkVAUdKQ220802LSTexu6xAuFH8VZNBLE1ZNEa220802cd.m3u8"
    ],
    "CGTN西语": [
     "https://0472.org/hls/cgtnx.m3u8"
@@ -80,21 +97,227 @@
    ]
   },
   "卫视频道": {
+   "东方卫视": [
+    "http://bp-resource-dfl.bestv.cn/155/3/video.m3u8",
+    "http://bp-resource-dfl.bestv.cn/148/3/video.m3u8"
+   ],
+   "东南卫视": [
+    "http://live.zohi.tv/video/s10001-fztv-3/index.m3u8"
+   ],
+   "湖南卫视": [
+    "https://txmov2.a.kwimgs.com/bs3/video-hls/5199687338554291078_hlsb.m3u8",
+    "http://hlsal-ldvt.qing.mgtv.com/nn_live/nn_x64/Y2RuZXhfaWQ9YWxfaGxzX2xkdnQmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNWSZGST.m3u8"
+   ],
+   "江西卫视": [
+    "http://112.27.5.218:9901/tsfile/live/faacts/0138_1.m3u8?key=txiptv&playlive=1&authid=0"
+   ],
+   "辽宁卫视": [
+    "http://61.136.172.236:9901/tsfile/live/0121_1.m3u8?key=txiptv&playlive=1&authid=0"
+   ],
+   "山西卫视": [
+    "http://119.39.9.8:9901/tsfile/live/0118_1.m3u8"
+   ],
+   "深圳卫视": [
+    "http://gmxw.7766.org:808/hls/45/index.m3u8"
+   ],
+   "西藏卫视": [
+    "http://112.27.5.218:9901/tsfile/live/0111_1.m3u8?key=txiptv&playlive=1&authid=0"
+   ],
+   "新疆卫视": [
+    "http://218.84.12.186:8001/hls/main/playlist.m3u8?zxinjd;http://218.84.12.186:8001/hls/main/playlist.m3u8zxinjd"
+   ],
+   "延边卫视": [
+    "https://srs.iyb983.cn/video/CYS/index.m3u8",
+    "https://srs.iyb983.cn:443/video/CYS/index.m3u8"
+   ],
+   "浙江卫视": [
+    "http://ali-xwl.cztv.com/live/channel011080Plxw.m3u8",
+    "http://ali-m-l.cztv.com/channels/lantian/channel001/1080p.m3u8"
+   ],
+   "安多卫视": [
+    "https://liveout.xntv.tv/a65jur/96iln2.m3u8"
+   ],
    "大湾区卫视": [
     "http://222.128.55.152:9080/live/dwq.m3u8"
+   ],
+   "黑龙江卫视": [
+    "http://61.136.172.236:9901/tsfile/live/0143_1.m3u8?key=txiptv&playlive=1&authid=0"
+   ],
+   "内蒙古卫视": [
+    "http://play1-qk.nmtv.cn/live/1769652018126032.m3u8"
+   ],
+   "山东教育": [
+    "https://test1.live.sdetv.com.cn/live/dianshizhibo/playlist.m3u8"
+   ],
+   "人间卫视": [
+    "http://61.216.67.119:1935/bltvhd/bltv1/chunklist_w1266569526.m3u",
+    "https://5ddce30eb4b55.streamlock.net/bltvhd/bltv1/chunklist_w511254805.m3u8"
+   ],
+   "东方卫视4K": [
+    "https://bp-resource-dfl.bestv.cn/148/3/video.m3u8"
+   ],
+   "苏州4K": [
+    "https://tylive.kan0512.com/norecord/csztv4k_4k.m3u8"
    ]
   },
   "电影频道": {
    "CHC电影": [
     "http://183.237.95.108:9901/tsfile/live/1008_1.m3u8?key=txiptv&playlive=0&authid=0"
+   ],
+   "东阳影视生活": [
+    "http://l.cztvcloud.com/channels/lantian/SXdongyang1/720p.m3u8"
+   ],
+   "倩女幽魂人间道": [
+    "http://jsmov2.a.yximgs.com/bs3/video-hls/5250634317044855747_hlsb.m3u8"
+   ],
+   "倩女幽魂妖魔道": [
+    "http://jsmov2.a.yximgs.com/bs3/video-hls/5232901391302199073_hlsb.m3u8"
+   ],
+   "倩女幽魂道道道": [
+    "http://jsmov2.a.yximgs.com/bs3/video-hls/5216294367991385255_hlsb.m3u8"
+   ],
+   "南宁影视娱乐": [
+    "http://hls.nntv.cn/nnlive/YSYL_244.m3u8"
+   ],
+   "哈尔滨影视": [
+    "http://stream.hrbtv.net/yspd/sd/live.m3u8?zheild"
+   ],
+   "浙江教科影视": [
+    "http://ali-m-l.cztv.com/channels/lantian/channel04/1080p.m3u8",
+    "https://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8"
+   ],
+   "韩国电影1": [
+    "https://stream.ads.ottera.tv/playlist.m3u8?network_id=595"
+   ],
+   "韩国电影2": [
+    "https://stream.ads.ottera.tv/playlist.m3u8?network_id=743"
+   ],
+   "龙门飞甲": [
+    "http://jsmov2.a.yximgs.com/bs3/video-hls/5203346449046555193_hlsb.m3u8"
+   ]
+  },
+  "数字频道": {
+   "南国都市": [
+    "https://tencentplay.gztv.com/live/nanguodushi.m3u8?txSecret=550af55c0ea34ce492748481415b6dfa&txTime=1903e7b17de"
+   ],
+   "四川科教": [
+    "http://182.150.115.21:8030/pcgacg/pcgacg_0.m3u8"
+   ]
+  },
+  "儿童频道": {
+   "浙江少儿": [
+    "https://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8?",
+    "http://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8"
+   ],
+   "福州少儿": [
+    "http://live.zohi.tv/video/s10001-fztv-4/index.m3u8"
+   ],
+   "韩国EBS少儿": [
+    "http://ebsonairios.ebs.co.kr/ebsutablet500k/tablet500k/playlist.m3u8"
+   ],
+   "黑龙江少儿": [
+    "https://ls.qingting.fm/live/4972/64k.m3u8"
    ]
   },
   "纪录频道": {
    "CGTN纪录": [
+    "https://english-livetx.cgtn.com/hls/yypdjlctzb_hd.m3u8",
     "https://0472.org/hls/cgtnd.m3u8"
    ],
+   "航拍中国第二季": [
+    "http://newcntv.qcloudcdn.com/asp/hls/4000/0303000a/3/default/2bdfdad540b342f592f9817cb7f3b79a/4000.m3u8"
+   ],
+   "东丰": [
+    "http://stream5.jlntv.cn/df/sd/live.m3u8?zjild"
+   ],
+   "中国村庄": [
+    "http://newcntv.qcloudcdn.com/asp/hls/4000/0303000a/3/default/93fc12dbf14241c18c23da104fbade23/4000.m3u8"
+   ],
    "之江纪录": [
+    "http://ali-m-l.cztv.com/channels/lantian/channel012/1080p.m3u8",
     "https://ali-m-l.cztv.com/channels/lantian/channel012/1080p.m3u8"
+   ],
+   "九台": [
+    "http://stream10.jlntv.cn/jiutaitv/sd/live.m3u8?zjild"
+   ],
+   "人与自然": [
+    "http://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/1425e1d505654cb48ba82b807b221193/1200.m3u8"
+   ],
+   "伊犁经济法制": [
+    "http://110.153.180.106:55555/out_4/index.m3u8?zxinjd"
+   ],
+   "兵团五师双河影": [
+    "https://liveout.btzx.com.cn/62ds9e/6o77s4.m3u8?zxinjd"
+   ],
+   "双辽": [
+    "http://stream5.jlntv.cn/sl/sd/live.m3u8?zjild"
+   ],
+   "地理中国": [
+    "http://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/c6baf6f74bb944aeacee1065ea72c798/1200.m3u8"
+   ],
+   "奎屯汉语": [
+    "http://218.84.12.186:8001/hls/main/playlist.m3u8?zxinjd"
+   ],
+   "敦化一套": [
+    "http://stream8.jlntv.cn/dhtv/playlist.m3u8?zjild"
+   ],
+   "柳河": [
+    "http://stream5.jlntv.cn/lh/sd/live.m3u8?zjild"
+   ],
+   "桦甸": [
+    "http://stream10.jlntv.cn/huadian/sd/live.m3u8?zjild"
+   ],
+   "江津新闻": [
+    "http://222.179.155.21:1935/ch1.m3u8?zzhongqd"
+   ],
+   "汪清": [
+    "http://stream5.jlntv.cn/wq/sd/live.m3u8?zjild"
+   ],
+   "玛纳斯": [
+    "http://218.84.127.245:1026/hls/main1/playlist.m3u8?zxinjd"
+   ],
+   "珲春新闻": [
+    "http://stream8.jlntv.cn/hctv/sd/live.m3u8?zjild"
+   ],
+   "白山公共": [
+    "http://stream8.jlntv.cn/baishan2/playlist.m3u8?zjild"
+   ],
+   "磐石": [
+    "http://stream5.jlntv.cn/ps/sd/live.m3u8?zjild"
+   ],
+   "舒兰新闻": [
+    "http://stream8.jlntv.cn/shulan/sd/live.m3u8?zjild"
+   ],
+   "辉南新闻": [
+    "http://stream5.jlntv.cn/hn/sd/live.m3u8?zjild"
+   ],
+   "通化县": [
+    "http://stream5.jlntv.cn/thx/sd/live.m3u8?zjild"
+   ],
+   "靖宇": [
+    "http://stream8.jlntv.cn/jytv/sd/live.m3u8?zjild"
+   ],
+   "飞碟之谜01": [
+    "https://hls.cntv.lxdns.com/asp/hls/2000/0303000a/3/default/f0a47e155d32450daa1d36a04fd7d262/2000.m3u8"
+   ],
+   "飞碟之谜02": [
+    "https://newcntv.qcloudcdn.com/asp/hls/2000/0303000a/3/default/d2454bbb542d4613a9db478dab2addfd/2000.m3u8"
+   ],
+   "龙井": [
+    "http://stream8.jlntv.cn/ljtv/sd/live.m3u8?zjild"
+   ]
+  },
+  "体育频道": {
+   "精品体育": [
+    "https://epg.pw/stream/f7556eccd4ae06b0c2991fdc7a4f8388496559f728cc82459a8e50346040e226.m3u8",
+    "https://epg.pw/stream/94ed0232b61ce8d89883160a4cdfbfc8f3225cae70ef8e17d93eec249a3c8ad6.m3u8"
+   ],
+   "足球频道": [
+    "https://epg.pw/stream/c7df950876e6a1ceb8be74ee86f9f702cebbbae29f1d15124ef8f86fd43161cf.m3u8"
+   ],
+   "纬来体育": [
+    "https://epg.pw/stream/8855a9936e37e608a0ec8a014cce1673dee9c5d68d560da376cc92e5edef2b25.m3u8",
+    "https://epg.pw/stream/4f18dfe0593db5c686eb64ae8edaf2a9202d4d46bdc9bbde2cee27708e12ea01.m3u8"
    ]
   },
   "音乐频道": {
@@ -103,21 +326,26 @@
    ],
    "音乐欣赏": [
     "http://61.221.215.25:8800/hls/49/index.m3u8"
+   ],
+   "音乐现场": [
+    "https://satellitepull.cnr.cn/live/wx32nmgyygb/playlist.m3u8"
+   ]
+  },
+  "春晚频道": {
+   "1987年春晚": [
+    "https://txmov2.a.kwimgs.com/bs3/video-hls/5195746663405928031_hlsb.m3u8"
+   ],
+   "1988年春晚": [
+    "https://txmov2.a.kwimgs.com/bs3/video-hls/5216575810935394655_hlsb.m3u8"
+   ],
+   "1989年春晚": [
+    "https://txmov2.a.kwimgs.com/bs3/video-hls/5194620763762726260_hlsb.m3u8"
+   ],
+   "2024年春晚": [
+    "https://p2.bdstatic.com/rtmp.liveshow.lss-user.baidubce.com/live/stream_bduid_6488563992_8982723413/merged_1707497046297_88536_25144_41936.m3u8"
    ]
   },
   "历年春晚": {
-   "春晚1987": [
-    "https://txmov2.a.kwimgs.com/bs3/video-hls/5195746663405928031_hlsb.m3u8"
-   ],
-   "春晚1988": [
-    "https://txmov2.a.kwimgs.com/bs3/video-hls/5216575810935394655_hlsb.m3u8"
-   ],
-   "春晚1989": [
-    "https://txmov2.a.kwimgs.com/bs3/video-hls/5194620763762726260_hlsb.m3u8"
-   ],
-   "春晚2024": [
-    "https://p2.bdstatic.com/rtmp.liveshow.lss-user.baidubce.com/live/stream_bduid_6488563992_8982723413/merged_1707497046297_88536_25144_41936.m3u8"
-   ],
    "春晚2025": [
     "https://res.cctvnews.cctv.com/video/3005/record/cctv/merge1/133396667284143308839013005/8fbd6180bdef4da19f6155cf6b4652e1-4.m3u8"
    ]
@@ -126,9 +354,11 @@
    "CCTV-1": [
     "http://74.91.26.218:82/live/cctv1hd.m3u8"
    ],
+   "CCTV-3": [
+    "http://74.91.26.218:82/live/cctv3hd.m3u8"
+   ],
    "CCTV-5+": [
-    "http://120.76.248.139/live/bfgd/4200000246.m3u8",
-    "http://223.78.65.165:9901/tsfile/live/0006_1.m3u8?key=txiptv&playlive=1&authid=0"
+    "http://120.76.248.139/live/bfgd/4200000246.m3u8"
    ],
    "CCTV-9": [
     "http://74.91.26.218:82/live/cctv9hd.m3u8"
@@ -148,12 +378,7 @@
     "http://120.76.248.139/live/bfgd/4200000092.m3u8"
    ],
    "浙江卫视": [
-    "http://ali-m-l.cztv.com/channels/lantian/channel01/1080p.m3u8",
-    "https://ali-m-l.cztv.com/channels/lantian/channel001/1080p.m3u8"
-   ],
-   "湖南卫视": [
-    "https://txmov2.a.kwimgs.com/bs3/video-hls/5199687338554291078_hlsb.m3u8",
-    "http://hlsal-ldvt.qing.mgtv.com/nn_live/nn_x64/dWlwPTEyNy4wLjAuMSZ1aWQ9cWluZy1jbXMmbm5fdGltZXpvbmU9OCZjZG5leF9pZD1hbF9obHNfbGR2dCZ1dWlkPTliODY4NmU5ZTM2YzYwMmMmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNWSZGST.m3u8"
+    "http://ali-m-l.cztv.com/channels/lantian/channel01/1080p.m3u8"
    ],
    "北京卫视": [
     "http://120.76.248.139/live/bfgd/4200000083.m3u8"
@@ -180,12 +405,6 @@
     "https://event.pull.hebtv.com/live/live101.m3u8",
     "http://120.76.248.139/live/bfgd/4200000108.m3u8"
    ],
-   "江西卫视": [
-    "http://112.27.5.218:9901/tsfile/live/faacts/0138_1.m3u8?key=txiptv&playlive=1&authid=0"
-   ],
-   "内蒙古卫视": [
-    "http://play1-qk.nmtv.cn/live/1769652018126032.m3u8"
-   ],
    "青海卫视": [
     "http://120.76.248.139/live/bfgd/4200000111.m3u8"
    ],
@@ -196,7 +415,6 @@
     "http://120.76.248.139/live/bfgd/4200000100.m3u8"
    ],
    "西藏卫视": [
-    "http://112.27.5.218:9901/tsfile/live/0111_1.m3u8?key=txiptv&playlive=1&authid=0",
     "http://120.76.248.139/live/bfgd/4200000121.m3u8"
    ],
    "云南卫视": [
@@ -205,8 +423,8 @@
   },
   "☘️广东频道": {
    "广州综合": [
-    "http://tencentplay.gztv.com/live/zonghes.m3u8?txSecret=c8dbe86d6f86eb1a21999ab479fd5667&txTime=18d3c4690e8",
-    "https://tencentplaybusiness.gztv.com/live/zonghes.m3u8"
+    "https://tencentplay.gztv.com/live/zonghes.m3u8?txSecret=439b0fd2cf766b363c93a59cbcbe1370&txTime=18d00acf488",
+    "http://tencentplay.gztv.com/live/zonghes.m3u8?txSecret=c8dbe86d6f86eb1a21999ab479fd5667&txTime=18d3c4690e8"
    ]
   },
   "☘️浙江频道": {
@@ -232,21 +450,12 @@
     "http://ali-m-l.cztv.com/channels/lantian/channel007/720p.m3u8",
     "https://ali-m-l.cztv.com/channels/lantian/channel007/1080p.m3u8?"
    ],
-   "浙江少儿": [
-    "https://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8",
-    "https://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8?"
-   ],
    "浙江教科": [
-    "http://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8",
-    "https://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8"
+    "http://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8"
    ],
    "浙江经济": [
     "http://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8",
     "http://ali-m-l.cztv.com/channels/lantian/channel03/720p.m3u8"
-   ],
-   "之江纪录": [
-    "http://ali-m-l.cztv.com/channels/lantian/channel012/1080p.m3u8",
-    "https://ali-m-l.cztv.com/channels/lantian/channel12/720p.m3u8"
    ],
    "浙江国际": [
     "http://ali-m-l.cztv.com/channels/lantian/channel010/1080p.m3u8",
@@ -255,19 +464,22 @@
    "嘉兴新闻综合": [
     "http://live.zohi.tv/video/s10001-fztv-1/index.m3u8"
    ],
+   "湖州新闻综合": [
+    "http://hzcm-live.media.hugd.com/3f5fa7d64c7c46a38c6bd8ad35e836cc/65128273761b4731ae53729ea6dcf932.m3u8?auth_key=2277598215-9d21c15111244bea8d298c361d31a72e-0-d031198f58d44b0e91ba2e3f3b188865"
+   ],
+   "湖州文化娱乐": [
+    "http://hzcm-live.media.hugd.com/613c47f0ab0d4eaa98b21378d0db6ded/0051d31c9dd543a7825eea4e49675b2a.m3u8?auth_key=2277598059-0a5ebfa1c0dc4671b42a60810fc37039-0-fa625b7d1feab612062453c12e3c8887"
+   ],
    "浙江经视": [
     "http://ali-m-l.cztv.com/channels/lantian/channel003/720p.m3u8"
    ],
    "浙江数码时代": [
-    "http://ali-m-l.cztv.com/channels/lantian/channel12/720p.m3u8?zzhed",
-    "http://ali-m-l.cztv.com/channels/lantian/channel12/720p.m3u8"
-   ],
-   "浙江教科影视": [
-    "http://ali-m-l.cztv.com/channels/lantian/channel04/1080p.m3u8"
+    "http://ali-m-l.cztv.com/channels/lantian/channel12/720p.m3u8",
+    "http://ali-m-l.cztv.com/channels/lantian/channel12/720p.m3u8?zzhed"
    ],
    "浙江公共新闻": [
-    "http://ali-m-l.cztv.com/channels/lantian/channel007/1080p.m3u8",
-    "http://ali-m-l.cztv.com/channels/lantian/channel07/1080p.m3u8"
+    "http://ali-m-l.cztv.com/channels/lantian/channel07/1080p.m3u8",
+    "http://ali-m-l.cztv.com/channels/lantian/channel007/1080p.m3u8"
    ],
    "浙江休闲台": [
     "http://ali-m-l.cztv.com/channels/lantian/channel006/720p.m3u8"
@@ -276,6 +488,7 @@
     "http://l.cztvcloud.com/channels/lantian/SXsuichang1/720p.m3u8"
    ],
    "诸暨新闻综合": [
+    "https://l.cztvcloud.com/channels/lantian/SXzhuji3/720p.m3u8",
     "http://l.cztvcloud.com/channels/lantian/SXzhuji3/720p.m3u8?zzhed"
    ],
    "龙游生活娱乐": [
@@ -284,25 +497,39 @@
    "龙游新闻综合": [
     "http://l.cztvcloud.com/channels/lantian/SXlongyou1/720p.m3u8?zzhed"
    ],
+   "龙泉新闻综合": [
+    "http://l.cztvcloud.com/channels/lantian/SXlongquan1/720p.m3u8"
+   ],
    "青田电视台": [
     "http://l.cztvcloud.com/channels/lantian/SXqingtian1/720p.m3u8"
    ],
+   "遂昌综合": [
+    "http://l.cztvcloud.com/channels/lantian/SXsuichang1/720p.m3u8?zzhed"
+   ],
    "象山综合": [
-    "http://play-sh13.quklive.com/live/1702360350551252.m3u8?auth_key=2037107484-800189c57a5a44d3b823b60cf84f6756-0-a6f6828a62d5c167cff5e68735fa0d39"
+    "http://play-sh13.quklive.com/live/1702360350551252.m3u8?auth_key=2037107484-800189c57a5a44d3b823b60cf84f6756-0-a6f6828a62d5c167cff5e68735fa0d39",
+    "http://l.cztvcloud.com/channels/lantian/SXxiangshan1/720p.m3u8"
    ],
    "萧山生活": [
-    "http://l.cztvcloud.com/channels/lantian/SXxiaoshan2/720p.m3u8?zzhed?",
-    "http://l.cztvcloud.com/channels/lantian/SXxiaoshan2/720p.m3u8?zzhed"
+    "http://l.cztvcloud.com/channels/lantian/SXxiaoshan2/720p.m3u8",
+    "http://l.cztvcloud.com/channels/lantian/SXxiaoshan2/720p.m3u8?zzhed?"
+   ],
+   "缙云综合": [
+    "http://l.cztvcloud.com/channels/lantian/SXjinyun1/720p.m3u8?zzhed",
+    "http://l.cztvcloud.com/channels/lantian/SXjinyun1/720p.m3u8?zzhed?"
    ],
    "缙云新闻综合": [
     "http://l.cztvcloud.com/channels/lantian/SXjinyun1/720p.m3u8"
+   ],
+   "湖州公共民生": [
+    "http://hzcm-live.media.hugd.com/1e6b554b9ab74513958c0e1ffe664d22/9acaa7634309494cb29a85eb12136607.m3u8?auth_key=2272900830-9a2389b8bf4e49d580d4ad807423d326-0-ea78a5c7a678c436263582d368f5009e"
    ],
    "海宁新闻综合": [
     "https://p2hs.vzan.com/slowlive/317913155078575177/live.m3u8"
    ],
    "洞头综合": [
-    "http://l.cztvcloud.com/channels/lantian/SXdongtou1/720p.m3u8?zzhed?",
-    "http://l.cztvcloud.com/channels/lantian/SXdongtou1/720p.m3u8"
+    "http://l.cztvcloud.com/channels/lantian/SXdongtou1/720p.m3u8",
+    "http://l.cztvcloud.com/channels/lantian/SXdongtou1/720p.m3u8?zzhed?"
    ],
    "武义新闻综合": [
     "http://l.cztvcloud.com/channels/lantian/SXwuyi1/720p.m3u8?zzhed",
@@ -322,6 +549,7 @@
     "https://l.cztvcloud.com/channels/lantian/SXxinchang1/720p.m3u8"
    ],
    "文成综合": [
+    "http://l.cztvcloud.com/channels/lantian/SXwencheng1/720p.m3u8?zzhed",
     "http://l.cztvcloud.com/channels/lantian/SXwencheng1/720p.m3u8?zzhed?"
    ],
    "文成新闻综合": [
@@ -331,16 +559,18 @@
     "http://l.cztvcloud.com/channels/lantian/SXkaihua1/720p.m3u8?zzhed"
    ],
    "开化国家公园": [
-    "http://l.cztvcloud.com/channels/lantian/SXkaihua2/720p.m3u8?zzhed#http://l.cztvcloud.com/channels/lantian/SXkaihua2/720p.m3u8zzhed#http://l.cztvcloud.com/channels/lantian/SXkaihua2/720p.m3u8",
-    "http://l.cztvcloud.com/channels/lantian/SXkaihua2/720p.m3u8"
+    "http://l.cztvcloud.com/channels/lantian/SXkaihua2/720p.m3u8zzhed",
+    "http://l.cztvcloud.com/channels/lantian/SXkaihua2/720p.m3u8?zzhed"
    ],
    "庆元综合": [
+    "http://l.cztvcloud.com/channels/lantian/SXqingyuan1/720p.m3u8?zzhed?",
     "http://l.cztvcloud.com/channels/lantian/SXqingyuan1/720p.m3u8"
    ],
    "庆元新闻综合": [
     "http://l.cztvcloud.com/channels/lantian/SXqingyuan1/720p.m3u8?fbl="
    ],
    "平湖民生休闲": [
+    "http://l.cztvcloud.com/channels/lantian/SXpinghu2/720p.m3u8",
     "http://l.cztvcloud.com/channels/lantian/SXpinghu2/720p.m3u8?zzhed"
    ],
    "嵊泗综合": [
@@ -354,26 +584,28 @@
     "http://l.cztvcloud.com/channels/lantian/SXlanxi1/720p.m3u8"
    ],
    "余杭综合": [
-    "http://l.cztvcloud.com/channels/lantian/SXyuhang1/720p.m3u8?zzhed",
-    "http://l.cztvcloud.com/channels/lantian/SXyuhang1/720p.m3u8"
+    "http://l.cztvcloud.com/channels/lantian/SXyuhang1/720p.m3u8",
+    "http://l.cztvcloud.com/channels/lantian/SXyuhang1/720p.m3u8?zzhed"
    ],
    "余杭未来E": [
     "http://l.cztvcloud.com/channels/lantian/SXyuhang3/720p.m3u8",
     "http://l.cztvcloud.com/channels/lantian/SXyuhang3/720p.m3u8?zzhed"
    ],
    "余姚综合": [
-    "http://l.cztvcloud.com/channels/lantian/SXyuyao1/720p.m3u8?zzhed"
+    "http://l.cztvcloud.com/channels/lantian/SXyuyao1/720p.m3u8?zzhed",
+    "http://l.cztvcloud.com/channels/lantian/SXyuyao1/720p.m3u8?"
    ],
    "余姚新闻综合": [
-    "http://l.cztvcloud.com/channels/lantian/SXyuyao1/720p.m3u8?cWlkPSZzPTg3OWMwYmMyZDMzYTFhZGY3NDQxMjgyYTg1MmUzNTY0JmVzPTE3MDY2Nzc4NzMmdXVpZD0yMjdiY2MzNGNiNGY0MThlYjRiY2IxYzcwNmZjODNkMS02NzQ3NDY2NyZ2PTImYXM9MCZjZG5leF9pZD10eF9waG9uZV9saXZl",
-    "http://l.cztvcloud.com/channels/lantian/SXyuyao1/720p.m3u8"
+    "http://l.cztvcloud.com/channels/lantian/SXyuyao1/720p.m3u8",
+    "http://l.cztvcloud.com/channels/lantian/SXyuyao1/720p.m3u8?cWlkPSZzPTg3OWMwYmMyZDMzYTFhZGY3NDQxMjgyYTg1MmUzNTY0JmVzPTE3MDY2Nzc4NzMmdXVpZD0yMjdiY2MzNGNiNGY0MThlYjRiY2IxYzcwNmZjODNkMS02NzQ3NDY2NyZ2PTImYXM9MCZjZG5leF9pZD10eF9waG9uZV9saXZl"
    ],
    "余姚姚江文化": [
-    "http://l.cztvcloud.com/channels/lantian/SXyuyao3/720p.m3u8?zzhed"
+    "http://l.cztvcloud.com/channels/lantian/SXyuyao3/720p.m3u8?zzhed",
+    "https://l.cztvcloud.com/channels/lantian/SXyuyao3/720p.m3u8"
    ],
    "云和新闻综合": [
-    "http://l.cztvcloud.com/channels/lantian/SXyunhe1/720p.m3u8?zzhed",
-    "http://l.cztvcloud.com/channels/lantian/SXyunhe1/720p.m3u8"
+    "http://l.cztvcloud.com/channels/lantian/SXyunhe1/720p.m3u8",
+    "http://l.cztvcloud.com/channels/lantian/SXyunhe1/720p.m3u8?zzhed"
    ],
    "中国蓝新闻": [
     "http://ali-m-l.cztv.com/channels/lantian/channel009/1080p.m3u8"
@@ -473,9 +705,6 @@
    ],
    "灌阳新闻综合": [
     "https://ls.qingting.fm/live/5043/64k.m3u8"
-   ],
-   "南宁影视娱乐": [
-    "http://hls.nntv.cn/nnlive/YSYL_244.m3u8"
    ]
   },
   "☘️四川频道": {
@@ -489,7 +718,7 @@
     "https://m3u8channel-bx.yunxya.com/nmip-media/channellive/channel104666/playlist.m3u8"
    ],
    "广安公共": [
-    "http://live1.gatv.com.cn:85/live/GGPD_ggpdzm.m3u8?zsicd",
+    "http://live1.gatv.com.cn:85/live/GGPD_ggpdzm.m3u8",
     "http://live1.gatv.com.cn:85/live/GGPD.m3u8"
    ],
    "旺苍新闻综合": [
@@ -531,11 +760,8 @@
     "https://ls.qingting.fm/live/5022100/64k.m3u8"
    ],
    "云霄综合": [
-    "http://live.zzyxxw.com:85/live/xwzh.m3u8?fujian,",
+    "http://live.zzyxxw.com:85/live/xwzh.m3u8?fujian",
     "http://live.zzyxxw.com:85/live/xwzh.m3u8"
-   ],
-   "福州少儿": [
-    "http://live.zohi.tv/video/s10001-fztv-4/index.m3u8"
    ],
    "福州生活": [
     "http://live.zohi.tv:80/video/s10001-fztv-3/index.m3u8"
@@ -570,8 +796,8 @@
     "http://jwplay.hebyun.com.cn/live/LPTV001/1500k/tzwj_video.m3u8"
    ],
    "河北农民": [
-    "https://ls.qingting.fm/live/1650/64k.m3u8",
-    "https://jwcdnqx.hebyun.com.cn/live/clzhpd/1500k/tzwj_video.m3u8?zhebd"
+    "https://jwcdnqx.hebyun.com.cn/live/clzhpd/1500k/tzwj_video.m3u8?zhebd",
+    "https://ls.qingting.fm/live/1650/64k.m3u8"
    ],
    "昌黎综合": [
     "https://jwcdnqx.hebyun.com.cn/live/clzhpd/1500k/tzwj_video.m3u8"
@@ -619,16 +845,14 @@
    ]
   },
   "☘️新疆频道": {
+   "伊犁维吾尔": [
+    "http://110.153.180.106:55555/out_2/index.m3u8"
+   ],
    "伊犁哈萨克": [
     "http://110.153.180.106:55555/out_3/index.m3u8?zxinjd"
    ],
    "伊犁经济法制": [
     "http://110.153.180.106:55555/out_4/index.m3u8"
-   ]
-  },
-  "☘️山东频道": {
-   "山东教育": [
-    "https://test1.live.sdetv.com.cn/live/dianshizhibo/playlist.m3u8"
    ]
   },
   "☘️山西频道": {
@@ -641,8 +865,8 @@
   },
   "☘️安徽频道": {
    "固镇新闻": [
-    "http://www.guzhenm.com:7001/hls/hd-live.m3u8",
-    "http://www.guzhenm.com:7001/hls/hd-live.m3u8?%E5%85%B3%E6%B3%A8%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7[%E6%99%B4%E5%9B%AD]"
+    "http://www.guzhenm.com:7001/hls/hd-live.m3u8?%E5%85%B3%E6%B3%A8%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7[%E6%99%B4%E5%9B%AD]",
+    "http://www.guzhenm.com:7001/hls/hd-live.m3u8"
    ],
    "铜陵新闻综合": [
     "https://ls.qingting.fm/live/21303/64k.m3u8"
@@ -659,10 +883,6 @@
    ]
   },
   "☘️吉林频道": {
-   "延边卫视": [
-    "https://srs.iyb983.cn/video/CYS/index.m3u8",
-    "https://srs.iyb983.cn:443/video/CYS/index.m3u8"
-   ],
    "吉林乡村": [
     "https://satellitepull.cnr.cn/live/wxjlxcgb/playlist.m3u8"
    ],
@@ -685,17 +905,11 @@
    ]
   },
   "☘️青海频道": {
-   "安多卫视": [
-    "https://liveout.xntv.tv/a65jur/96iln2.m3u8"
-   ],
    "西宁新闻综合": [
     "https://liveout.xntv.tv/a65jur/96iln2.m3u8?zqinghd"
    ]
   },
   "☘️黑龙江频道": {
-   "黑龙江少儿": [
-    "https://ls.qingting.fm/live/4972/64k.m3u8"
-   ],
    "黑龙江新闻": [
     "https://ls.qingting.fm/live/4974/64k.m3u8"
    ],
@@ -709,8 +923,8 @@
     "http://r.jdshipin.com/n90gt"
    ],
    "凤凰资讯": [
-    "http://r.jdshipin.com/0Rp07",
-    "http://php.jdshipin.com/TVOD/iptv.php?id=fhzx"
+    "http://php.jdshipin.com/TVOD/iptv.php?id=fhzx",
+    "http://r.jdshipin.com/0Rp07"
    ],
    "凤凰香港": [
     "http://php.jdshipin.com/TVOD/iptv.php?id=fhhk",
@@ -720,17 +934,13 @@
     "http://38.64.72.148:80/hls/modn/list/4005/playlist.m3u8",
     "http://38.64.72.148/hls/modn/list/4005/chunklist0.m3u8"
    ],
-   "纬来体育": [
-    "https://epg.pw/stream/ab6df63b64d0cc44a1f4f029ed847a26fa54a7aebd455578fb05a63f02c22f4b.m3u8",
-    "https://epg.pw/stream/8855a9936e37e608a0ec8a014cce1673dee9c5d68d560da376cc92e5edef2b25.m3u8"
-   ],
    "Viutv": [
-    "http://php.jdshipin.com/TVOD/iptv.php?id=viutv",
-    "http://php.jdshipin.com/TVOD/iptv.php?id=viutv2"
+    "http://r.jdshipin.com/vSJvl",
+    "http://r.jdshipin.com/TcKr2"
    ],
    "无线新闻": [
-    "http://r.jdshipin.com/CkuBd",
-    "http://php.jdshipin.com/TVOD/iptv.php?id=wxxw"
+    "http://php.jdshipin.com/TVOD/iptv.php?id=wxxw",
+    "http://r.jdshipin.com/CkuBd"
    ],
    "东森超视": [
     "http://38.64.72.148:80/hls/modn/list/2013/chunklist1.m3u8"
@@ -744,22 +954,8 @@
     "http://mag.trexlive.me:80/play/live.php?extension=ts&mac=00:1A:79:7E:2F:ED&stream=1919463"
    ],
    "无线星河": [
-    "http://r.jdshipin.com/Voac4",
+    "http://php.jdshipin.com/TVOD/iptv.php?id=xinghe",
     "http://r.jdshipin.com/sXuuD"
-   ]
-  },
-  "🏀体育频道": {
-   "精品体育": [
-    "https://epg.pw/stream/866a097a0907c9832440f8df38272dd555abf05200dfbafcc137e214c9b30ca7.m3u8",
-    "https://epg.pw/stream/94ed0232b61ce8d89883160a4cdfbfc8f3225cae70ef8e17d93eec249a3c8ad6.m3u8"
-   ],
-   "足球频道": [
-    "https://epg.pw/stream/c7df950876e6a1ceb8be74ee86f9f702cebbbae29f1d15124ef8f86fd43161cf.m3u8"
-   ]
-  },
-  "🎵音乐频道": {
-   "音乐现场": [
-    "https://satellitepull.cnr.cn/live/wx32nmgyygb/playlist.m3u8"
    ]
   },
   "🏛经典剧场": {
@@ -787,8 +983,8 @@
     "https://cdn4.skygo.mn/live/disk1/CCTV-10/HLSv3-FTA/CCTV-10.m3u8"
    ],
    "CGTN (1080p)": [
-    "https://amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv/master.m3u8",
-    "https://english-livebkali.cgtn.com/live/encgtn.m3u8"
+    "https://english-livebkali.cgtn.com/live/encgtn.m3u8",
+    "https://amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv/master.m3u8"
    ],
    "CGTN (720p)": [
     "https://dai.google.com/linear/hls/event/r4sa-f6GSN2XIvzKv5jVng/master.m3u8"
@@ -811,6 +1007,9 @@
    ],
    "Chuxiong News Channel [Not 24/7]": [
     "http://hwapi.yntv.net/ew265l/848y54.m3u8"
+   ],
+   "CND Film Middle School Channel": [
+    "http://live-play.zxstv.com.cn/zhongxuesheng/zhongxuesheng.m3u8"
    ],
    "Discovering China (1080p)": [
     "https://fastlive.cctvplus.com/out/v1/8442c3bfd4c64a3984389328f6087879/index.m3u8"
@@ -861,18 +1060,15 @@
     "https://voa-ingest.akamaized.net/hls/live/2033878/tvmc08/playlist.m3u8"
    ],
    "Xinjiang TV 2": [
-    "http://110.153.180.106:55555/out_3/index.m3u8",
-    "https://infolive.hongshannet.cn/RedHillEye/1781077833267957853648adb1cc9957853648adb1cc9.m3u8?auth_key=1812613833-0-0-4dabcc60fbe41e40712b37dbf24dc877"
+    "https://hls.quklive.com/live/play-sh-21.quklive.com/1777511615189085.m3u8?auth_key=2092871636-a39d8614688744d0b170b856b086ba80-0-33900446b83fa0b5befeb6bedbcd51a0",
+    "http://110.153.180.106:55555/out_3/index.m3u8"
    ],
    "Xinjiang TV 3": [
-    "http://218.84.35.38:3000/m3u8/live/tctv-2/index.m3u8",
-    "http://120.70.60.179:9901/tsfile/live/1006_1.m3u8?authid=0&key=txiptv&playlive=1"
+    "http://120.70.60.179:9901/tsfile/live/1006_1.m3u8?authid=0&key=txiptv&playlive=1",
+    "http://218.84.35.38:3000/m3u8/live/tctv-2/index.m3u8"
    ],
    "Xinjiang TV 8": [
     "http://120.70.60.179:9901/tsfile/live/1002_1.m3u8?authid=0&key=txiptv&playlive=1"
-   ],
-   "Xizang TV Chinese": [
-    "https://pili-live-hls-zdzz-tv.zzxwcm.cn/zdzz-tv/nqzh.m3u8"
    ],
    "Xizang TV Tibetan": [
     "https://live.vtibet.cn/live/ZYWS20261016.stream.m3u8"
@@ -940,9 +1136,6 @@
    "白山新闻综合 [Geo-blocked]": [
     "https://stream2.jlntv.cn/baishan1/sd/live.m3u8"
    ],
-   "福州广播电视台都市生活频道 (FZTV-3) (1080p)": [
-    "http://live.zohi.tv/video/s10001-fztv-3/index.m3u8"
-   ],
    "荣昌综合 (404p) [Not 24/7]": [
     "http://183.64.181.25:40023/rongchang01.m3u8"
    ],
@@ -961,97 +1154,549 @@
    "集安综合 [Geo-blocked]": [
     "https://stream2.jlntv.cn/ja/sd/live.m3u8"
    ],
+   "靖江新闻綜合 (480p) [Not 24/7]": [
+    "http://visit.jjbctv.com:1935/live/xwzhmb/playlist.m3u8"
+   ],
    "餘姚姚江文化 (576p) [Not 24/7]": [
     "https://l.cztvcloud.com/channels/lantian/SXyuyao2/720p.m3u8"
-   ],
-   "Yichang Sanxia Travel & Life Channel": [
-    "https://liveplay.ycrmt.cn/sxgd/lysh.m3u8"
-   ],
-   "Yichang Sanxia General Channel": [
-    "https://liveplay.ycrmt.cn/sxgd/zhpd.m3u8"
    ]
   }
  },
  "metrics": {
-  "https://0472.org/hls/cgtn.m3u8": {
-   "kbps": 202.0,
+  "http://gmxw.7766.org:808/hls/93/index.m3u8": {
+   "kbps": 10.4,
    "kind": "TS",
-   "ms": 0.29
+   "ms": 5.62
+  },
+  "http://gmxw.7766.org:808/hls/96/index.m3u8": {
+   "kbps": 16.7,
+   "kind": "TS",
+   "ms": 3.5
+  },
+  "http://124.165.251.82:85/tsfile/live/0008_1.m3u8?key=txiptv&playlive=1&authid=0": {
+   "kbps": 33.3,
+   "kind": "TS",
+   "ms": 1.76
+  },
+  "http://124.165.251.82:85/tsfile/live/0012_1.m3u8?key=txiptv&playlive=1&authid=0": {
+   "kbps": 41.0,
+   "kind": "TS",
+   "ms": 1.43
+  },
+  "http://ali-m-l.cztv.com/channels/lantian/channel21/1080p.m3u8": {
+   "kbps": 56.3,
+   "kind": "TS",
+   "ms": 1.04
+  },
+  "http://english-livetx.cgtn.com/hls/yypdyyctzb_hd.m3u8": {
+   "kbps": 325.5,
+   "kind": "TS",
+   "ms": 0.18
+  },
+  "https://0472.org/hls/cgtn.m3u8": {
+   "kbps": 234.4,
+   "kind": "TS",
+   "ms": 0.25
+  },
+  "http://espanol-liveali.cgtn.com/hls/LSveOGBaBw41Ea7ukkVAUdKQ220802LSTexu6xAuFH8VZNBLE1ZNEa220802cd.m3u8": {
+   "kbps": 266.3,
+   "kind": "TS",
+   "ms": 0.22
   },
   "https://0472.org/hls/cgtnx.m3u8": {
-   "kbps": 172.3,
+   "kbps": 209.3,
    "kind": "TS",
-   "ms": 0.34
+   "ms": 0.28
   },
   "https://0472.org/hls/cgtna.m3u8": {
-   "kbps": 172.3,
+   "kbps": 244.1,
    "kind": "TS",
-   "ms": 0.34
+   "ms": 0.24
+  },
+  "http://bp-resource-dfl.bestv.cn/148/3/video.m3u8": {
+   "kbps": 61.0,
+   "kind": "TS",
+   "ms": 0.96
+  },
+  "http://bp-resource-dfl.bestv.cn/155/3/video.m3u8": {
+   "kbps": 62.3,
+   "kind": "TS",
+   "ms": 0.94
+  },
+  "http://live.zohi.tv/video/s10001-fztv-3/index.m3u8": {
+   "kbps": 117.2,
+   "kind": "TS",
+   "ms": 0.5
+  },
+  "https://txmov2.a.kwimgs.com/bs3/video-hls/5199687338554291078_hlsb.m3u8": {
+   "kbps": 1171.9,
+   "kind": "TS",
+   "ms": 0.05
+  },
+  "http://hlsal-ldvt.qing.mgtv.com/nn_live/nn_x64/Y2RuZXhfaWQ9YWxfaGxzX2xkdnQmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNWSZGST.m3u8": {
+   "kbps": 325.5,
+   "kind": "TS",
+   "ms": 0.18
+  },
+  "http://hlsal-ldvt.qing.mgtv.com/nn_live/nn_x64/dWlwPTEyNy4wLjAuMSZ1aWQ9cWluZy1jbXMmbm5fdGltZXpvbmU9OCZjZG5leF9pZD1hbF9obHNfbGR2dCZ1dWlkPTliODY4NmU5ZTM2YzYwMmMmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNWSZGST.m3u8": {
+   "kbps": 195.3,
+   "kind": "TS",
+   "ms": 0.3
+  },
+  "http://www.yao87.com:4022/udp/239.76.246.101:1234": {
+   "kbps": 16.9,
+   "kind": "raw-TS",
+   "ms": 11.54
+  },
+  "http://112.27.5.218:9901/tsfile/live/faacts/0138_1.m3u8?key=txiptv&playlive=1&authid=0": {
+   "kbps": 90.1,
+   "kind": "TS",
+   "ms": 0.65
+  },
+  "http://61.136.172.236:9901/tsfile/live/0121_1.m3u8?key=txiptv&playlive=1&authid=0": {
+   "kbps": 13.2,
+   "kind": "TS",
+   "ms": 4.45
+  },
+  "http://119.39.9.8:9901/tsfile/live/0118_1.m3u8": {
+   "kbps": 69.8,
+   "kind": "TS",
+   "ms": 0.84
+  },
+  "http://gmxw.7766.org:808/hls/45/index.m3u8": {
+   "kbps": 50.1,
+   "kind": "TS",
+   "ms": 1.17
+  },
+  "http://112.27.5.218:9901/tsfile/live/0111_1.m3u8?key=txiptv&playlive=1&authid=0": {
+   "kbps": 91.6,
+   "kind": "TS",
+   "ms": 0.64
+  },
+  "http://218.84.12.186:8001/hls/main/playlist.m3u8?zxinjd;http://218.84.12.186:8001/hls/main/playlist.m3u8zxinjd": {
+   "kbps": 52.8,
+   "kind": "TS",
+   "ms": 1.11
+  },
+  "https://srs.iyb983.cn/video/CYS/index.m3u8": {
+   "kbps": 70.6,
+   "kind": "TS",
+   "ms": 0.83
+  },
+  "http://l.cztvcloud.com/channels/lantian/SXxinchang2/720p.m3u8#": {
+   "kbps": 36.9,
+   "kind": "TS",
+   "ms": 1.59
+  },
+  "https://srs.iyb983.cn:443/video/CYS/index.m3u8": {
+   "kbps": 68.1,
+   "kind": "TS",
+   "ms": 0.86
+  },
+  "https://ali-m-l.cztv.com/channels/lantian/channel001/1080p.m3u8": {
+   "kbps": 52.3,
+   "kind": "TS",
+   "ms": 1.12
+  },
+  "https://ali-m-l.cztv.com/channels/lantian/channel001/1080p.m3u8?": {
+   "kbps": 79.2,
+   "kind": "TS",
+   "ms": 0.74
+  },
+  "http://ali-m-l.cztv.com/channels/lantian/channel001/1080p.m3u8": {
+   "kbps": 108.5,
+   "kind": "TS",
+   "ms": 0.54
+  },
+  "http://ali-xwl.cztv.com/live/channel011080Plxw.m3u8": {
+   "kbps": 1953.1,
+   "kind": "TS",
+   "ms": 0.03
+  },
+  "https://liveout.xntv.tv/a65jur/96iln2.m3u8": {
+   "kbps": 44.1,
+   "kind": "TS",
+   "ms": 1.33
   },
   "http://222.128.55.152:9080/live/dwq.m3u8": {
+   "kbps": 72.3,
+   "kind": "TS",
+   "ms": 0.81
+  },
+  "http://61.136.172.236:9901/tsfile/live/0143_1.m3u8?key=txiptv&playlive=1&authid=0": {
+   "kbps": 7.2,
+   "kind": "TS",
+   "ms": 8.12
+  },
+  "http://play1-qk.nmtv.cn/live/1769652018126032.m3u8": {
+   "kbps": 42.2,
+   "kind": "TS",
+   "ms": 1.39
+  },
+  "https://test1.live.sdetv.com.cn/live/dianshizhibo/playlist.m3u8": {
+   "kbps": 43.4,
+   "kind": "TS",
+   "ms": 1.35
+  },
+  "https://5ddce30eb4b55.streamlock.net/bltvhd/bltv1/chunklist_w511254805.m3u8": {
+   "kbps": 52.8,
+   "kind": "TS",
+   "ms": 1.11
+  },
+  "http://61.216.67.119:1935/bltvhd/bltv1/chunklist_w1266569526.m3u": {
+   "kbps": 64.4,
+   "kind": "TS",
+   "ms": 0.91
+  },
+  "https://bp-resource-dfl.bestv.cn/148/3/video.m3u8": {
+   "kbps": 49.2,
+   "kind": "TS",
+   "ms": 1.19
+  },
+  "https://tylive.kan0512.com/norecord/csztv4k_4k.m3u8": {
+   "kbps": 67.3,
+   "kind": "TS",
+   "ms": 0.87
+  },
+  "http://183.237.95.108:9901/tsfile/live/1008_1.m3u8?key=txiptv&playlive=0&authid=0": {
+   "kbps": 70.6,
+   "kind": "TS",
+   "ms": 0.83
+  },
+  "http://l.cztvcloud.com/channels/lantian/SXdongyang1/720p.m3u8": {
+   "kbps": 16.3,
+   "kind": "TS",
+   "ms": 3.59
+  },
+  "http://jsmov2.a.yximgs.com/bs3/video-hls/5250634317044855747_hlsb.m3u8": {
+   "kbps": 130.2,
+   "kind": "TS",
+   "ms": 0.45
+  },
+  "http://jsmov2.a.yximgs.com/bs3/video-hls/5232901391302199073_hlsb.m3u8": {
+   "kbps": 146.5,
+   "kind": "TS",
+   "ms": 0.4
+  },
+  "http://jsmov2.a.yximgs.com/bs3/video-hls/5216294367991385255_hlsb.m3u8": {
+   "kbps": 133.2,
+   "kind": "TS",
+   "ms": 0.44
+  },
+  "http://hls.nntv.cn/nnlive/YSYL_244.m3u8": {
+   "kbps": 136.3,
+   "kind": "TS",
+   "ms": 0.43
+  },
+  "http://stream.hrbtv.net/yspd/sd/live.m3u8?zheild": {
+   "kbps": 34.5,
+   "kind": "TS",
+   "ms": 1.7
+  },
+  "https://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8": {
+   "kbps": 51.0,
+   "kind": "TS",
+   "ms": 1.15
+  },
+  "http://ali-m-l.cztv.com/channels/lantian/channel04/1080p.m3u8": {
+   "kbps": 86.2,
+   "kind": "TS",
+   "ms": 0.68
+  },
+  "https://stream.ads.ottera.tv/playlist.m3u8?network_id=595": {
+   "kbps": 91.6,
+   "kind": "TS",
+   "ms": 0.64
+  },
+  "https://stream.ads.ottera.tv/playlist.m3u8?network_id=743": {
+   "kbps": 93.0,
+   "kind": "TS",
+   "ms": 0.63
+  },
+  "http://jsmov2.a.yximgs.com/bs3/video-hls/5203346449046555193_hlsb.m3u8": {
+   "kbps": 146.5,
+   "kind": "TS",
+   "ms": 0.4
+  },
+  "https://tencentplay.gztv.com/live/nanguodushi.m3u8?txSecret=550af55c0ea34ce492748481415b6dfa&txTime=1903e7b17de": {
+   "kbps": 55.3,
+   "kind": "TS",
+   "ms": 1.06
+  },
+  "http://182.150.115.21:8030/pcgacg/pcgacg_0.m3u8": {
+   "kbps": 61.7,
+   "kind": "TS",
+   "ms": 0.95
+  },
+  "http://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8": {
+   "kbps": 76.1,
+   "kind": "TS",
+   "ms": 0.77
+  },
+  "https://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8?": {
+   "kbps": 81.4,
+   "kind": "TS",
+   "ms": 0.72
+  },
+  "https://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8": {
+   "kbps": 49.2,
+   "kind": "TS",
+   "ms": 1.19
+  },
+  "http://live.zohi.tv/video/s10001-fztv-4/index.m3u8": {
+   "kbps": 108.5,
+   "kind": "TS",
+   "ms": 0.54
+  },
+  "http://ebsonairios.ebs.co.kr/ebsutablet500k/tablet500k/playlist.m3u8": {
+   "kbps": 76.1,
+   "kind": "TS",
+   "ms": 0.77
+  },
+  "https://ls.qingting.fm/live/4972/64k.m3u8": {
+   "kbps": 32.7,
+   "kind": "TS",
+   "ms": 1.79
+  },
+  "https://0472.org/hls/cgtnd.m3u8": {
+   "kbps": 234.4,
+   "kind": "TS",
+   "ms": 0.25
+  },
+  "https://english-livetx.cgtn.com/hls/yypdjlctzb_hd.m3u8": {
+   "kbps": 244.1,
+   "kind": "TS",
+   "ms": 0.24
+  },
+  "http://newcntv.qcloudcdn.com/asp/hls/4000/0303000a/3/default/2bdfdad540b342f592f9817cb7f3b79a/4000.m3u8": {
    "kbps": 74.2,
    "kind": "TS",
    "ms": 0.79
   },
-  "http://183.237.95.108:9901/tsfile/live/1008_1.m3u8?key=txiptv&playlive=0&authid=0": {
-   "kbps": 48.4,
+  "http://stream5.jlntv.cn/df/sd/live.m3u8?zjild": {
+   "kbps": 52.3,
    "kind": "TS",
-   "ms": 1.21
+   "ms": 1.12
   },
-  "https://0472.org/hls/cgtnd.m3u8": {
-   "kbps": 202.0,
+  "http://newcntv.qcloudcdn.com/asp/hls/4000/0303000a/3/default/93fc12dbf14241c18c23da104fbade23/4000.m3u8": {
+   "kbps": 25.6,
    "kind": "TS",
-   "ms": 0.29
+   "ms": 2.29
+  },
+  "https://ali-m-l.cztv.com/channels/lantian/channel12/720p.m3u8": {
+   "kbps": 80.3,
+   "kind": "TS",
+   "ms": 0.73
   },
   "https://ali-m-l.cztv.com/channels/lantian/channel012/1080p.m3u8": {
+   "kbps": 81.4,
+   "kind": "TS",
+   "ms": 0.72
+  },
+  "http://ali-m-l.cztv.com/channels/lantian/channel012/1080p.m3u8": {
+   "kbps": 108.5,
+   "kind": "TS",
+   "ms": 0.54
+  },
+  "http://stream10.jlntv.cn/jiutaitv/sd/live.m3u8?zjild": {
+   "kbps": 68.1,
+   "kind": "TS",
+   "ms": 0.86
+  },
+  "http://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/1425e1d505654cb48ba82b807b221193/1200.m3u8": {
+   "kbps": 83.7,
+   "kind": "TS",
+   "ms": 0.7
+  },
+  "http://110.153.180.106:55555/out_4/index.m3u8?zxinjd": {
+   "kbps": 52.3,
+   "kind": "TS",
+   "ms": 1.12
+  },
+  "https://liveout.btzx.com.cn/62ds9e/6o77s4.m3u8?zxinjd": {
+   "kbps": 45.4,
+   "kind": "TS",
+   "ms": 1.29
+  },
+  "http://stream5.jlntv.cn/sl/sd/live.m3u8?zjild": {
+   "kbps": 34.1,
+   "kind": "TS",
+   "ms": 1.72
+  },
+  "http://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/c6baf6f74bb944aeacee1065ea72c798/1200.m3u8": {
+   "kbps": 5.1,
+   "kind": "TS",
+   "ms": 11.47
+  },
+  "http://218.84.12.186:8001/hls/main/playlist.m3u8?zxinjd": {
+   "kbps": 54.3,
+   "kind": "TS",
+   "ms": 1.08
+  },
+  "http://stream8.jlntv.cn/dhtv/playlist.m3u8?zjild": {
+   "kbps": 51.9,
+   "kind": "TS",
+   "ms": 1.13
+  },
+  "http://stream5.jlntv.cn/lh/sd/live.m3u8?zjild": {
+   "kbps": 51.0,
+   "kind": "TS",
+   "ms": 1.15
+  },
+  "http://stream10.jlntv.cn/huadian/sd/live.m3u8?zjild": {
+   "kbps": 65.8,
+   "kind": "TS",
+   "ms": 0.89
+  },
+  "http://222.179.155.21:1935/ch1.m3u8?zzhongqd": {
+   "kbps": 51.4,
+   "kind": "TS",
+   "ms": 1.14
+  },
+  "http://stream5.jlntv.cn/wq/sd/live.m3u8?zjild": {
+   "kbps": 59.8,
+   "kind": "TS",
+   "ms": 0.98
+  },
+  "http://218.84.127.245:1026/hls/main1/playlist.m3u8?zxinjd": {
+   "kbps": 51.9,
+   "kind": "TS",
+   "ms": 1.13
+  },
+  "http://stream8.jlntv.cn/hctv/sd/live.m3u8?zjild": {
+   "kbps": 64.4,
+   "kind": "TS",
+   "ms": 0.91
+  },
+  "http://stream8.jlntv.cn/baishan2/playlist.m3u8?zjild": {
+   "kbps": 43.4,
+   "kind": "TS",
+   "ms": 1.35
+  },
+  "http://stream5.jlntv.cn/ps/sd/live.m3u8?zjild": {
+   "kbps": 53.3,
+   "kind": "TS",
+   "ms": 1.1
+  },
+  "http://stream8.jlntv.cn/shulan/sd/live.m3u8?zjild": {
+   "kbps": 38.5,
+   "kind": "TS",
+   "ms": 1.52
+  },
+  "http://stream5.jlntv.cn/hn/sd/live.m3u8?zjild": {
+   "kbps": 79.2,
+   "kind": "TS",
+   "ms": 0.74
+  },
+  "http://stream5.jlntv.cn/thx/sd/live.m3u8?zjild": {
+   "kbps": 58.6,
+   "kind": "TS",
+   "ms": 1.0
+  },
+  "http://stream8.jlntv.cn/jytv/sd/live.m3u8?zjild": {
+   "kbps": 58.0,
+   "kind": "TS",
+   "ms": 1.01
+  },
+  "https://hls.cntv.lxdns.com/asp/hls/2000/0303000a/3/default/f0a47e155d32450daa1d36a04fd7d262/2000.m3u8": {
+   "kbps": 80.3,
+   "kind": "TS",
+   "ms": 0.73
+  },
+  "https://newcntv.qcloudcdn.com/asp/hls/2000/0303000a/3/default/d2454bbb542d4613a9db478dab2addfd/2000.m3u8": {
+   "kbps": 49.2,
+   "kind": "TS",
+   "ms": 1.19
+  },
+  "http://stream8.jlntv.cn/ljtv/sd/live.m3u8?zjild": {
+   "kbps": 80.3,
+   "kind": "TS",
+   "ms": 0.73
+  },
+  "https://epg.pw/stream/f7556eccd4ae06b0c2991fdc7a4f8388496559f728cc82459a8e50346040e226.m3u8": {
+   "kbps": 94.5,
+   "kind": "TS",
+   "ms": 0.62
+  },
+  "https://epg.pw/stream/94ed0232b61ce8d89883160a4cdfbfc8f3225cae70ef8e17d93eec249a3c8ad6.m3u8": {
+   "kbps": 90.1,
+   "kind": "TS",
+   "ms": 0.65
+  },
+  "https://epg.pw/stream/866a097a0907c9832440f8df38272dd555abf05200dfbafcc137e214c9b30ca7.m3u8": {
+   "kbps": 88.8,
+   "kind": "TS",
+   "ms": 0.66
+  },
+  "https://epg.pw/stream/c7df950876e6a1ceb8be74ee86f9f702cebbbae29f1d15124ef8f86fd43161cf.m3u8": {
+   "kbps": 77.1,
+   "kind": "TS",
+   "ms": 0.76
+  },
+  "https://epg.pw/stream/ab6df63b64d0cc44a1f4f029ed847a26fa54a7aebd455578fb05a63f02c22f4b.m3u8": {
+   "kbps": 78.1,
+   "kind": "TS",
+   "ms": 0.75
+  },
+  "https://epg.pw/stream/4f18dfe0593db5c686eb64ae8edaf2a9202d4d46bdc9bbde2cee27708e12ea01.m3u8": {
+   "kbps": 91.6,
+   "kind": "TS",
+   "ms": 0.64
+  },
+  "https://epg.pw/stream/8855a9936e37e608a0ec8a014cce1673dee9c5d68d560da376cc92e5edef2b25.m3u8": {
+   "kbps": 94.5,
+   "kind": "TS",
+   "ms": 0.62
+  },
+  "https://AMChls.wns.live/hls/stream.m3u8": {
    "kbps": 66.6,
    "kind": "TS",
    "ms": 0.88
   },
-  "https://AMChls.wns.live/hls/stream.m3u8": {
-   "kbps": 75.1,
-   "kind": "TS",
-   "ms": 0.78
-  },
   "http://61.221.215.25:8800/hls/49/index.m3u8": {
-   "kbps": 102.8,
+   "kbps": 93.0,
    "kind": "TS",
-   "ms": 0.57
+   "ms": 0.63
+  },
+  "https://satellitepull.cnr.cn/live/wx32nmgyygb/playlist.m3u8": {
+   "kbps": 146.5,
+   "kind": "TS",
+   "ms": 0.4
   },
   "https://txmov2.a.kwimgs.com/bs3/video-hls/5195746663405928031_hlsb.m3u8": {
-   "kbps": 1171.9,
+   "kbps": 167.4,
    "kind": "TS",
-   "ms": 0.05
+   "ms": 0.35
   },
   "https://txmov2.a.kwimgs.com/bs3/video-hls/5216575810935394655_hlsb.m3u8": {
-   "kbps": 976.6,
+   "kbps": 108.5,
    "kind": "TS",
-   "ms": 0.06
+   "ms": 0.54
   },
   "https://txmov2.a.kwimgs.com/bs3/video-hls/5194620763762726260_hlsb.m3u8": {
-   "kbps": 1171.9,
+   "kbps": 108.5,
    "kind": "TS",
-   "ms": 0.05
+   "ms": 0.54
   },
   "https://p2.bdstatic.com/rtmp.liveshow.lss-user.baidubce.com/live/stream_bduid_6488563992_8982723413/merged_1707497046297_88536_25144_41936.m3u8": {
-   "kbps": 63.7,
+   "kbps": 51.9,
    "kind": "TS",
-   "ms": 0.92
+   "ms": 1.13
   },
   "https://res.cctvnews.cctv.com/video/3005/record/cctv/merge1/133396667284143308839013005/8fbd6180bdef4da19f6155cf6b4652e1-4.m3u8": {
-   "kbps": 202.0,
+   "kbps": 209.3,
    "kind": "TS",
-   "ms": 0.29
+   "ms": 0.28
   },
   "http://74.91.26.218:82/live/cctv1hd.m3u8": {
-   "kbps": 279.0,
+   "kbps": 266.3,
    "kind": "TS",
-   "ms": 0.21
+   "ms": 0.22
   },
-  "http://223.78.65.165:9901/tsfile/live/0006_1.m3u8?key=txiptv&playlive=1&authid=0": {
-   "kbps": 23.6,
+  "http://74.91.26.218:82/live/cctv3hd.m3u8": {
+   "kbps": 266.3,
    "kind": "TS",
-   "ms": 2.48
+   "ms": 0.22
   },
   "http://120.76.248.139/live/bfgd/4200000246.m3u8": {
    "kbps": 59.2,
@@ -1059,109 +1704,84 @@
    "ms": 0.99
   },
   "http://74.91.26.218:82/live/cctv9hd.m3u8": {
-   "kbps": 279.0,
+   "kbps": 266.3,
    "kind": "TS",
-   "ms": 0.21
+   "ms": 0.22
   },
   "http://74.91.26.218:82/live/cctv12hd.m3u8": {
-   "kbps": 279.0,
+   "kbps": 266.3,
    "kind": "TS",
-   "ms": 0.21
+   "ms": 0.22
   },
   "http://120.76.248.139/live/bfgd/4200000067.m3u8": {
-   "kbps": 64.4,
-   "kind": "TS",
-   "ms": 0.91
-  },
-  "http://120.76.248.139/live/bfgd/4200000135.m3u8": {
-   "kbps": 58.6,
-   "kind": "TS",
-   "ms": 1.0
-  },
-  "http://120.76.248.139/live/bfgd/4200000092.m3u8": {
-   "kbps": 52.8,
-   "kind": "TS",
-   "ms": 1.11
-  },
-  "https://ali-m-l.cztv.com/channels/lantian/channel001/1080p.m3u8": {
-   "kbps": 62.3,
-   "kind": "TS",
-   "ms": 0.94
-  },
-  "http://ali-m-l.cztv.com/channels/lantian/channel01/1080p.m3u8": {
-   "kbps": 84.9,
-   "kind": "TS",
-   "ms": 0.69
-  },
-  "https://txmov2.a.kwimgs.com/bs3/video-hls/5199687338554291078_hlsb.m3u8": {
-   "kbps": 225.4,
-   "kind": "TS",
-   "ms": 0.26
-  },
-  "http://hlsal-ldvt.qing.mgtv.com/nn_live/nn_x64/dWlwPTEyNy4wLjAuMSZ1aWQ9cWluZy1jbXMmbm5fdGltZXpvbmU9OCZjZG5leF9pZD1hbF9obHNfbGR2dCZ1dWlkPTliODY4NmU5ZTM2YzYwMmMmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNWSZGST.m3u8": {
-   "kbps": 142.9,
-   "kind": "TS",
-   "ms": 0.41
-  },
-  "http://120.76.248.139/live/bfgd/4200000083.m3u8": {
-   "kbps": 55.8,
-   "kind": "TS",
-   "ms": 1.05
-  },
-  "http://120.76.248.139/live/bfgd/4200000102.m3u8": {
-   "kbps": 63.0,
-   "kind": "TS",
-   "ms": 0.93
-  },
-  "http://120.76.248.139/live/bfgd/4200000095.m3u8": {
-   "kbps": 72.3,
-   "kind": "TS",
-   "ms": 0.81
-  },
-  "http://120.76.248.139/live/bfgd/4200000483.m3u8": {
-   "kbps": 78.1,
-   "kind": "TS",
-   "ms": 0.75
-  },
-  "http://120.76.248.139/live/bfgd/4200000119.m3u8": {
-   "kbps": 53.8,
-   "kind": "TS",
-   "ms": 1.09
-  },
-  "http://120.76.248.139/live/bfgd/4200000116.m3u8": {
-   "kbps": 56.9,
-   "kind": "TS",
-   "ms": 1.03
-  },
-  "http://120.76.248.139/live/bfgd/4200000473.m3u8": {
    "kbps": 77.1,
    "kind": "TS",
    "ms": 0.76
   },
-  "http://120.76.248.139/live/bfgd/4200000108.m3u8": {
-   "kbps": 79.2,
+  "http://120.76.248.139/live/bfgd/4200000135.m3u8": {
+   "kbps": 54.3,
    "kind": "TS",
-   "ms": 0.74
+   "ms": 1.08
+  },
+  "http://120.76.248.139/live/bfgd/4200000092.m3u8": {
+   "kbps": 48.8,
+   "kind": "TS",
+   "ms": 1.2
+  },
+  "http://ali-m-l.cztv.com/channels/lantian/channel01/1080p.m3u8": {
+   "kbps": 96.1,
+   "kind": "TS",
+   "ms": 0.61
+  },
+  "http://120.76.248.139/live/bfgd/4200000083.m3u8": {
+   "kbps": 68.9,
+   "kind": "TS",
+   "ms": 0.85
+  },
+  "http://120.76.248.139/live/bfgd/4200000102.m3u8": {
+   "kbps": 59.8,
+   "kind": "TS",
+   "ms": 0.98
+  },
+  "http://120.76.248.139/live/bfgd/4200000095.m3u8": {
+   "kbps": 74.2,
+   "kind": "TS",
+   "ms": 0.79
+  },
+  "http://120.76.248.139/live/bfgd/4200000483.m3u8": {
+   "kbps": 69.8,
+   "kind": "TS",
+   "ms": 0.84
+  },
+  "http://120.76.248.139/live/bfgd/4200000119.m3u8": {
+   "kbps": 80.3,
+   "kind": "TS",
+   "ms": 0.73
+  },
+  "http://120.76.248.139/live/bfgd/4200000116.m3u8": {
+   "kbps": 75.1,
+   "kind": "TS",
+   "ms": 0.78
+  },
+  "http://120.76.248.139/live/bfgd/4200000473.m3u8": {
+   "kbps": 60.4,
+   "kind": "TS",
+   "ms": 0.97
+  },
+  "http://120.76.248.139/live/bfgd/4200000108.m3u8": {
+   "kbps": 53.3,
+   "kind": "TS",
+   "ms": 1.1
   },
   "https://event.pull.hebtv.com/live/live101.m3u8": {
-   "kbps": 82.5,
+   "kbps": 76.1,
    "kind": "TS",
-   "ms": 0.71
-  },
-  "http://112.27.5.218:9901/tsfile/live/faacts/0138_1.m3u8?key=txiptv&playlive=1&authid=0": {
-   "kbps": 91.6,
-   "kind": "TS",
-   "ms": 0.64
-  },
-  "http://play1-qk.nmtv.cn/live/1769652018126032.m3u8": {
-   "kbps": 73.2,
-   "kind": "TS",
-   "ms": 0.8
+   "ms": 0.77
   },
   "http://120.76.248.139/live/bfgd/4200000111.m3u8": {
-   "kbps": 58.0,
+   "kbps": 59.8,
    "kind": "TS",
-   "ms": 1.01
+   "ms": 0.98
   },
   "http://120.76.248.139/live/bfgd/4200000099.m3u8": {
    "kbps": 75.1,
@@ -1169,59 +1789,54 @@
    "ms": 0.78
   },
   "http://120.76.248.139/live/bfgd/4200000100.m3u8": {
-   "kbps": 66.6,
+   "kbps": 74.2,
    "kind": "TS",
-   "ms": 0.88
-  },
-  "http://112.27.5.218:9901/tsfile/live/0111_1.m3u8?key=txiptv&playlive=1&authid=0": {
-   "kbps": 90.1,
-   "kind": "TS",
-   "ms": 0.65
+   "ms": 0.79
   },
   "http://120.76.248.139/live/bfgd/4200000121.m3u8": {
-   "kbps": 80.3,
+   "kbps": 79.2,
    "kind": "TS",
-   "ms": 0.73
+   "ms": 0.74
   },
   "http://120.76.248.139/live/bfgd/4200000482.m3u8": {
-   "kbps": 55.3,
+   "kbps": 78.1,
    "kind": "TS",
-   "ms": 1.06
+   "ms": 0.75
   },
   "https://tencentplay.gztv.com/live/zonghes.m3u8?txSecret=439b0fd2cf766b363c93a59cbcbe1370&txTime=18d00acf488": {
-   "kbps": 34.3,
+   "kbps": 54.3,
    "kind": "TS",
-   "ms": 1.71
+   "ms": 1.08
   },
   "http://tencentplay.gztv.com/live/zonghes.m3u8?txSecret=c8dbe86d6f86eb1a21999ab479fd5667&txTime=18d3c4690e8": {
-   "kbps": 97.7,
+   "kbps": 88.8,
    "kind": "TS",
-   "ms": 0.6
+   "ms": 0.66
   },
   "https://tencentplay.gztv.com/live/zonghes.m3u8?txSecret=f0147ae6453a80f5989f382368b72aad&txTime=18d00acf487": {
-   "kbps": 64.4,
+   "kbps": 72.3,
    "kind": "TS",
-   "ms": 0.91
+   "ms": 0.81
   },
   "https://tencentplaybusiness.gztv.com/live/zonghes.m3u8": {
-   "kbps": 66.6,
+   "kbps": 55.8,
    "kind": "TS",
-   "ms": 0.88
+   "ms": 1.05
   },
   "https://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8?": {
-   "kbps": 82.5,
+   "kbps": 81.4,
    "kind": "TS",
-   "ms": 0.71
+   "ms": 0.72
   },
   "http://ali-xwl.cztv.com/live/channel021080Plxw.m3u8": {
-   "kbps": 22.0,
+   "kbps": 36.9,
    "kind": "TS",
-   "ms": 2.66
+   "ms": 1.59
   },
   "http://ali-xwl.cztv.com/live/channel02720Plxw.m3u8": {
-   "kbps": 33.3,
+   "kbps": 41.9,
    "kind": "TS",
-   "ms": 1.76
+   "ms": 1.4
   },
   "https://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8": {
    "kbps": 81.4,
@@ -1229,14 +1844,14 @@
    "ms": 0.72
   },
   "http://ali-m-l.cztv.com/channels/lantian/channel03/1080p.m3u8": {
-   "kbps": 106.5,
+   "kbps": 83.7,
    "kind": "TS",
-   "ms": 0.55
+   "ms": 0.7
   },
   "http://ali-m-l.cztv.com/channels/lantian/channel04/720p.m3u8": {
-   "kbps": 108.5,
+   "kbps": 94.5,
    "kind": "TS",
-   "ms": 0.54
+   "ms": 0.62
   },
   "https://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8?": {
    "kbps": 81.4,
@@ -1244,79 +1859,64 @@
    "ms": 0.72
   },
   "http://ali-m-l.cztv.com/channels/lantian/channel06/720p.m3u8": {
-   "kbps": 108.5,
+   "kbps": 106.5,
    "kind": "TS",
-   "ms": 0.54
+   "ms": 0.55
   },
   "https://ali-m-l.cztv.com/channels/lantian/channel007/1080p.m3u8?": {
-   "kbps": 82.5,
+   "kbps": 80.3,
    "kind": "TS",
-   "ms": 0.71
+   "ms": 0.73
   },
   "http://ali-m-l.cztv.com/channels/lantian/channel007/720p.m3u8": {
    "kbps": 106.5,
    "kind": "TS",
    "ms": 0.55
   },
-  "https://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8": {
-   "kbps": 71.5,
-   "kind": "TS",
-   "ms": 0.82
-  },
-  "https://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8?": {
-   "kbps": 68.1,
-   "kind": "TS",
-   "ms": 0.86
-  },
   "http://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8": {
-   "kbps": 84.9,
-   "kind": "TS",
-   "ms": 0.69
-  },
-  "https://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8": {
-   "kbps": 68.9,
-   "kind": "TS",
-   "ms": 0.85
-  },
-  "http://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8": {
-   "kbps": 91.6,
-   "kind": "TS",
-   "ms": 0.64
-  },
-  "https://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8?": {
-   "kbps": 66.6,
-   "kind": "TS",
-   "ms": 0.88
-  },
-  "http://ali-m-l.cztv.com/channels/lantian/channel03/720p.m3u8": {
-   "kbps": 75.1,
-   "kind": "TS",
-   "ms": 0.78
-  },
-  "http://ali-m-l.cztv.com/channels/lantian/channel012/1080p.m3u8": {
-   "kbps": 90.1,
-   "kind": "TS",
-   "ms": 0.65
-  },
-  "https://ali-m-l.cztv.com/channels/lantian/channel12/720p.m3u8": {
-   "kbps": 82.5,
-   "kind": "TS",
-   "ms": 0.71
-  },
-  "http://ali-m-l.cztv.com/channels/lantian/channel010/1080p.m3u8": {
    "kbps": 108.5,
    "kind": "TS",
    "ms": 0.54
   },
+  "http://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8": {
+   "kbps": 94.5,
+   "kind": "TS",
+   "ms": 0.62
+  },
+  "https://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8?": {
+   "kbps": 82.5,
+   "kind": "TS",
+   "ms": 0.71
+  },
+  "http://ali-m-l.cztv.com/channels/lantian/channel03/720p.m3u8": {
+   "kbps": 93.0,
+   "kind": "TS",
+   "ms": 0.63
+  },
+  "http://ali-m-l.cztv.com/channels/lantian/channel010/1080p.m3u8": {
+   "kbps": 106.5,
+   "kind": "TS",
+   "ms": 0.55
+  },
   "https://ali-m-l.cztv.com/channels/lantian/channel010/1080p.m3u8": {
+   "kbps": 82.5,
+   "kind": "TS",
+   "ms": 0.71
+  },
+  "http://live.zohi.tv/video/s10001-fztv-1/index.m3u8": {
+   "kbps": 110.6,
+   "kind": "TS",
+   "ms": 0.53
+  },
+  "http://hzcm-live.media.hugd.com/3f5fa7d64c7c46a38c6bd8ad35e836cc/65128273761b4731ae53729ea6dcf932.m3u8?auth_key=2277598215-9d21c15111244bea8d298c361d31a72e-0-d031198f58d44b0e91ba2e3f3b188865": {
    "kbps": 83.7,
    "kind": "TS",
    "ms": 0.7
   },
-  "http://live.zohi.tv/video/s10001-fztv-1/index.m3u8": {
-   "kbps": 106.5,
+  "http://hzcm-live.media.hugd.com/613c47f0ab0d4eaa98b21378d0db6ded/0051d31c9dd543a7825eea4e49675b2a.m3u8?auth_key=2277598059-0a5ebfa1c0dc4671b42a60810fc37039-0-fa625b7d1feab612062453c12e3c8887": {
+   "kbps": 76.1,
    "kind": "TS",
-   "ms": 0.55
+   "ms": 0.77
   },
   "http://ali-m-l.cztv.com/channels/lantian/channel003/720p.m3u8": {
    "kbps": 108.5,
@@ -1324,494 +1924,559 @@
    "ms": 0.54
   },
   "http://ali-m-l.cztv.com/channels/lantian/channel12/720p.m3u8": {
-   "kbps": 106.5,
+   "kbps": 108.5,
    "kind": "TS",
-   "ms": 0.55
+   "ms": 0.54
   },
   "http://ali-m-l.cztv.com/channels/lantian/channel12/720p.m3u8?zzhed": {
    "kbps": 108.5,
    "kind": "TS",
    "ms": 0.54
   },
-  "http://ali-m-l.cztv.com/channels/lantian/channel04/1080p.m3u8": {
+  "http://ali-m-l.cztv.com/channels/lantian/channel07/1080p.m3u8": {
    "kbps": 108.5,
    "kind": "TS",
    "ms": 0.54
-  },
-  "http://ali-m-l.cztv.com/channels/lantian/channel07/1080p.m3u8": {
-   "kbps": 84.9,
-   "kind": "TS",
-   "ms": 0.69
   },
   "http://ali-m-l.cztv.com/channels/lantian/channel007/1080p.m3u8": {
-   "kbps": 108.5,
+   "kbps": 106.5,
    "kind": "TS",
-   "ms": 0.54
+   "ms": 0.55
   },
   "http://ali-m-l.cztv.com/channels/lantian/channel006/720p.m3u8": {
-   "kbps": 91.6,
+   "kbps": 106.5,
    "kind": "TS",
-   "ms": 0.64
+   "ms": 0.55
   },
   "http://l.cztvcloud.com/channels/lantian/SXsuichang1/720p.m3u8": {
-   "kbps": 74.2,
+   "kbps": 21.8,
    "kind": "TS",
-   "ms": 0.79
+   "ms": 2.69
+  },
+  "https://l.cztvcloud.com/channels/lantian/SXzhuji3/720p.m3u8": {
+   "kbps": 37.8,
+   "kind": "TS",
+   "ms": 1.55
   },
   "http://l.cztvcloud.com/channels/lantian/SXzhuji3/720p.m3u8?zzhed": {
-   "kbps": 91.6,
+   "kbps": 33.1,
    "kind": "TS",
-   "ms": 0.64
+   "ms": 1.77
   },
   "http://l.cztvcloud.com/channels/lantian/SXlongyou2/720p.m3u8?zzhed": {
-   "kbps": 87.5,
+   "kbps": 36.4,
    "kind": "TS",
-   "ms": 0.67
+   "ms": 1.61
   },
   "http://l.cztvcloud.com/channels/lantian/SXlongyou1/720p.m3u8?zzhed": {
-   "kbps": 90.1,
+   "kbps": 61.0,
    "kind": "TS",
-   "ms": 0.65
+   "ms": 0.96
+  },
+  "http://l.cztvcloud.com/channels/lantian/SXlongquan1/720p.m3u8": {
+   "kbps": 39.1,
+   "kind": "TS",
+   "ms": 1.5
   },
   "http://l.cztvcloud.com/channels/lantian/SXqingtian1/720p.m3u8": {
-   "kbps": 74.2,
+   "kbps": 38.3,
    "kind": "TS",
-   "ms": 0.79
+   "ms": 1.53
   },
-  "http://play-sh13.quklive.com/live/1702360350551252.m3u8?auth_key=2037107484-800189c57a5a44d3b823b60cf84f6756-0-a6f6828a62d5c167cff5e68735fa0d39": {
-   "kbps": 81.4,
-   "kind": "TS",
-   "ms": 0.72
-  },
-  "http://l.cztvcloud.com/channels/lantian/SXxiaoshan2/720p.m3u8": {
-   "kbps": 9.3,
-   "kind": "TS",
-   "ms": 6.33
-  },
-  "http://l.cztvcloud.com/channels/lantian/SXxiaoshan2/720p.m3u8?zzhed": {
-   "kbps": 48.0,
-   "kind": "TS",
-   "ms": 1.22
-  },
-  "http://l.cztvcloud.com/channels/lantian/SXxiaoshan2/720p.m3u8?zzhed?": {
-   "kbps": 82.5,
-   "kind": "TS",
-   "ms": 0.71
-  },
-  "http://l.cztvcloud.com/channels/lantian/SXjinyun1/720p.m3u8": {
-   "kbps": 71.5,
-   "kind": "TS",
-   "ms": 0.82
-  },
-  "https://p2hs.vzan.com/slowlive/317913155078575177/live.m3u8": {
-   "kbps": 48.4,
-   "kind": "TS",
-   "ms": 1.21
-  },
-  "http://l.cztvcloud.com/channels/lantian/SXdongtou1/720p.m3u8": {
-   "kbps": 65.8,
-   "kind": "TS",
-   "ms": 0.89
-  },
-  "http://l.cztvcloud.com/channels/lantian/SXdongtou1/720p.m3u8?zzhed?": {
-   "kbps": 82.5,
-   "kind": "TS",
-   "ms": 0.71
-  },
-  "http://l.cztvcloud.com/channels/lantian/SXwuyi1/720p.m3u8": {
-   "kbps": 56.3,
-   "kind": "TS",
-   "ms": 1.04
-  },
-  "http://l.cztvcloud.com/channels/lantian/SXwuyi1/720p.m3u8?zzhed": {
-   "kbps": 70.6,
-   "kind": "TS",
-   "ms": 0.83
-  },
-  "http://l.cztvcloud.com/channels/lantian/SXsongyang1/720p.m3u8?zzhed?": {
-   "kbps": 15.4,
-   "kind": "TS",
-   "ms": 3.8
-  },
-  "http://l.cztvcloud.com/channels/lantian/SXsongyang1/720p.m3u8": {
+  "http://l.cztvcloud.com/channels/lantian/SXsuichang1/720p.m3u8?zzhed": {
    "kbps": 86.2,
    "kind": "TS",
    "ms": 0.68
   },
-  "http://l.cztvcloud.com/channels/lantian/SXputuo1/720p.m3u8": {
-   "kbps": 81.4,
+  "http://play-sh13.quklive.com/live/1702360350551252.m3u8?auth_key=2037107484-800189c57a5a44d3b823b60cf84f6756-0-a6f6828a62d5c167cff5e68735fa0d39": {
+   "kbps": 80.3,
    "kind": "TS",
-   "ms": 0.72
+   "ms": 0.73
+  },
+  "http://l.cztvcloud.com/channels/lantian/SXxiangshan1/720p.m3u8": {
+   "kbps": 38.0,
+   "kind": "TS",
+   "ms": 1.54
+  },
+  "http://l.cztvcloud.com/channels/lantian/SXxiaoshan2/720p.m3u8": {
+   "kbps": 86.2,
+   "kind": "TS",
+   "ms": 0.68
+  },
+  "https://l.cztvcloud.com/channels/lantian/SXxiaoshan2/720p.m3u8": {
+   "kbps": 36.4,
+   "kind": "TS",
+   "ms": 1.61
+  },
+  "http://l.cztvcloud.com/channels/lantian/SXxiaoshan2/720p.m3u8?zzhed": {
+   "kbps": 35.9,
+   "kind": "TS",
+   "ms": 1.63
+  },
+  "http://l.cztvcloud.com/channels/lantian/SXxiaoshan2/720p.m3u8?zzhed?": {
+   "kbps": 68.9,
+   "kind": "TS",
+   "ms": 0.85
+  },
+  "http://l.cztvcloud.com/channels/lantian/SXjinyun1/720p.m3u8?zzhed?": {
+   "kbps": 36.2,
+   "kind": "TS",
+   "ms": 1.62
+  },
+  "http://l.cztvcloud.com/channels/lantian/SXjinyun1/720p.m3u8?zzhed": {
+   "kbps": 36.6,
+   "kind": "TS",
+   "ms": 1.6
+  },
+  "http://l.cztvcloud.com/channels/lantian/SXjinyun1/720p.m3u8": {
+   "kbps": 44.7,
+   "kind": "TS",
+   "ms": 1.31
+  },
+  "http://hzcm-live.media.hugd.com/1e6b554b9ab74513958c0e1ffe664d22/9acaa7634309494cb29a85eb12136607.m3u8?auth_key=2272900830-9a2389b8bf4e49d580d4ad807423d326-0-ea78a5c7a678c436263582d368f5009e": {
+   "kbps": 67.3,
+   "kind": "TS",
+   "ms": 0.87
+  },
+  "https://p2hs.vzan.com/slowlive/317913155078575177/live.m3u8": {
+   "kbps": 50.5,
+   "kind": "TS",
+   "ms": 1.16
+  },
+  "http://l.cztvcloud.com/channels/lantian/SXdongtou1/720p.m3u8": {
+   "kbps": 46.9,
+   "kind": "TS",
+   "ms": 1.25
+  },
+  "http://l.cztvcloud.com/channels/lantian/SXdongtou1/720p.m3u8?zzhed?": {
+   "kbps": 42.2,
+   "kind": "TS",
+   "ms": 1.39
+  },
+  "http://l.cztvcloud.com/channels/lantian/SXwuyi1/720p.m3u8": {
+   "kbps": 43.7,
+   "kind": "TS",
+   "ms": 1.34
+  },
+  "http://l.cztvcloud.com/channels/lantian/SXwuyi1/720p.m3u8?zzhed": {
+   "kbps": 44.1,
+   "kind": "TS",
+   "ms": 1.33
+  },
+  "http://l.cztvcloud.com/channels/lantian/SXsongyang1/720p.m3u8?zzhed?": {
+   "kbps": 44.4,
+   "kind": "TS",
+   "ms": 1.32
+  },
+  "http://l.cztvcloud.com/channels/lantian/SXsongyang1/720p.m3u8": {
+   "kbps": 75.1,
+   "kind": "TS",
+   "ms": 0.78
+  },
+  "http://l.cztvcloud.com/channels/lantian/SXputuo1/720p.m3u8": {
+   "kbps": 39.1,
+   "kind": "TS",
+   "ms": 1.5
   },
   "http://l.cztvcloud.com/channels/lantian/SXxinchang2/720p.m3u8": {
-   "kbps": 84.9,
+   "kbps": 43.4,
    "kind": "TS",
-   "ms": 0.69
+   "ms": 1.35
   },
   "https://l.cztvcloud.com/channels/lantian/SXxinchang1/720p.m3u8": {
-   "kbps": 48.8,
+   "kbps": 45.8,
    "kind": "TS",
-   "ms": 1.2
+   "ms": 1.28
+  },
+  "http://l.cztvcloud.com/channels/lantian/SXwencheng1/720p.m3u8?zzhed": {
+   "kbps": 79.2,
+   "kind": "TS",
+   "ms": 0.74
   },
   "http://l.cztvcloud.com/channels/lantian/SXwencheng1/720p.m3u8?zzhed?": {
+   "kbps": 45.1,
+   "kind": "TS",
+   "ms": 1.3
+  },
+  "http://l.cztvcloud.com/channels/lantian/SXwencheng1/720p.m3u8": {
    "kbps": 81.4,
    "kind": "TS",
    "ms": 0.72
   },
-  "http://l.cztvcloud.com/channels/lantian/SXwencheng1/720p.m3u8": {
-   "kbps": 66.6,
-   "kind": "TS",
-   "ms": 0.88
-  },
   "http://l.cztvcloud.com/channels/lantian/SXkaihua1/720p.m3u8?zzhed": {
+   "kbps": 46.1,
+   "kind": "TS",
+   "ms": 1.27
+  },
+  "http://l.cztvcloud.com/channels/lantian/SXkaihua2/720p.m3u8zzhed": {
    "kbps": 88.8,
    "kind": "TS",
    "ms": 0.66
   },
   "http://l.cztvcloud.com/channels/lantian/SXkaihua2/720p.m3u8?zzhed": {
-   "kbps": 3.8,
+   "kbps": 84.9,
    "kind": "TS",
-   "ms": 15.51
+   "ms": 0.69
   },
   "http://l.cztvcloud.com/channels/lantian/SXkaihua2/720p.m3u8": {
-   "kbps": 55.3,
+   "kbps": 23.1,
    "kind": "TS",
-   "ms": 1.06
+   "ms": 2.54
   },
   "http://l.cztvcloud.com/channels/lantian/SXkaihua2/720p.m3u8?zzhed#http://l.cztvcloud.com/channels/lantian/SXkaihua2/720p.m3u8zzhed#http://l.cztvcloud.com/channels/lantian/SXkaihua2/720p.m3u8": {
-   "kbps": 87.5,
+   "kbps": 71.5,
    "kind": "TS",
-   "ms": 0.67
+   "ms": 0.82
+  },
+  "http://l.cztvcloud.com/channels/lantian/SXqingyuan1/720p.m3u8?zzhed?": {
+   "kbps": 84.9,
+   "kind": "TS",
+   "ms": 0.69
   },
   "http://l.cztvcloud.com/channels/lantian/SXqingyuan1/720p.m3u8": {
-   "kbps": 68.9,
+   "kbps": 34.7,
    "kind": "TS",
-   "ms": 0.85
+   "ms": 1.69
   },
   "http://l.cztvcloud.com/channels/lantian/SXqingyuan1/720p.m3u8?fbl=": {
-   "kbps": 91.6,
+   "kbps": 88.8,
    "kind": "TS",
-   "ms": 0.64
+   "ms": 0.66
+  },
+  "http://l.cztvcloud.com/channels/lantian/SXpinghu2/720p.m3u8": {
+   "kbps": 41.6,
+   "kind": "TS",
+   "ms": 1.41
   },
   "http://l.cztvcloud.com/channels/lantian/SXpinghu2/720p.m3u8?zzhed": {
+   "kbps": 38.8,
+   "kind": "TS",
+   "ms": 1.51
+  },
+  "http://l.cztvcloud.com/channels/lantian/SXshengsi1/720p.m3u8": {
+   "kbps": 45.1,
+   "kind": "TS",
+   "ms": 1.3
+  },
+  "http://l.cztvcloud.com/channels/lantian/SXshengzhou1/720p.m3u8?zzhed": {
+   "kbps": 46.1,
+   "kind": "TS",
+   "ms": 1.27
+  },
+  "http://l.cztvcloud.com/channels/lantian/SXshengzhou1/720p.m3u8?zzhed#http://l.cztvcloud.com/channels/lantian/SXshengzhou1/720p.m3u8": {
+   "kbps": 23.0,
+   "kind": "TS",
+   "ms": 2.55
+  },
+  "http://l.cztvcloud.com/channels/lantian/SXlanxi1/720p.m3u8": {
+   "kbps": 41.0,
+   "kind": "TS",
+   "ms": 1.43
+  },
+  "http://l.cztvcloud.com/channels/lantian/SXyuhang1/720p.m3u8?zzhed": {
+   "kbps": 39.9,
+   "kind": "TS",
+   "ms": 1.47
+  },
+  "http://l.cztvcloud.com/channels/lantian/SXyuhang1/720p.m3u8": {
    "kbps": 80.3,
    "kind": "TS",
    "ms": 0.73
   },
-  "http://l.cztvcloud.com/channels/lantian/SXshengsi1/720p.m3u8": {
-   "kbps": 46.5,
+  "http://l.cztvcloud.com/channels/lantian/SXyuhang3/720p.m3u8?zzhed": {
+   "kbps": 87.5,
    "kind": "TS",
-   "ms": 1.26
+   "ms": 0.67
   },
-  "http://l.cztvcloud.com/channels/lantian/SXshengzhou1/720p.m3u8?zzhed": {
+  "http://l.cztvcloud.com/channels/lantian/SXyuhang3/720p.m3u8": {
    "kbps": 91.6,
    "kind": "TS",
    "ms": 0.64
   },
-  "http://l.cztvcloud.com/channels/lantian/SXshengzhou1/720p.m3u8?zzhed#http://l.cztvcloud.com/channels/lantian/SXshengzhou1/720p.m3u8": {
-   "kbps": 3.0,
+  "https://l.cztvcloud.com/channels/lantian/SXyuyao1/720p.m3u8": {
+   "kbps": 68.9,
    "kind": "TS",
-   "ms": 19.26
-  },
-  "http://l.cztvcloud.com/channels/lantian/SXlanxi1/720p.m3u8": {
-   "kbps": 69.8,
-   "kind": "TS",
-   "ms": 0.84
-  },
-  "http://l.cztvcloud.com/channels/lantian/SXyuhang1/720p.m3u8?zzhed": {
-   "kbps": 65.8,
-   "kind": "TS",
-   "ms": 0.89
-  },
-  "http://l.cztvcloud.com/channels/lantian/SXyuhang1/720p.m3u8": {
-   "kbps": 18.2,
-   "kind": "TS",
-   "ms": 3.22
-  },
-  "http://l.cztvcloud.com/channels/lantian/SXyuhang3/720p.m3u8?zzhed": {
-   "kbps": 24.4,
-   "kind": "TS",
-   "ms": 2.4
-  },
-  "http://l.cztvcloud.com/channels/lantian/SXyuhang3/720p.m3u8": {
-   "kbps": 66.6,
-   "kind": "TS",
-   "ms": 0.88
+   "ms": 0.85
   },
   "http://l.cztvcloud.com/channels/lantian/SXyuyao1/720p.m3u8?zzhed": {
+   "kbps": 93.0,
+   "kind": "TS",
+   "ms": 0.63
+  },
+  "http://l.cztvcloud.com/channels/lantian/SXyuyao1/720p.m3u8?": {
    "kbps": 73.2,
    "kind": "TS",
    "ms": 0.8
   },
   "http://l.cztvcloud.com/channels/lantian/SXyuyao1/720p.m3u8": {
-   "kbps": 16.7,
+   "kbps": 83.7,
    "kind": "TS",
-   "ms": 3.5
+   "ms": 0.7
   },
   "http://l.cztvcloud.com/channels/lantian/SXyuyao1/720p.m3u8?cWlkPSZzPTg3OWMwYmMyZDMzYTFhZGY3NDQxMjgyYTg1MmUzNTY0JmVzPTE3MDY2Nzc4NzMmdXVpZD0yMjdiY2MzNGNiNGY0MThlYjRiY2IxYzcwNmZjODNkMS02NzQ3NDY2NyZ2PTImYXM9MCZjZG5leF9pZD10eF9waG9uZV9saXZl": {
-   "kbps": 17.0,
+   "kbps": 68.1,
    "kind": "TS",
-   "ms": 3.44
+   "ms": 0.86
+  },
+  "https://l.cztvcloud.com/channels/lantian/SXyuyao3/720p.m3u8": {
+   "kbps": 63.7,
+   "kind": "TS",
+   "ms": 0.92
   },
   "http://l.cztvcloud.com/channels/lantian/SXyuyao3/720p.m3u8?zzhed": {
-   "kbps": 18.1,
-   "kind": "TS",
-   "ms": 3.24
-  },
-  "http://l.cztvcloud.com/channels/lantian/SXyunhe1/720p.m3u8?zzhed": {
-   "kbps": 49.7,
-   "kind": "TS",
-   "ms": 1.18
-  },
-  "http://l.cztvcloud.com/channels/lantian/SXyunhe1/720p.m3u8": {
-   "kbps": 18.3,
-   "kind": "TS",
-   "ms": 3.2
-  },
-  "http://ali-m-l.cztv.com/channels/lantian/channel009/1080p.m3u8": {
-   "kbps": 64.4,
-   "kind": "TS",
-   "ms": 0.91
-  },
-  "http://l.cztvcloud.com/channels/lantian/SXshangyu1/720p.m3u8?zzhed": {
-   "kbps": 46.9,
-   "kind": "TS",
-   "ms": 1.25
-  },
-  "https://satellitepull.cnr.cn/live/wxbjxwgb/playlist.m3u8": {
-   "kbps": 651.0,
-   "kind": "TS",
-   "ms": 0.09
-  },
-  "http://120.76.248.139/live/bfgd/4200000113.m3u8": {
-   "kbps": 66.6,
-   "kind": "TS",
-   "ms": 0.88
-  },
-  "https://satellitepull.cnr.cn/live/wx32dycjgb/playlist.m3u8": {
-   "kbps": 532.7,
-   "kind": "TS",
-   "ms": 0.11
-  },
-  "https://m3u8channel.yunxya.com/nmip-media/channellive/channel100028/playlist.m3u8": {
-   "kbps": 68.9,
-   "kind": "TS",
-   "ms": 0.85
-  },
-  "http://satellitepull.cnr.cn/live/wx32dycjgb/playlist.m3u8": {
-   "kbps": 976.6,
-   "kind": "TS",
-   "ms": 0.06
-  },
-  "https://satellitepull.cnr.cn/live/wxcqxwgb/playlist.m3u8": {
-   "kbps": 585.9,
-   "kind": "TS",
-   "ms": 0.1
-  },
-  "http://nklive.nbs.cn/hls/75b3c462-b831-4de7-a34b-5d3221db2069/index.m3u8": {
-   "kbps": 82.5,
-   "kind": "TS",
-   "ms": 0.71
-  },
-  "http://nklive.nbs.cn/hls/d511bc9d-a694-4453-b3a2-4fc842cc97a1/index.m3u8": {
-   "kbps": 344.7,
-   "kind": "TS",
-   "ms": 0.17
-  },
-  "http://live.xysrmt.cn/xwzh/sd/live.m3u8?zjiangsd\"": {
-   "kbps": 35.9,
-   "kind": "TS",
-   "ms": 0.67
-  },
-  "http://live.xysrmt.cn/shpd/sd/live.m3u8?zjiangsd": {
-   "kbps": 41.5,
-   "kind": "TS",
-   "ms": 0.58
-  },
-  "http://traffic.jbh.tjbh.com/live/bhtv10/playlist.m3u8": {
-   "kbps": 55.8,
-   "kind": "TS",
-   "ms": 1.05
-  },
-  "https://live-auth.51kandianshi.com/szgd/csztv1.m3u8": {
-   "kbps": 234.4,
-   "kind": "TS",
-   "ms": 0.25
-  },
-  "https://live-auth.51kandianshi.com/szgd/csztv3.m3u8": {
-   "kbps": 65.8,
-   "kind": "TS",
-   "ms": 0.89
-  },
-  "https://live-auth.51kandianshi.com/szgd/csztv5.m3u8": {
-   "kbps": 61.7,
-   "kind": "TS",
-   "ms": 0.95
-  },
-  "https://live-auth.51kandianshi.com/szgd/csztv2.m3u8": {
-   "kbps": 585.9,
-   "kind": "TS",
-   "ms": 0.1
-  },
-  "http://120.76.248.139/live/bfgd/4200000282.m3u8": {
-   "kbps": 61.7,
-   "kind": "TS",
-   "ms": 0.95
-  },
-  "http://120.76.248.139/live/bfgd/4200000070.m3u8": {
-   "kbps": 70.6,
-   "kind": "TS",
-   "ms": 0.83
-  },
-  "http://120.76.248.139/live/bfgd/4200000075.m3u8": {
-   "kbps": 53.8,
-   "kind": "TS",
-   "ms": 1.09
-  },
-  "http://120.76.248.139/live/bfgd/4200000073.m3u8": {
-   "kbps": 56.9,
-   "kind": "TS",
-   "ms": 1.03
-  },
-  "http://120.76.248.139/live/bfgd/4200000480.m3u8": {
-   "kbps": 61.7,
-   "kind": "TS",
-   "ms": 0.95
-  },
-  "https://ls.qingting.fm/live/1099/64k.m3u8": {
-   "kbps": 80.3,
-   "kind": "TS",
-   "ms": 0.73
-  },
-  "http://php.jdshipin.com:8880/iptv.php": {
-   "kbps": 532.7,
-   "kind": "TS",
-   "ms": 0.11
-  },
-  "https://ls.qingting.fm/live/20198/64k.m3u8": {
-   "kbps": 77.1,
-   "kind": "TS",
-   "ms": 0.76
-  },
-  "http://stream.jmtv.com.cn/xwzh/sd/live.m3u8": {
-   "kbps": 70.6,
-   "kind": "TS",
-   "ms": 0.83
-  },
-  "https://stream.jmtv.com.cn/xwzh/playlist.m3u8?_upt=3e28e7271664278691": {
-   "kbps": 30.2,
-   "kind": "TS",
-   "ms": 1.94
-  },
-  "http://615bbf179ba53515dccad7b1da5d1ad9.livehwc3.cn/hls.nntv.cn/nnlive/WLSH_24.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=2598844eaee8a4265e706fc14b3fc11d": {
-   "kbps": 94.5,
-   "kind": "TS",
-   "ms": 0.62
-  },
-  "https://ls.qingting.fm/live/5043/64k.m3u8": {
-   "kbps": 81.4,
-   "kind": "TS",
-   "ms": 0.72
-  },
-  "http://hls.nntv.cn/nnlive/YSYL_244.m3u8": {
-   "kbps": 142.9,
-   "kind": "TS",
-   "ms": 0.41
-  },
-  "http://175.155.106.72:89/live1/live1.m3u8?zsicd": {
-   "kbps": 71.5,
-   "kind": "TS",
-   "ms": 0.82
-  },
-  "http://tvfile.jyrmt.cn/nmip-media/channellive/channel104452/playlist.m3u8": {
-   "kbps": 25.6,
-   "kind": "TS",
-   "ms": 2.29
-  },
-  "https://m3u8channel-bx.yunxya.com/nmip-media/channellive/channel104666/playlist.m3u8": {
-   "kbps": 67.3,
-   "kind": "TS",
-   "ms": 0.87
-  },
-  "http://live1.gatv.com.cn:85/live/GGPD_ggpdzm.m3u8?zsicd": {
-   "kbps": 65.8,
-   "kind": "TS",
-   "ms": 0.89
-  },
-  "http://live1.gatv.com.cn:85/live/GGPD.m3u8": {
-   "kbps": 43.1,
-   "kind": "TS",
-   "ms": 1.36
-  },
-  "http://live1.gatv.com.cn:85/live/GGPD_ggpdzm.m3u8": {
-   "kbps": 31.8,
-   "kind": "TS",
-   "ms": 1.84
-  },
-  "http://live.spccmc.com:90/live/spxwzh.m3u8?%E5%85%B3%E6%B3%A8%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7[%E6%99%B4%E5%9B%AD]": {
-   "kbps": 65.8,
-   "kind": "TS",
-   "ms": 0.89
-  },
-  "http://live.spccmc.com:90/live/spxwzh.m3u8?zsicd": {
-   "kbps": 64.4,
-   "kind": "TS",
-   "ms": 0.91
-  },
-  "http://live.spccmc.com:90/live/spxwzh.m3u8": {
-   "kbps": 30.2,
-   "kind": "TS",
-   "ms": 1.94
-  },
-  "http://live.iwcmt.cn:90/live/zhxw.m3u8?zsicd": {
-   "kbps": 76.1,
-   "kind": "TS",
-   "ms": 0.77
-  },
-  "http://live.iwcmt.cn:90/live/zhxw.m3u8": {
    "kbps": 73.2,
    "kind": "TS",
    "ms": 0.8
   },
-  "http://file.ysxtv.cn/cms/videos/nmip-media/channellive/channel4/playlist.m3u8?zsicd#rtmp://tv.mcrm.org.cn:1935/channellive/tv01": {
-   "kbps": 42.2,
+  "http://l.cztvcloud.com/channels/lantian/SXyunhe1/720p.m3u8?zzhed": {
+   "kbps": 74.2,
    "kind": "TS",
-   "ms": 1.39
+   "ms": 0.79
   },
-  "http://file.ysxtv.cn/cms/videos/nmip-media/channellive/channel4/playlist.m3u8?zsicd": {
-   "kbps": 32.9,
+  "http://l.cztvcloud.com/channels/lantian/SXyunhe1/720p.m3u8": {
+   "kbps": 86.2,
    "kind": "TS",
-   "ms": 1.78
+   "ms": 0.68
   },
-  "https://m3u8channel.ganzitv.com/nmip-media/channellive/channel1/playlist.m3u8": {
-   "kbps": 60.4,
+  "http://ali-m-l.cztv.com/channels/lantian/channel009/1080p.m3u8": {
+   "kbps": 108.5,
    "kind": "TS",
-   "ms": 0.97
+   "ms": 0.54
   },
-  "https://m3u8channel-yj.yunxya.com/nmip-media/channellive/channel101140/playlist.m3u8": {
-   "kbps": 6.6,
+  "http://l.cztvcloud.com/channels/lantian/SXshangyu1/720p.m3u8?zzhed": {
+   "kbps": 87.5,
    "kind": "TS",
-   "ms": 8.91
+   "ms": 0.67
   },
-  "http://file.ysxtv.cn/cms/videos/nmip-media/channellive/channel4/playlist.m3u8?zsicd#http://file.ysxtv.cn/cms/videos/nmip-media/channellive/channel4/playlist.m3u8": {
-   "kbps": 21.1,
+  "https://satellitepull.cnr.cn/live/wxbjxwgb/playlist.m3u8": {
+   "kbps": 344.7,
    "kind": "TS",
-   "ms": 2.78
+   "ms": 0.17
   },
-  "http://139.203.180.9:90/live/zhxw.m3u8": {
+  "http://120.76.248.139/live/bfgd/4200000113.m3u8": {
+   "kbps": 53.8,
+   "kind": "TS",
+   "ms": 1.09
+  },
+  "https://satellitepull.cnr.cn/live/wx32dycjgb/playlist.m3u8": {
+   "kbps": 390.6,
+   "kind": "TS",
+   "ms": 0.15
+  },
+  "https://m3u8channel.yunxya.com/nmip-media/channellive/channel100028/playlist.m3u8": {
+   "kbps": 57.4,
+   "kind": "TS",
+   "ms": 1.02
+  },
+  "http://satellitepull.cnr.cn/live/wx32dycjgb/playlist.m3u8": {
+   "kbps": 585.9,
+   "kind": "TS",
+   "ms": 0.1
+  },
+  "https://satellitepull.cnr.cn/live/wxcqxwgb/playlist.m3u8": {
+   "kbps": 189.0,
+   "kind": "TS",
+   "ms": 0.31
+  },
+  "http://nklive.nbs.cn/hls/75b3c462-b831-4de7-a34b-5d3221db2069/index.m3u8": {
+   "kbps": 99.3,
+   "kind": "TS",
+   "ms": 0.59
+  },
+  "http://nklive.nbs.cn/hls/d511bc9d-a694-4453-b3a2-4fc842cc97a1/index.m3u8": {
+   "kbps": 133.2,
+   "kind": "TS",
+   "ms": 0.44
+  },
+  "http://live.xysrmt.cn/xwzh/sd/live.m3u8?zjiangsd\"": {
+   "kbps": 38.2,
+   "kind": "TS",
+   "ms": 0.63
+  },
+  "http://live.xysrmt.cn/shpd/sd/live.m3u8?zjiangsd": {
+   "kbps": 38.8,
+   "kind": "TS",
+   "ms": 0.62
+  },
+  "http://traffic.jbh.tjbh.com/live/bhtv10/playlist.m3u8": {
+   "kbps": 58.6,
+   "kind": "TS",
+   "ms": 1.0
+  },
+  "https://live-auth.51kandianshi.com/szgd/csztv1.m3u8": {
+   "kbps": 68.1,
+   "kind": "TS",
+   "ms": 0.86
+  },
+  "https://live-auth.51kandianshi.com/szgd/csztv3.m3u8": {
+   "kbps": 80.3,
+   "kind": "TS",
+   "ms": 0.73
+  },
+  "https://live-auth.51kandianshi.com/szgd/csztv5.m3u8": {
    "kbps": 64.4,
    "kind": "TS",
    "ms": 0.91
   },
-  "http://live.jinchuanrmt.com:90/live/zhxw.m3u8?zsicd": {
-   "kbps": 60.4,
+  "https://live-auth.51kandianshi.com/szgd/csztv2.m3u8": {
+   "kbps": 418.5,
    "kind": "TS",
-   "ms": 0.97
+   "ms": 0.14
+  },
+  "http://120.76.248.139/live/bfgd/4200000282.m3u8": {
+   "kbps": 77.1,
+   "kind": "TS",
+   "ms": 0.76
+  },
+  "http://120.76.248.139/live/bfgd/4200000070.m3u8": {
+   "kbps": 69.8,
+   "kind": "TS",
+   "ms": 0.84
+  },
+  "http://120.76.248.139/live/bfgd/4200000075.m3u8": {
+   "kbps": 80.3,
+   "kind": "TS",
+   "ms": 0.73
+  },
+  "http://120.76.248.139/live/bfgd/4200000073.m3u8": {
+   "kbps": 78.1,
+   "kind": "TS",
+   "ms": 0.75
+  },
+  "http://120.76.248.139/live/bfgd/4200000480.m3u8": {
+   "kbps": 70.6,
+   "kind": "TS",
+   "ms": 0.83
+  },
+  "https://ls.qingting.fm/live/1099/64k.m3u8": {
+   "kbps": 93.0,
+   "kind": "TS",
+   "ms": 0.63
+  },
+  "http://php.jdshipin.com:8880/iptv.php": {
+   "kbps": 488.3,
+   "kind": "TS",
+   "ms": 0.12
+  },
+  "https://ls.qingting.fm/live/20198/64k.m3u8": {
+   "kbps": 73.2,
+   "kind": "TS",
+   "ms": 0.8
+  },
+  "http://stream.jmtv.com.cn/xwzh/sd/live.m3u8": {
+   "kbps": 67.3,
+   "kind": "TS",
+   "ms": 0.87
+  },
+  "https://stream.jmtv.com.cn/xwzh/playlist.m3u8?_upt=3e28e7271664278691": {
+   "kbps": 43.4,
+   "kind": "TS",
+   "ms": 1.35
+  },
+  "http://615bbf179ba53515dccad7b1da5d1ad9.livehwc3.cn/hls.nntv.cn/nnlive/WLSH_24.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=2598844eaee8a4265e706fc14b3fc11d": {
+   "kbps": 93.0,
+   "kind": "TS",
+   "ms": 0.63
+  },
+  "https://ls.qingting.fm/live/5043/64k.m3u8": {
+   "kbps": 45.4,
+   "kind": "TS",
+   "ms": 1.29
+  },
+  "http://175.155.106.72:89/live1/live1.m3u8?zsicd": {
+   "kbps": 67.3,
+   "kind": "TS",
+   "ms": 0.87
+  },
+  "http://tvfile.jyrmt.cn/nmip-media/channellive/channel104452/playlist.m3u8": {
+   "kbps": 29.2,
+   "kind": "TS",
+   "ms": 2.01
+  },
+  "https://m3u8channel-bx.yunxya.com/nmip-media/channellive/channel104666/playlist.m3u8": {
+   "kbps": 90.1,
+   "kind": "TS",
+   "ms": 0.65
+  },
+  "http://live1.gatv.com.cn:85/live/GGPD_ggpdzm.m3u8?zsicd": {
+   "kbps": 49.2,
+   "kind": "TS",
+   "ms": 1.19
+  },
+  "http://live1.gatv.com.cn:85/live/GGPD.m3u8": {
+   "kbps": 61.7,
+   "kind": "TS",
+   "ms": 0.95
+  },
+  "http://live1.gatv.com.cn:85/live/GGPD_ggpdzm.m3u8": {
+   "kbps": 64.4,
+   "kind": "TS",
+   "ms": 0.91
+  },
+  "http://live.spccmc.com:90/live/spxwzh.m3u8?%E5%85%B3%E6%B3%A8%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7[%E6%99%B4%E5%9B%AD]": {
+   "kbps": 62.3,
+   "kind": "TS",
+   "ms": 0.94
+  },
+  "http://live.spccmc.com:90/live/spxwzh.m3u8?zsicd": {
+   "kbps": 61.0,
+   "kind": "TS",
+   "ms": 0.96
+  },
+  "http://live.spccmc.com:90/live/spxwzh.m3u8": {
+   "kbps": 61.0,
+   "kind": "TS",
+   "ms": 0.96
+  },
+  "http://live.iwcmt.cn:90/live/zhxw.m3u8?zsicd": {
+   "kbps": 75.1,
+   "kind": "TS",
+   "ms": 0.78
+  },
+  "http://live.iwcmt.cn:90/live/zhxw.m3u8": {
+   "kbps": 75.1,
+   "kind": "TS",
+   "ms": 0.78
+  },
+  "http://file.ysxtv.cn/cms/videos/nmip-media/channellive/channel4/playlist.m3u8?zsicd#rtmp://tv.mcrm.org.cn:1935/channellive/tv01": {
+   "kbps": 59.8,
+   "kind": "TS",
+   "ms": 0.98
+  },
+  "http://file.ysxtv.cn/cms/videos/nmip-media/channellive/channel4/playlist.m3u8?zsicd": {
+   "kbps": 63.0,
+   "kind": "TS",
+   "ms": 0.93
+  },
+  "https://m3u8channel.ganzitv.com/nmip-media/channellive/channel1/playlist.m3u8": {
+   "kbps": 87.5,
+   "kind": "TS",
+   "ms": 0.67
+  },
+  "https://m3u8channel-yj.yunxya.com/nmip-media/channellive/channel101140/playlist.m3u8": {
+   "kbps": 64.4,
+   "kind": "TS",
+   "ms": 0.91
+  },
+  "http://file.ysxtv.cn/cms/videos/nmip-media/channellive/channel4/playlist.m3u8?zsicd#http://file.ysxtv.cn/cms/videos/nmip-media/channellive/channel4/playlist.m3u8": {
+   "kbps": 59.8,
+   "kind": "TS",
+   "ms": 0.98
+  },
+  "http://139.203.180.9:90/live/zhxw.m3u8": {
+   "kbps": 62.3,
+   "kind": "TS",
+   "ms": 0.94
+  },
+  "http://live.jinchuanrmt.com:90/live/zhxw.m3u8?zsicd": {
+   "kbps": 56.3,
+   "kind": "TS",
+   "ms": 1.04
   },
   "https://play.yunxya.com/channellive/xinwen.m3u8": {
-   "kbps": 52.3,
+   "kbps": 55.3,
    "kind": "TS",
-   "ms": 1.12
+   "ms": 1.06
   },
   "http://qcfile.qcrmt.com/nmip-media/channellive/channel100933/playlist.m3u8": {
    "kbps": 64.4,
@@ -1824,69 +2489,64 @@
    "ms": 0.77
   },
   "http://live.zzyxxw.com:85/live/xwzh.m3u8?fujian": {
-   "kbps": 41.9,
+   "kbps": 69.8,
    "kind": "TS",
-   "ms": 1.4
+   "ms": 0.84
   },
   "https://live.zzyxxw.com:2443/live/xwzh.m3u8": {
-   "kbps": 22.4,
+   "kbps": 22.6,
    "kind": "TS",
-   "ms": 2.61
+   "ms": 2.59
   },
   "http://live.zzyxxw.com:85/live/xwzh.m3u8": {
-   "kbps": 68.1,
-   "kind": "TS",
-   "ms": 0.86
-  },
-  "http://live.zzyxxw.com:85/live/xwzh.m3u8?fujian,": {
-   "kbps": 71.5,
-   "kind": "TS",
-   "ms": 0.82
-  },
-  "http://live.zohi.tv/video/s10001-fztv-4/index.m3u8": {
-   "kbps": 114.9,
-   "kind": "TS",
-   "ms": 0.51
-  },
-  "http://live.zohi.tv:80/video/s10001-fztv-3/index.m3u8": {
-   "kbps": 117.2,
-   "kind": "TS",
-   "ms": 0.5
-  },
-  "http://satellitepull.cnr.cn/live/wx32fjxwgb/playlist.m3u8": {
-   "kbps": 1464.8,
-   "kind": "TS",
-   "ms": 0.04
-  },
-  "http://satellitepull.cnr.cn/live/wx32fjdnjjgb/playlist.m3u8": {
-   "kbps": 1171.9,
-   "kind": "TS",
-   "ms": 0.05
-  },
-  "https://dxtx.hntv.tv/live/lypd.m3u8?txSecret=10c771842a0be59e8b575d765173ec96&txTime=7B923E0A&wsSecret=41543190cdf375f1c73207222bb96542&wsTime=1769313549": {
-   "kbps": 55.3,
-   "kind": "TS",
-   "ms": 1.06
-  },
-  "https://jwcdnqx.hebyun.com.cn/live/hdkj/1500k/tzwj_video.m3u8": {
-   "kbps": 75.1,
-   "kind": "TS",
-   "ms": 0.78
-  },
-  "https://jwcdnqx.hebyun.com.cn/live/hdgg/1500k/tzwj_video.m3u8": {
-   "kbps": 75.1,
-   "kind": "TS",
-   "ms": 0.78
-  },
-  "https://jwcdnqx.hebyun.com.cn/live/hdxwzh/1500k/tzwj_video.m3u8": {
    "kbps": 66.6,
    "kind": "TS",
    "ms": 0.88
   },
-  "http://jwplay.hebyun.com.cn/live/xtsrmtzs/1500k/tzwj_video.m3u8": {
-   "kbps": 90.1,
+  "http://live.zzyxxw.com:85/live/xwzh.m3u8?fujian,": {
+   "kbps": 63.7,
    "kind": "TS",
-   "ms": 0.65
+   "ms": 0.92
+  },
+  "http://live.zohi.tv:80/video/s10001-fztv-3/index.m3u8": {
+   "kbps": 114.9,
+   "kind": "TS",
+   "ms": 0.51
+  },
+  "http://satellitepull.cnr.cn/live/wx32fjxwgb/playlist.m3u8": {
+   "kbps": 651.0,
+   "kind": "TS",
+   "ms": 0.09
+  },
+  "http://satellitepull.cnr.cn/live/wx32fjdnjjgb/playlist.m3u8": {
+   "kbps": 585.9,
+   "kind": "TS",
+   "ms": 0.1
+  },
+  "https://dxtx.hntv.tv/live/lypd.m3u8?txSecret=10c771842a0be59e8b575d765173ec96&txTime=7B923E0A&wsSecret=41543190cdf375f1c73207222bb96542&wsTime=1769313549": {
+   "kbps": 53.8,
+   "kind": "TS",
+   "ms": 1.09
+  },
+  "https://jwcdnqx.hebyun.com.cn/live/hdkj/1500k/tzwj_video.m3u8": {
+   "kbps": 66.6,
+   "kind": "TS",
+   "ms": 0.88
+  },
+  "https://jwcdnqx.hebyun.com.cn/live/hdgg/1500k/tzwj_video.m3u8": {
+   "kbps": 69.8,
+   "kind": "TS",
+   "ms": 0.84
+  },
+  "https://jwcdnqx.hebyun.com.cn/live/hdxwzh/1500k/tzwj_video.m3u8": {
+   "kbps": 70.6,
+   "kind": "TS",
+   "ms": 0.83
+  },
+  "http://jwplay.hebyun.com.cn/live/xtsrmtzs/1500k/tzwj_video.m3u8": {
+   "kbps": 87.5,
+   "kind": "TS",
+   "ms": 0.67
   },
   "https://jwplay.hebyun.com.cn:443/live/xtsrmtzs/1500k/tzwj_video.m3u8": {
    "kbps": 66.6,
@@ -1894,89 +2554,94 @@
    "ms": 0.88
   },
   "http://jwplay.hebyun.com.cn/live/LPTV001/1500k/tzwj_video.m3u8": {
-   "kbps": 90.1,
+   "kbps": 84.9,
    "kind": "TS",
-   "ms": 0.65
+   "ms": 0.69
   },
   "https://ls.qingting.fm/live/1650/64k.m3u8": {
-   "kbps": 76.1,
+   "kbps": 46.5,
    "kind": "TS",
-   "ms": 0.77
+   "ms": 1.26
   },
   "https://jwcdnqx.hebyun.com.cn/live/clzhpd/1500k/tzwj_video.m3u8?zhebd": {
-   "kbps": 63.0,
-   "kind": "TS",
-   "ms": 0.93
-  },
-  "https://jwcdnqx.hebyun.com.cn/live/clzhpd/1500k/tzwj_video.m3u8": {
-   "kbps": 56.9,
-   "kind": "TS",
-   "ms": 1.03
-  },
-  "https://jwcdnqx.hebyun.com.cn/live/rqtv1/1500k/tzwj_video.m3u8": {
-   "kbps": 72.3,
-   "kind": "TS",
-   "ms": 0.81
-  },
-  "https://jwcdnqx.hebyun.com.cn/live/xlzh/1500k/tzwj_video.m3u8": {
-   "kbps": 75.1,
-   "kind": "TS",
-   "ms": 0.78
-  },
-  "https://jwcdnqx.hebyun.com.cn/live/pqzh/1500k/tzwj_video.m3u8": {
-   "kbps": 61.0,
-   "kind": "TS",
-   "ms": 0.96
-  },
-  "https://jwcdnqx.hebyun.com.cn/live/qinghe1/1500k/tzwj_video.m3u8": {
-   "kbps": 75.1,
-   "kind": "TS",
-   "ms": 0.78
-  },
-  "https://satellitepull.cnr.cn/live/wxgshhzs/playlist.m3u8": {
-   "kbps": 732.4,
-   "kind": "TS",
-   "ms": 0.08
-  },
-  "https://satellitepull.cnr.cn/live/wxgsdstb/playlist.m3u8": {
-   "kbps": 532.7,
-   "kind": "TS",
-   "ms": 0.11
-  },
-  "http://play.kankanlive.com/live/1720583434627241.m3u8": {
-   "kbps": 33.1,
-   "kind": "TS",
-   "ms": 1.77
-  },
-  "https://play.kankanlive.com/live/1656487214793905.m3u8": {
    "kbps": 67.3,
    "kind": "TS",
    "ms": 0.87
   },
-  "https://play.kankanlive.com/live/1720583434627241.m3u8": {
-   "kbps": 59.2,
+  "https://jwcdnqx.hebyun.com.cn/live/clzhpd/1500k/tzwj_video.m3u8": {
+   "kbps": 61.7,
    "kind": "TS",
-   "ms": 0.99
+   "ms": 0.95
   },
-  "https://play.kankanlive.com/live/1652755738635915.m3u8": {
-   "kbps": 58.6,
+  "https://jwcdnqx.hebyun.com.cn/live/rqtv1/1500k/tzwj_video.m3u8": {
+   "kbps": 70.6,
    "kind": "TS",
-   "ms": 1.0
+   "ms": 0.83
   },
-  "http://play.kankanlive.com/live/1720408280309109.m3u8": {
+  "https://jwcdnqx.hebyun.com.cn/live/xlzh/1500k/tzwj_video.m3u8": {
    "kbps": 72.3,
    "kind": "TS",
    "ms": 0.81
   },
-  "http://play.kankanlive.com/live/1720408089419110.m3u8": {
-   "kbps": 82.5,
+  "https://jwcdnqx.hebyun.com.cn/live/pqzh/1500k/tzwj_video.m3u8": {
+   "kbps": 69.8,
    "kind": "TS",
-   "ms": 0.71
+   "ms": 0.84
+  },
+  "https://jwcdnqx.hebyun.com.cn/live/qinghe1/1500k/tzwj_video.m3u8": {
+   "kbps": 58.0,
+   "kind": "TS",
+   "ms": 1.01
+  },
+  "https://satellitepull.cnr.cn/live/wxgshhzs/playlist.m3u8": {
+   "kbps": 266.3,
+   "kind": "TS",
+   "ms": 0.22
+  },
+  "https://satellitepull.cnr.cn/live/wxgsdstb/playlist.m3u8": {
+   "kbps": 293.0,
+   "kind": "TS",
+   "ms": 0.2
+  },
+  "http://play.kankanlive.com/live/1720583434627241.m3u8": {
+   "kbps": 79.2,
+   "kind": "TS",
+   "ms": 0.74
+  },
+  "https://play.kankanlive.com/live/1656487214793905.m3u8": {
+   "kbps": 48.0,
+   "kind": "TS",
+   "ms": 1.22
+  },
+  "https://play.kankanlive.com/live/1720583434627241.m3u8": {
+   "kbps": 43.1,
+   "kind": "TS",
+   "ms": 1.36
+  },
+  "https://play.kankanlive.com/live/1652755738635915.m3u8": {
+   "kbps": 47.6,
+   "kind": "TS",
+   "ms": 1.23
+  },
+  "http://play.kankanlive.com/live/1720408280309109.m3u8": {
+   "kbps": 81.4,
+   "kind": "TS",
+   "ms": 0.72
+  },
+  "http://play.kankanlive.com/live/1720408089419110.m3u8": {
+   "kbps": 78.1,
+   "kind": "TS",
+   "ms": 0.75
   },
   "https://play.kankanlive.com/live/1683944827526991.m3u8": {
-   "kbps": 53.8,
+   "kbps": 48.8,
    "kind": "TS",
-   "ms": 1.09
+   "ms": 1.2
+  },
+  "http://110.153.180.106:55555/out_2/index.m3u8": {
+   "kbps": 56.3,
+   "kind": "TS",
+   "ms": 1.04
   },
   "http://110.153.180.106:55555/out_3/index.m3u8?zxinjd": {
    "kbps": 55.3,
@@ -1984,49 +2649,44 @@
    "ms": 1.06
   },
   "http://110.153.180.106:55555/out_4/index.m3u8": {
-   "kbps": 51.9,
+   "kbps": 53.8,
    "kind": "TS",
-   "ms": 1.13
-  },
-  "https://test1.live.sdetv.com.cn/live/dianshizhibo/playlist.m3u8": {
-   "kbps": 65.8,
-   "kind": "TS",
-   "ms": 0.89
+   "ms": 1.09
   },
   "https://p2.vzan.com/slowlive/596867413819827251/live.m3u8?zbid=1725814272&tpid=1516989100&type=0": {
-   "kbps": 37.1,
+   "kbps": 40.1,
    "kind": "TS",
-   "ms": 1.58
+   "ms": 1.46
   },
   "https://qmmqvzoz.live.sxmty.com/live/hls/f24f8a390c084386a564074c9260100c/be3fdf07606145739ab2c4b80fe0136a.m3u8?zshanxd": {
-   "kbps": 60.4,
+   "kbps": 30.4,
    "kind": "TS",
-   "ms": 0.97
+   "ms": 1.93
   },
   "http://www.guzhenm.com:7001/hls/hd-live.m3u8?%E5%85%B3%E6%B3%A8%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7[%E6%99%B4%E5%9B%AD]": {
+   "kbps": 61.0,
+   "kind": "TS",
+   "ms": 0.96
+  },
+  "http://www.guzhenm.com:7001/hls/hd-live.m3u8": {
    "kbps": 59.2,
    "kind": "TS",
    "ms": 0.99
   },
-  "http://www.guzhenm.com:7001/hls/hd-live.m3u8": {
-   "kbps": 65.1,
-   "kind": "TS",
-   "ms": 0.9
-  },
   "https://ls.qingting.fm/live/21303/64k.m3u8": {
-   "kbps": 87.5,
+   "kbps": 74.2,
    "kind": "TS",
-   "ms": 0.67
+   "ms": 0.79
   },
   "http://zbbf2.ahbztv.com/live/416.m3u8?zanhd": {
-   "kbps": 976.6,
+   "kbps": 1464.8,
    "kind": "TS",
-   "ms": 0.06
+   "ms": 0.04
   },
   "https://live.gdtv.ah.cn/live/newsTV.m3u8": {
-   "kbps": 48.8,
+   "kbps": 23.1,
    "kind": "TS",
-   "ms": 1.2
+   "ms": 2.54
   },
   "http://zbbf2.ahbztv.com/live/418.m3u8": {
    "kbps": 1464.8,
@@ -2038,20 +2698,10 @@
    "kind": "TS",
    "ms": 0.04
   },
-  "https://srs.iyb983.cn/video/CYS/index.m3u8": {
-   "kbps": 102.8,
-   "kind": "TS",
-   "ms": 0.57
-  },
-  "https://srs.iyb983.cn:443/video/CYS/index.m3u8": {
-   "kbps": 61.7,
-   "kind": "TS",
-   "ms": 0.95
-  },
   "https://satellitepull.cnr.cn/live/wxjlxcgb/playlist.m3u8": {
-   "kbps": 158.4,
+   "kbps": 293.0,
    "kind": "TS",
-   "ms": 0.37
+   "ms": 0.2
   },
   "http://hplayer1.juyun.tv:80/camera/11344136.m3u8": {
    "kbps": 96.1,
@@ -2059,584 +2709,524 @@
    "ms": 0.61
   },
   "https://zb-live.ynurl.com/yimen/3b75a2f9-7941-46b7-992d-a9796fbca5fe.m3u8": {
-   "kbps": 74.2,
+   "kbps": 53.8,
    "kind": "TS",
-   "ms": 0.79
+   "ms": 1.09
   },
   "https://zb-live.ynurl.com/tonghai/3bfe3a9e-48e6-4c1e-8770-1df66447cc6c.m3u8": {
-   "kbps": 69.8,
+   "kbps": 55.8,
    "kind": "TS",
-   "ms": 0.84
+   "ms": 1.05
   },
   "https://hwapi.yntv.net/62hdvf/rjwt14.m3u8": {
-   "kbps": 65.1,
-   "kind": "TS",
-   "ms": 0.9
-  },
-  "https://hwapi.yntv.net/62hdvf/q9vs1b.m3u8": {
-   "kbps": 71.5,
-   "kind": "TS",
-   "ms": 0.82
-  },
-  "https://liveout.xntv.tv/a65jur/96iln2.m3u8": {
-   "kbps": 43.4,
-   "kind": "TS",
-   "ms": 1.35
-  },
-  "https://liveout.xntv.tv/a65jur/96iln2.m3u8?zqinghd": {
-   "kbps": 33.3,
-   "kind": "TS",
-   "ms": 1.76
-  },
-  "https://ls.qingting.fm/live/4972/64k.m3u8": {
-   "kbps": 84.9,
-   "kind": "TS",
-   "ms": 0.69
-  },
-  "https://ls.qingting.fm/live/4974/64k.m3u8": {
-   "kbps": 67.3,
-   "kind": "TS",
-   "ms": 0.87
-  },
-  "http://live.qthnews.org.cn:1935/live/live1/800k/tzwj_video.m3u8": {
-   "kbps": 52.3,
-   "kind": "TS",
-   "ms": 1.12
-  },
-  "http://r.jdshipin.com/qClQf": {
-   "kbps": 732.4,
-   "kind": "TS",
-   "ms": 0.08
-  },
-  "http://r.jdshipin.com/qrfbg": {
-   "kbps": 1953.1,
-   "kind": "TS",
-   "ms": 0.03
-  },
-  "http://r.jdshipin.com/n90gt": {
-   "kbps": 1953.1,
-   "kind": "TS",
-   "ms": 0.03
-  },
-  "http://r.jdshipin.com/GeWKr": {
-   "kbps": 732.4,
-   "kind": "TS",
-   "ms": 0.08
-  },
-  "http://r.jdshipin.com/0Rp07": {
-   "kbps": 2929.7,
-   "kind": "TS",
-   "ms": 0.02
-  },
-  "http://php.jdshipin.com/TVOD/iptv.php?id=fhzx": {
-   "kbps": 2929.7,
-   "kind": "TS",
-   "ms": 0.02
-  },
-  "http://r.jdshipin.com/yDoTN": {
-   "kbps": 732.4,
-   "kind": "TS",
-   "ms": 0.08
-  },
-  "http://r.jdshipin.com/NfC0f": {
-   "kbps": 732.4,
-   "kind": "TS",
-   "ms": 0.08
-  },
-  "http://php.jdshipin.com/TVOD/iptv.php?id=fhhk": {
-   "kbps": 2929.7,
-   "kind": "TS",
-   "ms": 0.02
-  },
-  "https://epg.pw/stream/5f16dc7fc8aaaed3205516c63e4a8c24bca9dbba1181684244729cf574505b0e.m3u8": {
-   "kbps": 88.8,
-   "kind": "TS",
-   "ms": 0.66
-  },
-  "http://38.64.72.148:80/hls/modn/list/4005/playlist.m3u8": {
-   "kbps": 1171.9,
-   "kind": "TS",
-   "ms": 0.05
-  },
-  "http://38.64.72.148/hls/modn/list/4005/chunklist0.m3u8": {
-   "kbps": 976.6,
-   "kind": "TS",
-   "ms": 0.06
-  },
-  "https://epg.pw/stream/8855a9936e37e608a0ec8a014cce1673dee9c5d68d560da376cc92e5edef2b25.m3u8": {
-   "kbps": 87.5,
-   "kind": "TS",
-   "ms": 0.67
-  },
-  "https://epg.pw/stream/ab6df63b64d0cc44a1f4f029ed847a26fa54a7aebd455578fb05a63f02c22f4b.m3u8": {
-   "kbps": 88.8,
-   "kind": "TS",
-   "ms": 0.66
-  },
-  "https://epg.pw/stream/4f18dfe0593db5c686eb64ae8edaf2a9202d4d46bdc9bbde2cee27708e12ea01.m3u8": {
-   "kbps": 87.5,
-   "kind": "TS",
-   "ms": 0.67
-  },
-  "http://r.jdshipin.com/vSJvl": {
-   "kbps": 976.6,
-   "kind": "fMP4",
-   "ms": 0.06
-  },
-  "http://r.jdshipin.com/TcKr2": {
-   "kbps": 1464.8,
-   "kind": "fMP4",
-   "ms": 0.04
-  },
-  "http://php.jdshipin.com/TVOD/iptv.php?id=viutv": {
-   "kbps": 1953.1,
-   "kind": "fMP4",
-   "ms": 0.03
-  },
-  "http://php.jdshipin.com/TVOD/iptv.php?id=viutv2": {
-   "kbps": 1953.1,
-   "kind": "fMP4",
-   "ms": 0.03
-  },
-  "https://h5cdn3.kylintv.tv/live/tvbnews_iphone.m3u8": {
-   "kbps": 217.0,
-   "kind": "TS",
-   "ms": 0.27
-  },
-  "http://r.jdshipin.com/CkuBd": {
-   "kbps": 2929.7,
-   "kind": "TS",
-   "ms": 0.02
-  },
-  "http://php.jdshipin.com/TVOD/iptv.php?id=wxxw": {
-   "kbps": 2929.7,
-   "kind": "TS",
-   "ms": 0.02
-  },
-  "http://38.64.72.148:80/hls/modn/list/2013/chunklist1.m3u8": {
-   "kbps": 1171.9,
-   "kind": "TS",
-   "ms": 0.05
-  },
-  "https://goodiptv.club/douyu/6091425": {
-   "kbps": 1953.1,
-   "kind": "TS",
-   "ms": 0.03
-  },
-  "http://mag.trexlive.me:80/play/live.php?extension=ts&mac=00:1A:79:7E:2F:ED&stream=1919463": {
-   "kbps": 174.4,
-   "kind": "raw-TS",
-   "ms": 1.12
-  },
-  "http://r.jdshipin.com/sXuuD": {
-   "kbps": 1953.1,
-   "kind": "fMP4",
-   "ms": 0.03
-  },
-  "http://r.jdshipin.com/Voac4": {
-   "kbps": 2929.7,
-   "kind": "TS",
-   "ms": 0.02
-  },
-  "http://php.jdshipin.com/TVOD/iptv.php?id=xinghe": {
-   "kbps": 1953.1,
-   "kind": "fMP4",
-   "ms": 0.03
-  },
-  "https://epg.pw/stream/866a097a0907c9832440f8df38272dd555abf05200dfbafcc137e214c9b30ca7.m3u8": {
-   "kbps": 88.8,
-   "kind": "TS",
-   "ms": 0.66
-  },
-  "https://epg.pw/stream/f7556eccd4ae06b0c2991fdc7a4f8388496559f728cc82459a8e50346040e226.m3u8": {
-   "kbps": 87.5,
-   "kind": "TS",
-   "ms": 0.67
-  },
-  "https://epg.pw/stream/94ed0232b61ce8d89883160a4cdfbfc8f3225cae70ef8e17d93eec249a3c8ad6.m3u8": {
-   "kbps": 88.8,
-   "kind": "TS",
-   "ms": 0.66
-  },
-  "https://epg.pw/stream/c7df950876e6a1ceb8be74ee86f9f702cebbbae29f1d15124ef8f86fd43161cf.m3u8": {
-   "kbps": 87.5,
-   "kind": "TS",
-   "ms": 0.67
-  },
-  "https://satellitepull.cnr.cn/live/wx32nmgyygb/playlist.m3u8": {
-   "kbps": 488.3,
-   "kind": "TS",
-   "ms": 0.12
-  },
-  "http://live.ottiptv.cc/huya/26355860": {
-   "kbps": 2929.7,
-   "kind": "TS",
-   "ms": 0.02
-  },
-  "http://play.kankanlive.com/live/1711956137852982.m3u8": {
-   "kbps": 64.4,
-   "kind": "TS",
-   "ms": 0.91
-  },
-  "https://restream.pdtvhd.com/memfs/c1cd2ed0-3b2b-4c25-af98-a7fb0b1eb130.m3u8": {
-   "kbps": 58.0,
-   "kind": "TS",
-   "ms": 1.01
-  },
-  "https://video.bread-tv.com:8091/hls-live24/online/index.m3u8": {
-   "kbps": 62.3,
-   "kind": "TS",
-   "ms": 0.94
-  },
-  "https://liveplay-srs.voc.com.cn/hls/tv/134_180adf.m3u8": {
-   "kbps": 10.1,
-   "kind": "TS",
-   "ms": 5.82
-  },
-  "https://xykt-fix.github.io/Y77.m3u8": {
-   "kbps": 49.7,
-   "kind": "TS",
-   "ms": 1.18
-  },
-  "https://cdn4.skygo.mn/live/disk1/CCTV-10/HLSv3-FTA/CCTV-10.m3u8": {
-   "kbps": 52.8,
-   "kind": "TS",
-   "ms": 1.11
-  },
-  "https://amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv/master.m3u8": {
-   "kbps": 1953.1,
-   "kind": "TS",
-   "ms": 0.03
-  },
-  "https://english-livebkali.cgtn.com/live/encgtn.m3u8": {
-   "kbps": 71.5,
-   "kind": "TS",
-   "ms": 0.82
-  },
-  "https://hlspackager.akamaized.net/live/DB/CGTN_ENGLISH/HLS/CGTN_ENGLISH.m3u8": {
-   "kbps": 43.7,
-   "kind": "TS",
-   "ms": 1.34
-  },
-  "https://dai.google.com/linear/hls/event/r4sa-f6GSN2XIvzKv5jVng/master.m3u8": {
-   "kbps": 344.7,
-   "kind": "TS",
-   "ms": 0.17
-  },
-  "https://amg00405-rakutentv-cgtndocumentary-rakuten-0ql8j.amagi.tv/master.m3u8": {
-   "kbps": 101.0,
-   "kind": "TS",
-   "ms": 0.58
-  },
-  "https://hlspackager.akamaized.net/live/DB/CGTN_DOCUMENTARY/HLS/CGTN_DOCUMENTARY.m3u8": {
-   "kbps": 59.2,
-   "kind": "TS",
-   "ms": 0.99
-  },
-  "https://fastlive.cctvplus.com/out/v1/2b3d8a0c805d437f9dc85b764c2ac599/index.m3u8": {
-   "kbps": 2929.7,
-   "kind": "TS",
-   "ms": 0.02
-  },
-  "http://113.64.146.48:1688/hls/4/index.m3u8": {
-   "kbps": 29.0,
-   "kind": "TS",
-   "ms": 2.02
-  },
-  "http://play1-qk.nmtv.cn/live/1735546697341033.m3u8": {
-   "kbps": 71.5,
-   "kind": "TS",
-   "ms": 0.82
-  },
-  "https://fastlive.cctvplus.com/out/v1/ca6f9297b7314a63959435028af287fc/index.m3u8": {
-   "kbps": 308.4,
-   "kind": "TS",
-   "ms": 0.19
-  },
-  "http://hwapi.yntv.net/ew265l/848y54.m3u8": {
-   "kbps": 77.1,
-   "kind": "TS",
-   "ms": 0.76
-  },
-  "https://fastlive.cctvplus.com/out/v1/8442c3bfd4c64a3984389328f6087879/index.m3u8": {
-   "kbps": 5859.4,
-   "kind": "TS",
-   "ms": 0.01
-  },
-  "https://stream.sun0769.com/dgrtv1/mp4tv1_800/index.m3u8": {
-   "kbps": 51.4,
-   "kind": "TS",
-   "ms": 1.14
-  },
-  "http://111.59.24.227:8181/tsfile/live/1001_1.m3u8?authid=0&key=txiptv&playlive=1": {
-   "kbps": 72.3,
-   "kind": "TS",
-   "ms": 0.81
-  },
-  "https://stream.hrbtv.net/xwzh/playlist.m3u8?_upt=ef41dd531755913594": {
-   "kbps": 43.4,
-   "kind": "TS",
-   "ms": 1.35
-  },
-  "https://stream.hrbtv.net/yspd/playlist.m3u8": {
-   "kbps": 40.4,
-   "kind": "TS",
-   "ms": 1.45
-  },
-  "https://restream.pdtvhd.com/memfs/1db8c005-9365-4b32-94a4-3736987b5646.m3u8": {
-   "kbps": 37.8,
-   "kind": "TS",
-   "ms": 1.55
-  },
-  "https://p8.vzan.com/slowlive/415983998730568937/live.m3u8": {
-   "kbps": 47.6,
-   "kind": "TS",
-   "ms": 1.23
-  },
-  "https://jiangning-tv-playing-t.cm.jstv.com/jiangning-tv/jnxwzh.m3u8": {
-   "kbps": 29.3,
-   "kind": "TS",
-   "ms": 2.0
-  },
-  "https://stream.jmtv.com.cn/xwzh/sd/live.m3u8?_upt=341f4b8e1791883036": {
-   "kbps": 46.1,
-   "kind": "TS",
-   "ms": 1.27
-  },
-  "http://110.185.237.164:8888/hls/30/index.m3u8": {
-   "kbps": 67.3,
-   "kind": "TS",
-   "ms": 0.87
-  },
-  "https://liveplus.lzr.com.cn/xwzh/HD/live.m3u8": {
-   "kbps": 41.9,
-   "kind": "TS",
-   "ms": 1.4
-  },
-  "https://liveplus.lzr.com.cn/wlpd/HD/live.m3u8": {
-   "kbps": 39.6,
-   "kind": "TS",
-   "ms": 1.48
-  },
-  "http://play1-qk.nmtv.cn/live/1769652109096027.m3u8": {
-   "kbps": 97.7,
-   "kind": "TS",
-   "ms": 0.6
-  },
-  "http://stream2.jlntv.cn/sptv/sd/live.m3u8?_upt=f27750421743154598": {
-   "kbps": 91.6,
-   "kind": "TS",
-   "ms": 0.64
-  },
-  "http://139.211.217.79:9004/hls/75/index.m3u8": {
-   "kbps": 29.2,
-   "kind": "TS",
-   "ms": 2.01
-  },
-  "https://voa-ingest.akamaized.net/hls/live/2033878/tvmc08/playlist.m3u8": {
-   "kbps": 80.3,
-   "kind": "TS",
-   "ms": 0.73
-  },
-  "http://110.153.180.106:55555/out_3/index.m3u8": {
-   "kbps": 52.8,
-   "kind": "TS",
-   "ms": 1.11
-  },
-  "https://hls.quklive.com/live/play-sh-21.quklive.com/1777511615189085.m3u8?auth_key=2092871636-a39d8614688744d0b170b856b086ba80-0-33900446b83fa0b5befeb6bedbcd51a0": {
-   "kbps": 42.2,
-   "kind": "TS",
-   "ms": 1.39
-  },
-  "https://infolive.hongshannet.cn/RedHillEye/1781077833267957853648adb1cc9957853648adb1cc9.m3u8?auth_key=1812613833-0-0-4dabcc60fbe41e40712b37dbf24dc877": {
-   "kbps": 49.7,
-   "kind": "TS",
-   "ms": 1.18
-  },
-  "http://120.70.60.179:9901/tsfile/live/1006_1.m3u8?authid=0&key=txiptv&playlive=1": {
-   "kbps": 49.2,
-   "kind": "TS",
-   "ms": 1.19
-  },
-  "http://218.84.35.38:3000/m3u8/live/tctv-2/index.m3u8": {
-   "kbps": 58.6,
-   "kind": "TS",
-   "ms": 1.0
-  },
-  "https://st-video.xjmty.com/fs/livedit/e55abfa37af26e19/8ce9971c2177b3dd.m3u8": {
-   "kbps": 3.4,
-   "kind": "TS",
-   "ms": 17.35
-  },
-  "http://120.70.60.179:9901/tsfile/live/1002_1.m3u8?authid=0&key=txiptv&playlive=1": {
-   "kbps": 56.3,
-   "kind": "TS",
-   "ms": 1.04
-  },
-  "https://pili-live-hls-zdzz-tv.zzxwcm.cn/zdzz-tv/nqzh.m3u8": {
-   "kbps": 23.0,
-   "kind": "TS",
-   "ms": 2.55
-  },
-  "https://live.vtibet.cn/live/ZYWS20261016.stream.m3u8": {
-   "kbps": 86.2,
-   "kind": "TS",
-   "ms": 0.68
-  },
-  "https://ali-m-l.cztv.com/channels/lantian/channel10/1080p.m3u8": {
-   "kbps": 68.9,
-   "kind": "TS",
-   "ms": 0.85
-  },
-  "https://l.cztvcloud.com/channels/lantian/SXshangyu1/720p.m3u8": {
-   "kbps": 38.5,
-   "kind": "TS",
-   "ms": 1.52
-  },
-  "https://l.cztvcloud.com/channels/lantian/SXshangyu3/720p.m3u8": {
-   "kbps": 34.1,
-   "kind": "TS",
-   "ms": 1.72
-  },
-  "https://l.cztvcloud.com/channels/lantian/SXshangyu2/720p.m3u8": {
-   "kbps": 32.7,
-   "kind": "TS",
-   "ms": 1.79
-  },
-  "https://stream2.jlntv.cn/naxw/sd/live.m3u8": {
-   "kbps": 63.0,
-   "kind": "TS",
-   "ms": 0.93
-  },
-  "https://stream2.jlntv.cn/qg/sd/live.m3u8": {
-   "kbps": 67.3,
-   "kind": "TS",
-   "ms": 0.87
-  },
-  "https://stream2.jlntv.cn/jilin1/sd/live.m3u8": {
-   "kbps": 66.6,
-   "kind": "TS",
-   "ms": 0.88
-  },
-  "https://stream2.jlntv.cn/sptv/sd/live.m3u8": {
-   "kbps": 64.4,
-   "kind": "TS",
-   "ms": 0.91
-  },
-  "https://l.cztvcloud.com/channels/lantian/SXshengzhou1/720p.m3u8": {
-   "kbps": 11.1,
-   "kind": "TS",
-   "ms": 5.27
-  },
-  "https://stream2.jlntv.cn/jlyb/sd/live.m3u8": {
-   "kbps": 67.3,
-   "kind": "TS",
-   "ms": 0.87
-  },
-  "https://l.cztvcloud.com/channels/lantian/SXxinchang2/720p.m3u8": {
    "kbps": 61.7,
    "kind": "TS",
    "ms": 0.95
   },
-  "https://stream2.jlntv.cn/sytv/sd/live.m3u8": {
-   "kbps": 22.4,
+  "https://hwapi.yntv.net/62hdvf/q9vs1b.m3u8": {
+   "kbps": 55.3,
    "kind": "TS",
-   "ms": 2.61
+   "ms": 1.06
   },
-  "https://live.wjyanghu.com/live/CH1.m3u8": {
-   "kbps": 38.3,
+  "https://liveout.xntv.tv/a65jur/96iln2.m3u8?zqinghd": {
+   "kbps": 41.9,
    "kind": "TS",
-   "ms": 1.53
+   "ms": 1.4
   },
-  "https://live.wjyanghu.com/live/CH2.m3u8": {
-   "kbps": 49.2,
-   "kind": "TS",
-   "ms": 1.19
-  },
-  "http://222.179.155.21:1935/ch1.m3u8": {
-   "kbps": 53.3,
-   "kind": "TS",
-   "ms": 1.1
-  },
-  "http://222.179.155.21:1935/ch0.m3u8": {
+  "https://ls.qingting.fm/live/4974/64k.m3u8": {
    "kbps": 48.4,
    "kind": "TS",
    "ms": 1.21
   },
-  "https://ali-m-l.cztv.com/channels/lantian/channel007/1080p.m3u8": {
+  "http://live.qthnews.org.cn:1935/live/live1/800k/tzwj_video.m3u8": {
+   "kbps": 39.1,
+   "kind": "TS",
+   "ms": 1.5
+  },
+  "http://r.jdshipin.com/qClQf": {
+   "kbps": 450.7,
+   "kind": "TS",
+   "ms": 0.13
+  },
+  "http://r.jdshipin.com/qrfbg": {
+   "kbps": 1171.9,
+   "kind": "TS",
+   "ms": 0.05
+  },
+  "http://r.jdshipin.com/n90gt": {
+   "kbps": 1171.9,
+   "kind": "TS",
+   "ms": 0.05
+  },
+  "http://r.jdshipin.com/GeWKr": {
+   "kbps": 1171.9,
+   "kind": "TS",
+   "ms": 0.05
+  },
+  "http://r.jdshipin.com/0Rp07": {
+   "kbps": 976.6,
+   "kind": "TS",
+   "ms": 0.06
+  },
+  "http://php.jdshipin.com/TVOD/iptv.php?id=fhzx": {
+   "kbps": 1171.9,
+   "kind": "TS",
+   "ms": 0.05
+  },
+  "http://r.jdshipin.com/yDoTN": {
+   "kbps": 976.6,
+   "kind": "TS",
+   "ms": 0.06
+  },
+  "http://r.jdshipin.com/NfC0f": {
+   "kbps": 976.6,
+   "kind": "TS",
+   "ms": 0.06
+  },
+  "http://php.jdshipin.com/TVOD/iptv.php?id=fhhk": {
+   "kbps": 1171.9,
+   "kind": "TS",
+   "ms": 0.05
+  },
+  "https://epg.pw/stream/5f16dc7fc8aaaed3205516c63e4a8c24bca9dbba1181684244729cf574505b0e.m3u8": {
+   "kbps": 77.1,
+   "kind": "TS",
+   "ms": 0.76
+  },
+  "http://38.64.72.148:80/hls/modn/list/4005/playlist.m3u8": {
+   "kbps": 1464.8,
+   "kind": "TS",
+   "ms": 0.04
+  },
+  "http://38.64.72.148/hls/modn/list/4005/chunklist0.m3u8": {
+   "kbps": 1171.9,
+   "kind": "TS",
+   "ms": 0.05
+  },
+  "http://r.jdshipin.com/vSJvl": {
+   "kbps": 1171.9,
+   "kind": "fMP4",
+   "ms": 0.05
+  },
+  "http://r.jdshipin.com/TcKr2": {
+   "kbps": 1171.9,
+   "kind": "fMP4",
+   "ms": 0.05
+  },
+  "http://php.jdshipin.com/TVOD/iptv.php?id=viutv": {
+   "kbps": 976.6,
+   "kind": "fMP4",
+   "ms": 0.06
+  },
+  "http://php.jdshipin.com/TVOD/iptv.php?id=viutv2": {
+   "kbps": 976.6,
+   "kind": "fMP4",
+   "ms": 0.06
+  },
+  "https://h5cdn3.kylintv.tv/live/tvbnews_iphone.m3u8": {
+   "kbps": 418.5,
+   "kind": "TS",
+   "ms": 0.14
+  },
+  "http://r.jdshipin.com/CkuBd": {
+   "kbps": 1171.9,
+   "kind": "TS",
+   "ms": 0.05
+  },
+  "http://php.jdshipin.com/TVOD/iptv.php?id=wxxw": {
+   "kbps": 1464.8,
+   "kind": "TS",
+   "ms": 0.04
+  },
+  "http://38.64.72.148:80/hls/modn/list/2013/chunklist1.m3u8": {
+   "kbps": 1464.8,
+   "kind": "TS",
+   "ms": 0.04
+  },
+  "https://goodiptv.club/douyu/6091425": {
+   "kbps": 1464.8,
+   "kind": "TS",
+   "ms": 0.04
+  },
+  "http://mag.trexlive.me:80/play/live.php?extension=ts&mac=00:1A:79:7E:2F:ED&stream=1919463": {
+   "kbps": 197.3,
+   "kind": "raw-TS",
+   "ms": 0.99
+  },
+  "http://r.jdshipin.com/sXuuD": {
+   "kbps": 532.7,
+   "kind": "fMP4",
+   "ms": 0.11
+  },
+  "http://r.jdshipin.com/Voac4": {
+   "kbps": 293.0,
+   "kind": "TS",
+   "ms": 0.2
+  },
+  "http://php.jdshipin.com/TVOD/iptv.php?id=xinghe": {
+   "kbps": 732.4,
+   "kind": "fMP4",
+   "ms": 0.08
+  },
+  "http://live.ottiptv.cc/huya/26355860": {
+   "kbps": 1464.8,
+   "kind": "TS",
+   "ms": 0.04
+  },
+  "http://play.kankanlive.com/live/1711956137852982.m3u8": {
+   "kbps": 79.2,
+   "kind": "TS",
+   "ms": 0.74
+  },
+  "https://restream.pdtvhd.com/memfs/c1cd2ed0-3b2b-4c25-af98-a7fb0b1eb130.m3u8": {
+   "kbps": 57.4,
+   "kind": "TS",
+   "ms": 1.02
+  },
+  "https://video.bread-tv.com:8091/hls-live24/online/index.m3u8": {
+   "kbps": 56.3,
+   "kind": "TS",
+   "ms": 1.04
+  },
+  "https://liveplay-srs.voc.com.cn/hls/tv/134_180adf.m3u8": {
+   "kbps": 9.3,
+   "kind": "TS",
+   "ms": 6.32
+  },
+  "https://xykt-fix.github.io/Y77.m3u8": {
+   "kbps": 58.6,
+   "kind": "TS",
+   "ms": 1.0
+  },
+  "https://cdn4.skygo.mn/live/disk1/CCTV-10/HLSv3-FTA/CCTV-10.m3u8": {
+   "kbps": 34.7,
+   "kind": "TS",
+   "ms": 1.69
+  },
+  "https://amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv/master.m3u8": {
+   "kbps": 97.7,
+   "kind": "TS",
+   "ms": 0.6
+  },
+  "https://english-livebkali.cgtn.com/live/encgtn.m3u8": {
+   "kbps": 133.2,
+   "kind": "TS",
+   "ms": 0.44
+  },
+  "https://hlspackager.akamaized.net/live/DB/CGTN_ENGLISH/HLS/CGTN_ENGLISH.m3u8": {
+   "kbps": 74.2,
+   "kind": "TS",
+   "ms": 0.79
+  },
+  "https://dai.google.com/linear/hls/event/r4sa-f6GSN2XIvzKv5jVng/master.m3u8": {
+   "kbps": 189.0,
+   "kind": "TS",
+   "ms": 0.31
+  },
+  "https://amg00405-rakutentv-cgtndocumentary-rakuten-0ql8j.amagi.tv/master.m3u8": {
+   "kbps": 97.7,
+   "kind": "TS",
+   "ms": 0.6
+  },
+  "https://hlspackager.akamaized.net/live/DB/CGTN_DOCUMENTARY/HLS/CGTN_DOCUMENTARY.m3u8": {
+   "kbps": 77.1,
+   "kind": "TS",
+   "ms": 0.76
+  },
+  "https://fastlive.cctvplus.com/out/v1/2b3d8a0c805d437f9dc85b764c2ac599/index.m3u8": {
+   "kbps": 1464.8,
+   "kind": "TS",
+   "ms": 0.04
+  },
+  "http://113.64.146.48:1688/hls/4/index.m3u8": {
    "kbps": 69.8,
    "kind": "TS",
    "ms": 0.84
   },
-  "https://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8": {
-   "kbps": 75.1,
-   "kind": "TS",
-   "ms": 0.78
-  },
-  "https://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8": {
-   "kbps": 70.6,
-   "kind": "TS",
-   "ms": 0.83
-  },
-  "https://stream2.jlntv.cn/baicheng1/sd/live.m3u8": {
-   "kbps": 63.0,
-   "kind": "TS",
-   "ms": 0.93
-  },
-  "https://stream2.jlntv.cn/baishan1/sd/live.m3u8": {
+  "http://play1-qk.nmtv.cn/live/1735546697341033.m3u8": {
    "kbps": 62.3,
    "kind": "TS",
    "ms": 0.94
   },
-  "http://live.zohi.tv/video/s10001-fztv-3/index.m3u8": {
-   "kbps": 110.6,
+  "https://fastlive.cctvplus.com/out/v1/ca6f9297b7314a63959435028af287fc/index.m3u8": {
+   "kbps": 279.0,
    "kind": "TS",
-   "ms": 0.53
+   "ms": 0.21
   },
-  "http://183.64.181.25:40023/rongchang01.m3u8": {
-   "kbps": 68.9,
+  "http://hwapi.yntv.net/ew265l/848y54.m3u8": {
+   "kbps": 30.0,
    "kind": "TS",
-   "ms": 0.85
+   "ms": 1.95
   },
-  "https://l.cztvcloud.com/channels/lantian/SXxiaoshan1/720p.m3u8": {
-   "kbps": 29.4,
+  "http://live-play.zxstv.com.cn/zhongxuesheng/zhongxuesheng.m3u8": {
+   "kbps": 93.0,
    "kind": "TS",
-   "ms": 1.99
+   "ms": 0.63
   },
-  "https://stream2.jlntv.cn/liaoyuan1/sd/live.m3u8": {
-   "kbps": 73.2,
+  "https://fastlive.cctvplus.com/out/v1/8442c3bfd4c64a3984389328f6087879/index.m3u8": {
+   "kbps": 1464.8,
    "kind": "TS",
-   "ms": 0.8
+   "ms": 0.04
   },
-  "https://stream2.jlntv.cn/tonghua1/sd/live.m3u8": {
-   "kbps": 64.4,
+  "https://stream.sun0769.com/dgrtv1/mp4tv1_800/index.m3u8": {
+   "kbps": 42.5,
    "kind": "TS",
-   "ms": 0.91
+   "ms": 1.38
   },
-  "https://stream2.jlntv.cn/jlcc/sd/live.m3u8": {
-   "kbps": 62.3,
+  "http://111.59.24.227:8181/tsfile/live/1001_1.m3u8?authid=0&key=txiptv&playlive=1": {
+   "kbps": 69.8,
    "kind": "TS",
-   "ms": 0.94
+   "ms": 0.84
   },
-  "https://stream2.jlntv.cn/ja/sd/live.m3u8": {
+  "https://stream.hrbtv.net/xwzh/playlist.m3u8?_upt=ef41dd531755913594": {
+   "kbps": 30.0,
+   "kind": "TS",
+   "ms": 1.95
+  },
+  "https://stream.hrbtv.net/yspd/playlist.m3u8": {
+   "kbps": 30.4,
+   "kind": "TS",
+   "ms": 1.93
+  },
+  "https://restream.pdtvhd.com/memfs/1db8c005-9365-4b32-94a4-3736987b5646.m3u8": {
+   "kbps": 46.5,
+   "kind": "TS",
+   "ms": 1.26
+  },
+  "https://p8.vzan.com/slowlive/415983998730568937/live.m3u8": {
+   "kbps": 52.8,
+   "kind": "TS",
+   "ms": 1.11
+  },
+  "https://jiangning-tv-playing-t.cm.jstv.com/jiangning-tv/jnxwzh.m3u8": {
+   "kbps": 66.6,
+   "kind": "TS",
+   "ms": 0.88
+  },
+  "https://stream.jmtv.com.cn/xwzh/sd/live.m3u8?_upt=341f4b8e1791883036": {
+   "kbps": 40.7,
+   "kind": "TS",
+   "ms": 1.44
+  },
+  "http://110.185.237.164:8888/hls/30/index.m3u8": {
+   "kbps": 66.6,
+   "kind": "TS",
+   "ms": 0.88
+  },
+  "https://liveplus.lzr.com.cn/xwzh/HD/live.m3u8": {
+   "kbps": 8.4,
+   "kind": "TS",
+   "ms": 6.95
+  },
+  "https://liveplus.lzr.com.cn/wlpd/HD/live.m3u8": {
+   "kbps": 8.6,
+   "kind": "TS",
+   "ms": 6.83
+  },
+  "http://play1-qk.nmtv.cn/live/1769652109096027.m3u8": {
+   "kbps": 56.3,
+   "kind": "TS",
+   "ms": 1.04
+  },
+  "http://stream2.jlntv.cn/sptv/sd/live.m3u8?_upt=f27750421743154598": {
+   "kbps": 86.2,
+   "kind": "TS",
+   "ms": 0.68
+  },
+  "http://139.211.217.79:9004/hls/75/index.m3u8": {
+   "kbps": 25.1,
+   "kind": "TS",
+   "ms": 2.33
+  },
+  "https://voa-ingest.akamaized.net/hls/live/2033878/tvmc08/playlist.m3u8": {
+   "kbps": 2929.7,
+   "kind": "TS",
+   "ms": 0.02
+  },
+  "http://110.153.180.106:55555/out_3/index.m3u8": {
+   "kbps": 51.4,
+   "kind": "TS",
+   "ms": 1.14
+  },
+  "https://hls.quklive.com/live/play-sh-21.quklive.com/1777511615189085.m3u8?auth_key=2092871636-a39d8614688744d0b170b856b086ba80-0-33900446b83fa0b5befeb6bedbcd51a0": {
+   "kbps": 82.5,
+   "kind": "TS",
+   "ms": 0.71
+  },
+  "https://infolive.hongshannet.cn/RedHillEye/1781077833267957853648adb1cc9957853648adb1cc9.m3u8?auth_key=1812613833-0-0-4dabcc60fbe41e40712b37dbf24dc877": {
+   "kbps": 48.0,
+   "kind": "TS",
+   "ms": 1.22
+  },
+  "http://120.70.60.179:9901/tsfile/live/1006_1.m3u8?authid=0&key=txiptv&playlive=1": {
+   "kbps": 54.8,
+   "kind": "TS",
+   "ms": 1.07
+  },
+  "http://218.84.35.38:3000/m3u8/live/tctv-2/index.m3u8": {
+   "kbps": 54.3,
+   "kind": "TS",
+   "ms": 1.08
+  },
+  "https://st-video.xjmty.com/fs/livedit/e55abfa37af26e19/8ce9971c2177b3dd.m3u8": {
+   "kbps": 41.3,
+   "kind": "TS",
+   "ms": 1.42
+  },
+  "http://120.70.60.179:9901/tsfile/live/1002_1.m3u8?authid=0&key=txiptv&playlive=1": {
+   "kbps": 54.3,
+   "kind": "TS",
+   "ms": 1.08
+  },
+  "https://live.vtibet.cn/live/ZYWS20261016.stream.m3u8": {
+   "kbps": 60.4,
+   "kind": "TS",
+   "ms": 0.97
+  },
+  "https://ali-m-l.cztv.com/channels/lantian/channel10/1080p.m3u8": {
+   "kbps": 48.0,
+   "kind": "TS",
+   "ms": 1.22
+  },
+  "https://l.cztvcloud.com/channels/lantian/SXshangyu1/720p.m3u8": {
    "kbps": 65.8,
    "kind": "TS",
    "ms": 0.89
   },
-  "https://l.cztvcloud.com/channels/lantian/SXyuyao2/720p.m3u8": {
-   "kbps": 28.2,
+  "https://l.cztvcloud.com/channels/lantian/SXshangyu3/720p.m3u8": {
+   "kbps": 39.9,
    "kind": "TS",
-   "ms": 2.08
+   "ms": 1.47
   },
-  "https://liveplay.ycrmt.cn/sxgd/lysh.m3u8": {
+  "https://l.cztvcloud.com/channels/lantian/SXshangyu2/720p.m3u8": {
+   "kbps": 33.7,
+   "kind": "TS",
+   "ms": 1.74
+  },
+  "https://stream2.jlntv.cn/naxw/sd/live.m3u8": {
+   "kbps": 65.1,
+   "kind": "TS",
+   "ms": 0.9
+  },
+  "https://stream2.jlntv.cn/qg/sd/live.m3u8": {
+   "kbps": 55.8,
+   "kind": "TS",
+   "ms": 1.05
+  },
+  "https://stream2.jlntv.cn/jilin1/sd/live.m3u8": {
+   "kbps": 44.7,
+   "kind": "TS",
+   "ms": 1.31
+  },
+  "https://stream2.jlntv.cn/sptv/sd/live.m3u8": {
+   "kbps": 62.3,
+   "kind": "TS",
+   "ms": 0.94
+  },
+  "https://l.cztvcloud.com/channels/lantian/SXshengzhou1/720p.m3u8": {
+   "kbps": 52.3,
+   "kind": "TS",
+   "ms": 1.12
+  },
+  "https://stream2.jlntv.cn/jlyb/sd/live.m3u8": {
+   "kbps": 59.8,
+   "kind": "TS",
+   "ms": 0.98
+  },
+  "https://l.cztvcloud.com/channels/lantian/SXxinchang2/720p.m3u8": {
+   "kbps": 52.3,
+   "kind": "TS",
+   "ms": 1.12
+  },
+  "https://stream2.jlntv.cn/sytv/sd/live.m3u8": {
+   "kbps": 40.1,
+   "kind": "TS",
+   "ms": 1.46
+  },
+  "https://live.wjyanghu.com/live/CH1.m3u8": {
+   "kbps": 38.8,
+   "kind": "TS",
+   "ms": 1.51
+  },
+  "https://live.wjyanghu.com/live/CH2.m3u8": {
+   "kbps": 39.9,
+   "kind": "TS",
+   "ms": 1.47
+  },
+  "http://222.179.155.21:1935/ch1.m3u8": {
+   "kbps": 30.7,
+   "kind": "TS",
+   "ms": 1.91
+  },
+  "http://222.179.155.21:1935/ch0.m3u8": {
+   "kbps": 29.4,
+   "kind": "TS",
+   "ms": 1.99
+  },
+  "https://ali-m-l.cztv.com/channels/lantian/channel007/1080p.m3u8": {
+   "kbps": 45.8,
+   "kind": "TS",
+   "ms": 1.28
+  },
+  "https://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8": {
+   "kbps": 62.3,
+   "kind": "TS",
+   "ms": 0.94
+  },
+  "https://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8": {
+   "kbps": 65.1,
+   "kind": "TS",
+   "ms": 0.9
+  },
+  "https://stream2.jlntv.cn/baicheng1/sd/live.m3u8": {
+   "kbps": 55.8,
+   "kind": "TS",
+   "ms": 1.05
+  },
+  "https://stream2.jlntv.cn/baishan1/sd/live.m3u8": {
+   "kbps": 33.1,
+   "kind": "TS",
+   "ms": 1.77
+  },
+  "http://183.64.181.25:40023/rongchang01.m3u8": {
    "kbps": 56.9,
    "kind": "TS",
    "ms": 1.03
   },
-  "https://liveplay.ycrmt.cn/sxgd/zhpd.m3u8": {
-   "kbps": 82.5,
+  "https://l.cztvcloud.com/channels/lantian/SXxiaoshan1/720p.m3u8": {
+   "kbps": 67.3,
    "kind": "TS",
-   "ms": 0.71
+   "ms": 0.87
+  },
+  "https://stream2.jlntv.cn/liaoyuan1/sd/live.m3u8": {
+   "kbps": 56.3,
+   "kind": "TS",
+   "ms": 1.04
+  },
+  "https://stream2.jlntv.cn/tonghua1/sd/live.m3u8": {
+   "kbps": 65.8,
+   "kind": "TS",
+   "ms": 0.89
+  },
+  "https://stream2.jlntv.cn/jlcc/sd/live.m3u8": {
+   "kbps": 63.0,
+   "kind": "TS",
+   "ms": 0.93
+  },
+  "https://stream2.jlntv.cn/ja/sd/live.m3u8": {
+   "kbps": 39.9,
+   "kind": "TS",
+   "ms": 1.47
+  },
+  "http://visit.jjbctv.com:1935/live/xwzhmb/playlist.m3u8": {
+   "kbps": 55.3,
+   "kind": "TS",
+   "ms": 1.06
+  },
+  "https://l.cztvcloud.com/channels/lantian/SXyuyao2/720p.m3u8": {
+   "kbps": 31.5,
+   "kind": "TS",
+   "ms": 1.86
   }
  }
 }
