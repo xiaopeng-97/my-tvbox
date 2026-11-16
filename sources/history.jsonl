@@ -201,3 +201,15 @@
 {"date": "2026-11-15", "ts": 1794707575, "key": "ikunzyapi", "ok": true, "verdict": "四级通过", "result": "ok", "score": null, "l1_ms": 0.23, "l4_ms": 0.27}
 {"date": "2026-11-15", "ts": 1794707575, "key": "rycjapi", "ok": true, "verdict": "四级通过", "result": "ok", "score": null, "l1_ms": 1.32, "l4_ms": 0.29}
 {"date": "2026-11-15", "ts": 1794707575, "key": "hongniuzy2", "ok": true, "verdict": "四级通过", "result": "ok", "score": null, "l1_ms": 0.14, "l4_ms": 0.25}
+{"date": "2026-11-16", "ts": 1794794435, "key": "guangsu", "ok": true, "verdict": "四级通过", "result": "ok", "score": 100.0, "l1_ms": 0.08, "l4_ms": 0.2}
+{"date": "2026-11-16", "ts": 1794794435, "key": "subo", "ok": true, "verdict": "四级通过", "result": "ok", "score": 95.0, "l1_ms": 0.49, "l4_ms": 0.25}
+{"date": "2026-11-16", "ts": 1794794435, "key": "xinlang", "ok": true, "verdict": "四级通过", "result": "ok", "score": 100.0, "l1_ms": 0.58, "l4_ms": 0.33}
+{"date": "2026-11-16", "ts": 1794794435, "key": "jyzy", "ok": true, "verdict": "四级通过", "result": "ok", "score": 100.0, "l1_ms": 0.49, "l4_ms": 0.28}
+{"date": "2026-11-16", "ts": 1794794435, "key": "hhzy", "ok": true, "verdict": "四级通过", "result": "ok", "score": 100.0, "l1_ms": 0.29, "l4_ms": 0.29}
+{"date": "2026-11-16", "ts": 1794794435, "key": "360zy", "ok": true, "verdict": "四级通过", "result": "ok", "score": 100.0, "l1_ms": 1.05, "l4_ms": 0.95}
+{"date": "2026-11-16", "ts": 1794794435, "key": "huyaapi", "ok": true, "verdict": "四级通过", "result": "ok", "score": 95.0, "l1_ms": 0.53, "l4_ms": 0.25}
+{"date": "2026-11-16", "ts": 1794794435, "key": "cxkjg", "ok": true, "verdict": "四级通过", "result": "ok", "score": 70.0, "l1_ms": 1.02, "l4_ms": 0.19}
+{"date": "2026-11-16", "ts": 1794794435, "key": "apiyhzy", "ok": true, "verdict": "四级通过", "result": "ok", "score": 0, "l1_ms": 0.41, "l4_ms": 0.44}
+{"date": "2026-11-16", "ts": 1794794435, "key": "ikunzyapi", "ok": true, "verdict": "四级通过", "result": "ok", "score": null, "l1_ms": 0.19, "l4_ms": 0.37}
+{"date": "2026-11-16", "ts": 1794794435, "key": "rycjapi", "ok": true, "verdict": "四级通过", "result": "ok", "score": null, "l1_ms": 1.25, "l4_ms": 0.46}
+{"date": "2026-11-16", "ts": 1794794435, "key": "hongniuzy2", "ok": true, "verdict": "四级通过", "result": "ok", "score": null, "l1_ms": 0.21, "l4_ms": 0.29}
