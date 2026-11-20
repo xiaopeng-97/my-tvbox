@@ -249,3 +249,15 @@
 {"date": "2026-11-19", "ts": 1795058598, "key": "ikunzyapi", "ok": true, "verdict": "四级通过", "result": "ok", "score": null, "l1_ms": 0.16, "l4_ms": 0.13}
 {"date": "2026-11-19", "ts": 1795058598, "key": "rycjapi", "ok": true, "verdict": "四级通过", "result": "ok", "score": null, "l1_ms": 1.45, "l4_ms": 0.48}
 {"date": "2026-11-19", "ts": 1795058598, "key": "hongniuzy2", "ok": true, "verdict": "四级通过", "result": "ok", "score": null, "l1_ms": 0.13, "l4_ms": 0.17}
+{"date": "2026-11-20", "ts": 1795144236, "key": "guangsu", "ok": false, "verdict": "播放地址不可达", "result": "degraded", "score": 75.0, "l1_ms": 0.3, "l4_ms": 0}
+{"date": "2026-11-20", "ts": 1795144236, "key": "subo", "ok": false, "verdict": "播放地址不可达", "result": "degraded", "score": 70.0, "l1_ms": 0.57, "l4_ms": 0}
+{"date": "2026-11-20", "ts": 1795144236, "key": "xinlang", "ok": false, "verdict": "播放地址不可达", "result": "degraded", "score": 75.0, "l1_ms": 0.25, "l4_ms": 0}
+{"date": "2026-11-20", "ts": 1795144236, "key": "jyzy", "ok": true, "verdict": "四级通过", "result": "ok", "score": 100.0, "l1_ms": 0.29, "l4_ms": 1.09}
+{"date": "2026-11-20", "ts": 1795144236, "key": "hhzy", "ok": false, "verdict": "播放地址不可达", "result": "degraded", "score": 75.0, "l1_ms": 0.38, "l4_ms": 0}
+{"date": "2026-11-20", "ts": 1795144236, "key": "360zy", "ok": true, "verdict": "四级通过", "result": "ok", "score": 100.0, "l1_ms": 1.73, "l4_ms": 0.74}
+{"date": "2026-11-20", "ts": 1795144236, "key": "huyaapi", "ok": false, "verdict": "播放地址不可达", "result": "degraded", "score": 70.0, "l1_ms": 0.29, "l4_ms": 0}
+{"date": "2026-11-20", "ts": 1795144236, "key": "cxkjg", "ok": true, "verdict": "四级通过", "result": "ok", "score": 70.0, "l1_ms": 3.52, "l4_ms": 0.52}
+{"date": "2026-11-20", "ts": 1795144236, "key": "apiyhzy", "ok": true, "verdict": "四级通过", "result": "ok", "score": 0, "l1_ms": 0.28, "l4_ms": 0.68}
+{"date": "2026-11-20", "ts": 1795144236, "key": "ikunzyapi", "ok": true, "verdict": "四级通过", "result": "ok", "score": null, "l1_ms": 0.24, "l4_ms": 0.63}
+{"date": "2026-11-20", "ts": 1795144236, "key": "rycjapi", "ok": true, "verdict": "四级通过", "result": "ok", "score": null, "l1_ms": 2.61, "l4_ms": 0.3}
+{"date": "2026-11-20", "ts": 1795144236, "key": "hongniuzy2", "ok": true, "verdict": "四级通过", "result": "ok", "score": null, "l1_ms": 0.23, "l4_ms": 0.75}
