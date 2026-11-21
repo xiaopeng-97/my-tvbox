@@ -39,6 +39,15 @@
    "filterable": 1
   },
   {
+   "key": "cxkjg",
+   "name": "创享资源",
+   "type": 3,
+   "api": "https://ys.cxkjg.cn/api/provide/vod/",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1
+  },
+  {
    "key": "xinlang",
    "name": "新浪资源",
    "type": 3,
@@ -61,15 +70,6 @@
    "name": "虎牙资源",
    "type": 3,
    "api": "https://www.huyaapi.com/api.php/provide/vod/from/hym3u8/",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1
-  },
-  {
-   "key": "cxkjg",
-   "name": "创享资源",
-   "type": 3,
-   "api": "https://ys.cxkjg.cn/api/provide/vod/",
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1
@@ -115,7 +115,7 @@
   {
    "name": "精选直播·仅真活",
    "type": 0,
-   "url": "http://127.0.0.1:8899/dist/live.txt"
+   "url": "https://raw.githubusercontent.com/xiaopeng-97/my-tvbox/main/dist/live.txt"
   }
  ],
  "parses": [],
