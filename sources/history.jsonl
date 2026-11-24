@@ -292,3 +292,10 @@
 {"date": "2026-11-23", "ts": 1795401794, "key": "ikunzyapi", "ok": true, "verdict": "四级通过", "result": "ok", "score": null, "l1_ms": 0.26, "l4_ms": 0.48}
 {"date": "2026-11-23", "ts": 1795401794, "key": "rycjapi", "ok": true, "verdict": "四级通过", "result": "ok", "score": null, "l1_ms": 1.49, "l4_ms": 0.48}
 {"date": "2026-11-23", "ts": 1795401794, "key": "hongniuzy2", "ok": true, "verdict": "四级通过", "result": "ok", "score": null, "l1_ms": 0.25, "l4_ms": 0.54}
+{"date": "2026-11-24", "ts": 1795499915, "key": "jyzy", "ok": true, "verdict": "四级通过", "result": "ok", "score": 100.0, "l1_ms": 0.12, "l4_ms": 0.16}
+{"date": "2026-11-24", "ts": 1795499915, "key": "360zy", "ok": true, "verdict": "四级通过", "result": "ok", "score": 100.0, "l1_ms": 1.06, "l4_ms": 0.9}
+{"date": "2026-11-24", "ts": 1795499915, "key": "cxkjg", "ok": true, "verdict": "四级通过", "result": "ok", "score": 70.0, "l1_ms": 1.88, "l4_ms": 0.23}
+{"date": "2026-11-24", "ts": 1795499915, "key": "apiyhzy", "ok": true, "verdict": "四级通过", "result": "ok", "score": 0, "l1_ms": 0.57, "l4_ms": 0.4}
+{"date": "2026-11-24", "ts": 1795499915, "key": "ikunzyapi", "ok": true, "verdict": "四级通过", "result": "ok", "score": null, "l1_ms": 0.21, "l4_ms": 0.14}
+{"date": "2026-11-24", "ts": 1795499915, "key": "rycjapi", "ok": true, "verdict": "四级通过", "result": "ok", "score": null, "l1_ms": 2.84, "l4_ms": 0.22}
+{"date": "2026-11-24", "ts": 1795499915, "key": "hongniuzy2", "ok": true, "verdict": "四级通过", "result": "ok", "score": null, "l1_ms": 0.13, "l4_ms": 0.19}
